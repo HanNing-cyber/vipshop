@@ -152,9 +152,6 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
-	color: #06e;
-}
 
 a:focus {
 	outline: thin dotted;
@@ -223,5 +220,5 @@ a:active {
 }
 
 img {
-	display: block;
+	display: inline-block;
 }

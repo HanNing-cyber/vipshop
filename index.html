@@ -3,33 +3,149 @@
 	<head>
 		<meta charset="utf-8">
 		<!-- 重置样式表 -->
-		<link rel="stylesheet" type="text/css" href="./css/index/index_reset.css" />
+		<link rel="stylesheet" type="text/css" href="./css/reset.css" />
 		<!-- 全局 header/footer -->
-		<link rel="stylesheet" type="text/css" href="./css/index/header&footer.css" />
+		<link rel="stylesheet" type="text/css" href="./css/header&footer.css" />
 		<!-- index主要内容 -->
-		<link rel="stylesheet" type="text/css" href="./css/index/index_style.css"/>
-		<title></title>
+		<link rel="stylesheet" type="text/css" href="./css/index/index_style.css" />
+		<title>唯品会（原Vipshop.com）特卖会：品牌特卖_确保正品_确保低价_货到付款</title>
 	</head>
 	<body>
 		<!-- 全局header -->
 		<div class="header">
 			<div class="top_nav">
-				<div class="container">
-					<div class="location"></div>
-					<ul class="list">
-						<li class="user"></li>
-						<li class="signIn"></li>
-						<li class="myOrder"></li>
-						<li class="specialSale"></li>
-						<li class="member"></li>
-						<li class="service"></li>
-						<li class="mobileCode"></li>
-						<li class="more"></li>
+				<div class="container clearfix">
+					<div class="location relative">
+						<a href="javascript:;" class="show_city">
+							<div class="city vertical-mid">北京市</div>
+							<div class="arrow vertical-mid"></div>
+						</a>
+						<div class="city_select">
+							<div class="title clearfix">
+								<span class="text">请选择你所在的收货地区</span>
+								<a href="javascript:;" class="fr del"><b>X</b></a>
+							</div>
+						</div>
+					</div>
+					<ul class="list fr">
+						<li class="user">
+							<a href="javascript:;">
+								<span class="text">
+									<!-- <i class="icon_header icon_header_user vertical-mid"></i> -->
+									<span class="vertical-mid">请登录</span>
+									<!-- <i class="arrow vertical-mid"></i> -->
+								</span>
+							</a>
+						</li>
+						<li class="logIn">
+							<a href="javascript:;">
+								<span class="vertical-mid interval">/</span>
+								<span class="text">
+									<span class="vertical-mid">注册</span>
+								</span>
+							</a>
+						</li>
+						<li class="signIn">
+							<a href="javascript:;">
+								<span class="vertical-mid interval">/</span>
+								<span class="text">
+									<img src="./img/index/header_gift.gif" class="vertical-mid">
+									<span class="vertical-mid">签到有礼</span>
+								</span>
+							</a>
+						</li>
+						<li class="myOrder">
+							<a href="javascript:;">
+								<span class="vertical-mid interval">/</span>
+								<span class="text">
+									<span class="vertical-mid">我的订单</span>
+								</span>
+							</a>
+						</li>
+						<li class="specialSale">
+							<a href="javascript:;">
+								<span class="vertical-mid interval">/</span>
+								<span class="text">
+									<span class="vertical-mid">我的特卖</span>
+									<i class="arrow vertical-mid"></i>
+								</span>
+							</a>
+						</li>
+						<li class="member">
+							<a href="javascript:;">
+								<span class="vertical-mid interval">/</span>
+								<span class="text">
+									<span class="vertical-mid">会员俱乐部</span>
+									<i class="arrow vertical-mid"></i>
+								</span>
+							</a>
+						</li>
+						<li class="service">
+							<a href="javascript:;">
+								<span class="vertical-mid interval">/</span>
+								<span class="text">
+									<span class="vertical-mid">客户服务</span>
+									<i class="arrow vertical-mid"></i>
+								</span>
+							</a>
+						</li>
+						<li class="mobileCode">
+							<a href="javascript:;">
+								<span class="vertical-mid interval">/</span>
+								<span class="text">
+									<i class="icon_header icon_header_mobileCode vertical-mid"></i>
+									<span class="vertical-mid">手机版</span>
+								</span>
+							</a>
+						</li>
+						<li class="more">
+							<a href="javascript:;">
+								<span class="vertical-mid interval">/</span>
+								<span class="text">
+									<span class="vertical-mid">更多</span>
+									<i class="arrow vertical-mid"></i>
+								</span>
+							</a>
+						</li>
 					</ul>
 				</div>
 			</div>
-			<div class="container"></div>
+			<div class="top_content">
+				<div class="container clearfix">
+					<div class="logo fl">
+						<a href="index.html"><img src="./img/index/header_logo.gif"></a>
+					</div>
+					<div class="slogan fl">
+						<a href="#"><i class="icon_header icon_header_slogan1"></i></a>
+						<a href="#"><i class="icon_header icon_header_slogan2"></i></a>
+						<a href="#"><i class="icon_header icon_header_slogan3"></i></a>
+					</div>
+					<div class="search fl">
+						<div class="input_box relative">
+							<input type="text" name="keyword" class="input" id="input" value="" placeholder="快抢商品" />
+							<a href="javascript:;" class="search_btn"><img src="./img/index/search_btn.png"></a>
+						</div>
+						<ul class="hot_keyword">
+							<li><a href="#">护肤套装</a></li>
+							<li><a href="#">手机</a></li>
+							<li><a href="#">欧莱雅Loreal</a></li>
+							<li><a href="#">面部精华</a></li>
+							<li><a href="#">面膜</a></li>
+							<li><a href="#">爽肤水</a></li>
+						</ul>
+					</div>
+					<div class="shoppingCart fl relative">
+						<a href="javascript:;">
+							<i class="icon_header icon_header_shoppingCart vertical-mid"></i>
+							<span class="text vertical-mid">购物袋</span>
+							<span class="number vertical-mid">0</span>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- 全局footer -->
+		<script src="./js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/index/index.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

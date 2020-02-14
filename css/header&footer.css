@@ -1,19 +1,277 @@
 /* 引入header雪碧图文件 */
 .icon_header {
-	background:url(../../img/index/header_sprite.png);
+	background: url(../img/index/header_sprite.png);
 	display: inline-block;
 	font-style: normal;
 }
-/* 签到icon */
-.icon_header_signIn{
-	
+
+/* 用户 */
+.icon_header_user {
+	width: 24px;
+	height: 24px;
+	background-position: -61px -237px;
 }
+
+
 /* 移动端二维码 */
-.icon_header_mobileCode{
-	
+.icon_header_mobileCode {
+	width: 10px;
+	height: 14px;
+	background-position: -294px -142px;
 }
+
+/* logo旁边三个的标语 */
+.icon_header_slogan1 {
+	width: 85px;
+	height: 24px;
+	background-position: -3px -38px;
+}
+
+.icon_header_slogan2 {
+	width: 87px;
+	height: 24px;
+	background-position: -104px -38px;
+}
+
+.icon_header_slogan3 {
+	width: 94px;
+	height: 24px;
+	background-position: -207px -38px;
+}
+
+/* 关闭 */
+.icon_header_cityClose {
+	width: 14px;
+	height: 14px;
+	background-position: -147px -207px;
+}
+
+.icon_header_shoppingCart {
+	width: 14px;
+	height: 19px;
+	background-position: -113px -207px;
+}
+
 /* 文字工具类 */
-.ffffff_14{
+.ffffff_14 {
 	color: #FFFFFF;
 	font-size: 14px;
+}
+
+/* 文字公共类 */
+
+/* header_nav */
+.top_nav {
+	background-color: rgb(245, 245, 245);
+	height: 30px;
+	line-height: 27px;
+}
+
+/* header城市定位 */
+.top_nav .location .city {
+	display: inline-block;
+	width: 40px;
+}
+
+/* 城市选择 */
+.top_nav .city_select b {
+	color: gray;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.top_nav .city_select a:hover b {
+	color: #000000;
+}
+
+/* 城市选择框定位 */
+.top_nav .city_select {
+	position: absolute;
+	top: 28px;
+	left: -1px;
+	width: 500px;
+	height: 285px;
+	background-color: #FFFFFF;
+	border: 1px solid #ccc;
+	color: #000000;
+	padding: 10px 15px 0 15px;
+	/* jQuery调用该属性 */
+	display: none;
+}
+/* jQuery调用 */
+.top_nav .location.selected{
+	border: 1px solid #ccc;
+	background-color: #FFFFFF;
+}
+.top_nav .city_select::after{
+	content: "";
+	width:92px;
+	height: 5px;
+	position: absolute;
+	top: -4px;
+	left: 0;
+	background-color: #FFFFFF;
+}
+/* 小三角 */
+.top_nav .location .arrow {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-width: 4px;
+	border-color: #999 transparent transparent transparent;
+	border-style: solid dashed dotted dashed;
+}
+
+.top_nav .location {
+	width: 54px;
+	padding-left: 15px;
+	padding-right: 23px;
+	display: inline-block;
+}
+
+/* top_nav 横向导航 */
+.top_nav .list {
+	display: inline-block;
+}
+
+.top_nav .list li {
+	display: inline-block;
+	margin-left: -10px;
+}
+
+.top_nav .list li .text {
+	padding-left: 10px;
+	padding-right: 17px;
+}
+
+/* 签到图标 文字 底部水平对齐 */
+.top_nav .list .signIn img {
+	margin-top: -6px;
+}
+
+/* 每项之间的斜线 */
+.top_nav .list li .interval {
+	color: #CCCCCC;
+}
+
+/* 倒三角 */
+.top_nav .list .arrow {
+	display: inline-block;
+	margin-top: 5px;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	vertical-align: middle;
+	border-width: 4px;
+	border-color: #999 transparent transparent transparent;
+	border-style: solid dashed dotted dashed;
+}
+
+/* 鼠标放上,颜色变红 */
+.top_nav .list a:hover {
+	color: rgb(214, 1, 128);
+}
+
+/* logo solgan 可更换*/
+.top_content .container div {
+	display: inline-block;
+}
+
+.top_content .slogan i {
+	margin-left: 16px;
+}
+
+.top_content .slogan {
+	margin-right: 50px;
+	margin-top: 40px;
+}
+
+/* 搜索框 */
+
+.top_content .input_box .input {
+	border: 2px solid rgb(250, 42, 131);
+	width: 280px;
+	height: 28px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #333;
+	background-color: #fff;
+	padding: 2px 12px;
+	outline: 0;
+}
+
+/* 搜索框图标 */
+.top_content .input_box .search_btn img {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+}
+
+.top_content .input_box .search_btn {
+	position: absolute;
+	top: 0;
+	right: -53px;
+	padding-top: 6px;
+	width: 53px;
+	height: 30px;
+	text-align: center;
+	background-color: #fa2a83;
+}
+
+.top_content .search {
+	margin-top: 34px;
+}
+
+/* 热门关键词 */
+.top_content .hot_keyword li {
+	display: inline-block;
+	margin-top: 4px;
+}
+
+.top_content .hot_keyword li a {
+	color: #999;
+}
+
+.top_content .hot_keyword li::after {
+	content: "|";
+	color: #999;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.top_content .hot_keyword li:last-child::after {
+	content: "";
+}
+
+/* 购物袋 */
+.top_content .shoppingCart {
+	position: relative;
+	padding-right: 33px;
+	padding-left: 25px;
+	width: 36px;
+	height: 32px;
+	line-height: 32px;
+	border: 1px solid #ccc;
+	background-color: #f6f7f9;
+	border-radius: 2px;
+	margin-top: 35px;
+	margin-left: 26px;
+}
+
+.top_content .shoppingCart i {
+	margin-left: -18px;
+}
+
+.top_content .shoppingCart .number {
+	position: absolute;
+	top: 8px;
+	right: 3px;
+	display: inline-block;
+	border-radius: 8px;
+	height: 16px;
+	width: 24px;
+	line-height: 16px;
+	color: #fff;
+	text-align: center;
+	background-color: #f00581;
 }
