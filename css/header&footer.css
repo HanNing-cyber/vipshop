@@ -1,0 +1,19 @@
+/* 引入header雪碧图文件 */
+.icon_header {
+	background:url(../../img/index/header_sprite.png);
+	display: inline-block;
+	font-style: normal;
+}
+/* 签到icon */
+.icon_header_signIn{
+	
+}
+/* 移动端二维码 */
+.icon_header_mobileCode{
+	
+}
+/* 文字工具类 */
+.ffffff_14{
+	color: #FFFFFF;
+	font-size: 14px;
+}
