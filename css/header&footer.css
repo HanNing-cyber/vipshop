@@ -144,6 +144,7 @@
 
 .top_nav .list .title {
 	padding-left: 10px;
+	border: 1px solid rgba(0, 0, 0, 0);
 }
 
 /* 斜线 */
@@ -203,13 +204,155 @@
 }
 
 /* jQuery调用 */
-.top_nav .login .title {
+.top_nav .login .title.show {
 	border: 1px solid #ccc;
 	background-color: #FFFFFF;
-	padding-right: 10px;
+	padding-right: 19px;
 }
 
-.top_nav .login .title::after {
+.top_nav .login .title.show::after {
+	content: "";
+	position: absolute;
+	bottom: -3px;
+	left: 1px;
+	width: 82%;
+	height: 5px;
+	z-index: 101;
+	background-color: #FFFFFF;
+}
+
+.top_nav .login_box {
+	position: absolute;
+	top: 28px;
+	left: 0;
+	z-index: 100;
+	width: 240px;
+	background-color: #FFFFFF;
+	border: 1px solid #ccc;
+	padding: 20px 0 20px 20px;
+	display: none;
+}
+
+/* 我的特卖 会员俱乐部 客户服务 */
+.top_nav .specialSale .title.show,
+.top_nav .member .title.show,
+.top_nav .service .title.show {
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	background-color: #FFFFFF;
+	padding-right: 9px;
+}
+
+.top_nav .specialSale .title.show::after,
+.top_nav .member .title.show::after,
+.top_nav .service .title.show::after {
+	content: "";
+}
+
+.top_nav .specialSale .box,
+.top_nav .member .box,
+.top_nav .service .box {
+	z-index: 100;
+	position: absolute;
+	top: 28px;
+	left: 0;
+	background-color: #FFFFFF;
+	border: 1px solid #ccc;
+	border-top: 0;
+	padding-bottom: 10px;
+	display: none;
+}
+
+.top_nav .specialSale .box a,
+.top_nav .member .box a,
+.top_nav .service .box a {
+	display: inline-block;
+	width: 100%;
+	margin-left: 11px;
+}
+
+/* 移动端二维码 */
+.top_nav .mobileCode .box img {
+	width: 161px;
+	height: 161px;
+}
+
+.top_nav .mobileCode .box a {
+	text-align: center;
+	display: block;
+	font-weight: bold;
+	color: #000000;
+}
+
+.top_nav .mobileCode .box a:hover {
+	color: rgb(214, 1, 128);
+}
+
+.top_nav .mobileCode .box {
+	z-index: 100;
+	position: absolute;
+	top: 28px;
+	left: -102px;
+	background-color: #FFFFFF;
+	border: 1px solid #ccc;
+	padding: 10px;
+	display: none;
+}
+
+.top_nav .mobileCode .title.show::after {
+	content: "";
+	position: absolute;
+	bottom: -3px;
+	left: 1px;
+	width: 85%;
+	height: 5px;
+	z-index: 101;
+	background-color: #FFFFFF;
+}
+
+.top_nav .mobileCode .title.show {
+	border: 1px solid #ccc;
+	background-color: #FFFFFF;
+	padding-right: 9px;
+	padding-right: 19px;
+}
+
+/* 更多 */
+.top_nav .more .cooperation span,
+.top_nav .more .about_us span {
+	color: #000000;
+	font-weight: bold;
+	font-size: 14px;
+	display: block;
+}
+
+.top_nav .more .cooperation {
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #ccc;
+}
+
+.top_nav .more .about_us {
+	padding-top: 10px;
+}
+
+.top_nav .more .about_us a {
+	padding-right: 5px;
+}
+
+.top_nav .more .box {
+	z-index: 100;
+	position: absolute;
+	top: 28px;
+	right: 0;
+	width: 260px;
+	background-color: #FFFFFF;
+	border: 1px solid #ccc;
+	padding: 10px;
+	padding-bottom: 20px;
+	display: none;
+}
+
+.top_nav .more .title.show::after {
 	content: "";
 	position: absolute;
 	bottom: -3px;
@@ -220,15 +363,11 @@
 	background-color: #FFFFFF;
 }
 
-.top_nav .login_box {
-	position: absolute;
-	top: 30px;
-	left: 0;
-	z-index: 100;
-	width: 240px;
-	background-color: #FFFFFF;
+.top_nav .more .title.show {
 	border: 1px solid #ccc;
-	padding: 20px 0 20px 20px;
+	background-color: #FFFFFF;
+	padding-right: 9px;
+	padding-right: 10px;
 }
 
 /* logo solgan 可更换*/
@@ -300,10 +439,10 @@
 .top_content .hot_keyword li:last-child::after {
 	content: "";
 }
+/* 搜索下拉框 */
 
 /* 购物袋 */
 .top_content .shoppingCart {
-	position: relative;
 	padding-right: 33px;
 	padding-left: 25px;
 	width: 36px;
@@ -332,4 +471,39 @@
 	color: #fff;
 	text-align: center;
 	background-color: #f00581;
+}
+
+/* 购物袋展开 */
+.top_content .shoppingCart .link {
+	color: rgb(250, 42, 131);
+}
+
+.top_content .shoppingCart .box {
+	z-index: 100;
+	position: absolute;
+	top: 42px;
+	right: -1px;
+	width: 320px;
+	background-color: #FFFFFF;
+	border: 1px solid #ccc;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+.top_content .shoppingCart .title.show::after {
+	content: "";
+	position: absolute;
+	bottom: -11px;
+	left: -1px;
+	width: 100%;
+	height: 14px;
+	z-index: 101;
+	background-color: #FFFFFF;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+.top_content .shoppingCart.bgcolor {
+	background-color: #FFFFFF;
 }
