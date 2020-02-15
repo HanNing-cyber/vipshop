@@ -12,7 +12,6 @@
 	background-position: -61px -237px;
 }
 
-
 /* 移动端二维码 */
 .icon_header_mobileCode {
 	width: 10px;
@@ -46,10 +45,18 @@
 	background-position: -147px -207px;
 }
 
+/* 购物袋 */
 .icon_header_shoppingCart {
 	width: 14px;
 	height: 19px;
 	background-position: -113px -207px;
+}
+
+/* 头像 */
+.icon_header_user {
+	width: 38px;
+	height: 38px;
+	background-position: -164px -142px;
 }
 
 /* 文字工具类 */
@@ -57,8 +64,6 @@
 	color: #FFFFFF;
 	font-size: 14px;
 }
-
-/* 文字公共类 */
 
 /* header_nav */
 .top_nav {
@@ -98,21 +103,24 @@
 	/* jQuery调用该属性 */
 	display: none;
 }
-/* jQuery调用 */
-.top_nav .location.selected{
+
+/* 城市选择jQuery调用 */
+.top_nav .location.selected {
 	border: 1px solid #ccc;
 	background-color: #FFFFFF;
 }
-.top_nav .city_select::after{
+
+.top_nav .city_select::after {
 	content: "";
-	width:92px;
+	width: 92px;
 	height: 5px;
 	position: absolute;
 	top: -4px;
 	left: 0;
 	background-color: #FFFFFF;
 }
-/* 小三角 */
+
+/* 城市选择小三角 */
 .top_nav .location .arrow {
 	display: inline-block;
 	width: 0;
@@ -130,28 +138,28 @@
 }
 
 /* top_nav 横向导航 */
-.top_nav .list {
-	display: inline-block;
-}
-
 .top_nav .list li {
 	display: inline-block;
-	margin-left: -10px;
 }
 
-.top_nav .list li .text {
+.top_nav .list .title {
 	padding-left: 10px;
-	padding-right: 17px;
+}
+
+/* 斜线 */
+.top_nav .list .title::after {
+	content: "/";
+	color: #ccc;
+	padding-left: 10px;
+}
+
+.top_nav .list li:last-child .title::after {
+	content: "";
 }
 
 /* 签到图标 文字 底部水平对齐 */
 .top_nav .list .signIn img {
 	margin-top: -6px;
-}
-
-/* 每项之间的斜线 */
-.top_nav .list li .interval {
-	color: #CCCCCC;
 }
 
 /* 倒三角 */
@@ -172,6 +180,57 @@
 	color: rgb(214, 1, 128);
 }
 
+/* 顶部导航  登录 鼠标移入 */
+.top_nav .login_box .link a {
+	display: inline-block;
+	width: 49%;
+}
+
+.top_nav .login_box .inf a {
+	display: inline-block;
+	padding: 5px 80px 5px 5px;
+	border-bottom: 1px dotted #ccc;
+	margin-left: 10px;
+	margin-top: -5px;
+}
+
+.top_nav .login_box .inf i {
+	border-radius: 100%;
+}
+
+.top_nav .login_box .inf {
+	margin-bottom: 10px;
+}
+
+/* jQuery调用 */
+.top_nav .login .title {
+	border: 1px solid #ccc;
+	background-color: #FFFFFF;
+	padding-right: 10px;
+}
+
+.top_nav .login .title::after {
+	content: "";
+	position: absolute;
+	bottom: -3px;
+	left: 1px;
+	width: 80%;
+	height: 5px;
+	z-index: 101;
+	background-color: #FFFFFF;
+}
+
+.top_nav .login_box {
+	position: absolute;
+	top: 30px;
+	left: 0;
+	z-index: 100;
+	width: 240px;
+	background-color: #FFFFFF;
+	border: 1px solid #ccc;
+	padding: 20px 0 20px 20px;
+}
+
 /* logo solgan 可更换*/
 .top_content .container div {
 	display: inline-block;
@@ -187,7 +246,6 @@
 }
 
 /* 搜索框 */
-
 .top_content .input_box .input {
 	border: 2px solid rgb(250, 42, 131);
 	width: 280px;
