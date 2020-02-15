@@ -90,4 +90,20 @@ $(document).ready(function() {
 		});
 		$(this).children('a').css('color', 'grey');
 	});
+	/* 横向大导航栏 更多 */
+	$('.nav .crosswise_nav .more').on('mouseenter', function () {
+		$(this).addClass('active');
+		$(this).children('.more_box').css('display', 'inline-block');
+	});
+	$('.nav .crosswise_nav .more').on('mouseleave', function () {
+		$(this).removeClass('active');
+		$(this).children('.more_box').css('display', 'none');
+	});
+	/* 纵向大导航栏 移入下拉效果*/
+	$('.nav .vertical_nav').on('mouseenter', function () {
+		$(this).children('.channel_list').stop(true).slideDown();
+	});
+	$('.nav .vertical_nav').on('mouseleave', function () {
+		$(this).children('.channel_list').stop(true).slideUp();
+	});
 });
