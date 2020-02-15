@@ -1,3 +1,17 @@
+/* 全局适配 */
+.header {
+	/* 在此处修改header距离主内容的距离 */
+	margin-bottom: 0px;
+}
+
+
+
+
+
+
+/* -----------勿动------------ */
+
+
 /* 引入header雪碧图文件 */
 .icon_header {
 	background: url(../img/index/header_sprite.png);
@@ -663,12 +677,14 @@
 	margin-left: -18px;
 	padding-bottom: 10px;
 }
-.footer .link .code .title{
+
+.footer .link .code .title {
 	display: inline-block;
 	color: #000000;
 	margin-left: 2px;
 	padding-bottom: 10px;
 }
+
 .footer .link .item {
 	border-right: 1px solid #ccc;
 	display: inline-block;
@@ -682,118 +698,144 @@
 	padding-left: 30px;
 	width: 114px;
 }
+
 /* 底部关于我们 */
-.footer .about{
-	background-color: rgb(215,35,126);
+.footer .about {
+	background-color: rgb(215, 35, 126);
 	text-align: center;
 	margin-top: 30px;
 }
-.footer .about li{
+
+.footer .about li {
 	display: inline-block;
 	padding: 10px 1px;
 }
-.footer .about li::after{
+
+.footer .about li::after {
 	content: "|";
 	color: #FFFFFF;
 	padding-left: 5px;
 }
-.footer .about li:last-child::after{
+
+.footer .about li:last-child::after {
 	content: "";
 }
-.footer .about a{
+
+.footer .about a {
 	color: #FFFFFF;
 }
-.footer .about a:hover{
+
+.footer .about a:hover {
 	color: #ccc;
 }
+
 /* 底部版权信息 */
-.footer .Copyright{
+.footer .Copyright {
 	text-align: center;
 	padding-top: 10px;
 }
-.footer .Copyright a{
+
+.footer .Copyright a {
 	color: gray;
 }
-.footer .put_on_records a img{
+
+.footer .put_on_records a img {
 	display: inline-block;
 	padding-right: 4px;
 }
-.footer .Copyright a:hover{
+
+.footer .Copyright a:hover {
 	color: rgb(250, 42, 131);
 }
+
 /* 底部备案信息 */
-.footer .put_on_records span{
+.footer .put_on_records span {
 	display: block;
 	padding-top: 5px;
 	text-align: center;
 }
-.footer .put_on_records a{
+
+.footer .put_on_records a {
 	color: gray;
 }
-.footer .put_on_records a:hover{
+
+.footer .put_on_records a:hover {
 	color: rgb(250, 42, 131);
 }
+
 /* 底部认证信息 */
 .footer .identification {
 	text-align: center;
 	margin-top: 30px;
 	margin-bottom: 10px;
 }
-.footer .identification a{
+
+.footer .identification a {
 	display: inline-block;
 	margin-right: 30px;
 }
-.icon_identification{
+
+.icon_identification {
 	background: url(../img/index/identification.png);
 	display: inline-block;
 	font-style: normal;
 }
-.icon_identification_Unionpay{
+
+.icon_identification_Unionpay {
 	width: 105px;
 	height: 40px;
 	background-position: 0 0;
 }
-.icon_identification_Alipay{
+
+.icon_identification_Alipay {
 	width: 89px;
 	height: 40px;
 	background-position: 0 -50px;
 }
-.icon_identification_CreditEnterprise{
+
+.icon_identification_CreditEnterprise {
 	width: 91px;
 	height: 40px;
 	background-position: 0 -100px;
 }
-.icon_identification_LegalRights{
+
+.icon_identification_LegalRights {
 	width: 99px;
 	height: 28px;
 	background-position: 0 -156px;
 }
-.icon_identification_RedLink{
+
+.icon_identification_RedLink {
 	width: 66px;
 	height: 40px;
 	background-position: 0 -200px;
 }
-.icon_identification_callPolice{
+
+.icon_identification_callPolice {
 	width: 71px;
 	height: 40px;
 	background-position: 0 -250px;
 }
-.icon_identification_netPolice{
+
+.icon_identification_netPolice {
 	width: 75px;
 	height: 37px;
 	background-position: 0 -303px;
 }
-.icon_identification_ccredit{
+
+.icon_identification_ccredit {
 	width: 89px;
 	height: 40px;
 	background-position: 0 -350px;
 }
-.icon_identification_integrityWeb{
+
+.icon_identification_integrityWeb {
 	width: 77px;
 	height: 40px;
 	background-position: 0 -400px;
 }
-.icon_identification_credibleWeb{
+
+.icon_identification_credibleWeb {
 	width: 77px;
 	height: 40px;
 	background-position: 0 -450px;
