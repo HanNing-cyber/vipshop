@@ -110,13 +110,13 @@
 				<div class="operation-box clearfix">
 					<div class="multiple float-left change-color">综合</div>
 					<div class="price-sort float-left">价格
-					    <img src="img/goods_search/images/sort.jpg" class="sort">
 						<img src="img/goods_search/images/pink-up.jpg" class="pink-up">
-						<img src="img/goods_search/images/pink-down.jpg" class="pink-down"></div>
+						<img src="img/goods_search/images/pink-down.jpg" class="pink-down">
+					    <img src="img/goods_search/images/sort.jpg" class="sort"></div>
 					<div class="reduction-sort float-left">折扣
-					    <img src="img/goods_search/images/sort.jpg" class="sort">
 						<img src="img/goods_search/images/pink-up.jpg" class="pink-up">
-						<img src="img/goods_search/images/pink-down.jpg" class="pink-down"></div>
+						<img src="img/goods_search/images/pink-down.jpg" class="pink-down">
+					    <img src="img/goods_search/images/sort.jpg" class="sort"></div>
 					<div class="sales float-left">销量</div>
 					<!-- 价格筛选 -->
 					<div class="price-screen float-left">
@@ -271,6 +271,63 @@
 				$(this).find('.goods-border').css('display','block');
 			},function () {
 				$(this).find('.goods-border').css('display','none');
+			})
+			
+			// 商品价格排序
+			$('.price-sort').click(function() {
+				$(this).siblings().removeClass('change-color');
+				$(this).siblings().find('.sort').css('display','inline-block');
+				$(this).addClass('change-color');
+				$(this).find('.sort').css('display','none');
+				$(this).find('.pink-up').css('display','inline-block')
+				// 方法2：借助数组里面的sort方法
+				var arr = [];
+				$('.goods-list .goods-item .num').each(function() {
+					arr.push($(this));
+				});
+				// sort
+				arr.sort(function($itemA, $itemB) {
+					var priceA = $itemA.find('num').text();
+					var priceB = $itemB.find('num').text();
+					return priceA - priceB;
+				});
+				console.log(arr)
+				// 插入DOM
+				arr.forEach(function(item, index) {
+					$('.goods-list').append(item)
+				});
+			});
+			
+			// 商品折扣排序
+			$('.reduction-sort').click(function() {
+				$(this).siblings().removeClass('change-color');
+				$(this).siblings().find('.sort').css('display','inline-block');
+				$(this).addClass('change-color');
+				$(this).find('.sort').css('display','none');
+				$(this).find('.pink-up').css('display','inline-block')
+				// 方法2：借助数组里面的sort方法
+				var arr = [];
+				$('.goods-list .goods-item').each(function() {
+					arr.push($(this));
+				});
+				// sort
+				arr.sort(function($itemA, $itemB) {
+					var priceA = $itemA.find('num').text();
+					var priceB = $itemB.find('num').text();
+					return priceA - priceB;
+				});
+				console.log(arr)
+				// 插入DOM
+				arr.forEach(function(item, index) {
+					$('.goods-list').append(item)
+				});
+			});
+			
+			// 点击综合取消排序
+			$('.multiple').click(function () {
+				$(this).siblings().removeClass('change-color');
+				$(this).siblings().find('.sort').css('display','inline-block');
+				$(this).addClass('change-color');
 			})
 		</script>
 	</body>
