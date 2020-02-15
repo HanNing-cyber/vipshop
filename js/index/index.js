@@ -75,4 +75,19 @@ $(document).ready(function() {
 	$('.top_content .search input').on('blur', function() {
 		$(this).parents('.input_box').siblings('.pullDown').css('display', 'none');
 	});
+	/* 底部链接区 */
+	$('.footer .link ul li').on('mouseenter', function() {
+		$(this).css({
+			'color': 'rgb(250, 42, 131)',
+			'margin-left': '5px'
+		});
+		$(this).children('a').css('color', 'rgb(250, 42, 131)');
+	});
+	$('.footer .link ul li').on('mouseleave', function() {
+		$(this).css({
+			'color': 'grey',
+			'margin-left': '0px'
+		});
+		$(this).children('a').css('color', 'grey');
+	});
 });

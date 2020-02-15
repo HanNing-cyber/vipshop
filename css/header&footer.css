@@ -5,6 +5,12 @@
 	font-style: normal;
 }
 
+.icon_footer {
+	background: url(../img/index/slogan_footer_10.png);
+	display: inline-block;
+	font-style: normal;
+}
+
 /* 用户 */
 .icon_header_user {
 	width: 24px;
@@ -59,6 +65,66 @@
 	background-position: -164px -142px;
 }
 
+/* 底部10个标语 */
+.icon_footer_slogan01 {
+	width: 58px;
+	height: 75px;
+	background-position: 0 0;
+}
+
+.icon_footer_slogan02 {
+	width: 58px;
+	height: 75px;
+	background-position: -79px 0;
+}
+
+.icon_footer_slogan03 {
+	width: 58px;
+	height: 75px;
+	background-position: -160px 0;
+}
+
+.icon_footer_slogan04 {
+	width: 58px;
+	height: 75px;
+	background-position: -239px 0;
+}
+
+.icon_footer_slogan05 {
+	width: 58px;
+	height: 75px;
+	background-position: -319px 0;
+}
+
+.icon_footer_slogan06 {
+	width: 58px;
+	height: 75px;
+	background-position: -399px 0;
+}
+
+.icon_footer_slogan07 {
+	width: 58px;
+	height: 75px;
+	background-position: -479px 0;
+}
+
+.icon_footer_slogan08 {
+	width: 58px;
+	height: 75px;
+	background-position: -560px 0;
+}
+
+.icon_footer_slogan09 {
+	width: 58px;
+	height: 75px;
+	background-position: -640px 0;
+}
+
+.icon_footer_slogan10 {
+	width: 58px;
+	height: 75px;
+	background-position: -720px 0;
+}
 
 /* header_nav */
 .top_nav {
@@ -241,7 +307,7 @@
 .top_nav .member .title.show::after,
 .top_nav .service .title.show::after {
 	content: "/";
-	color: rgba(0,0,0,0);
+	color: rgba(0, 0, 0, 0);
 }
 
 .top_nav .specialSale .box,
@@ -296,7 +362,7 @@
 
 .top_nav .mobileCode .title.show::after {
 	content: "/";
-	color: rgba(0,0,0,0);
+	color: rgba(0, 0, 0, 0);
 	position: absolute;
 	left: 1px;
 	bottom: -3px;
@@ -369,8 +435,7 @@
 .top_content .container .logo,
 .top_content .container .slogan,
 .top_content .container .search,
-.top_content .container .shoppingCart
-{
+.top_content .container .shoppingCart {
 	display: inline-block;
 }
 
@@ -438,6 +503,7 @@
 .top_content .hot_keyword li:last-child::after {
 	content: "";
 }
+
 /* 搜索下拉框 */
 .top_content .pullDown {
 	position: absolute;
@@ -453,23 +519,27 @@
 	padding-left: 20px;
 	display: none;
 }
-.top_content .pullDown .history{
+
+.top_content .pullDown .history {
 	border-right: 1px solid #ccc;
 	width: 140px;
 	height: 100%;
 	padding-top: 10px;
 }
-.top_content .pullDown .recommend{
+
+.top_content .pullDown .recommend {
 	width: 140px;
 	height: 100%;
 	padding-left: 15px;
 }
-.top_content .pullDown .recommend .title{
+
+.top_content .pullDown .recommend .title {
 	display: inline-block;
 	padding-top: 10px;
 	padding-right: 30px;
 }
-.top_content .pullDown .recommend a{
+
+.top_content .pullDown .recommend a {
 	display: inline-block;
 	padding: 5px;
 	border-radius: 2px;
@@ -477,7 +547,8 @@
 	margin-right: 8px;
 	margin-top: 10px;
 }
-.top_content .pullDown .recommend a:hover{
+
+.top_content .pullDown .recommend a:hover {
 	display: inline-block;
 	padding: 5px;
 	border-radius: 2px;
@@ -553,4 +624,177 @@
 
 .top_content .shoppingCart.bgcolor {
 	background-color: #FFFFFF;
+}
+
+
+
+/* --------全局footer----------- */
+.footer {
+	background-color: rgb(252, 252, 252);
+	border-top: 1px solid rgb(235, 235, 235);
+	margin-top: 70px;
+	padding-top: 30px;
+}
+
+/* 10个标语 */
+.footer .slogan {
+	margin-bottom: 30px;
+}
+
+.footer .slogan i {
+	margin-right: 42px;
+}
+
+.footer .slogan i:last-child {
+	margin-right: 0;
+}
+
+/* 底部链接区 */
+.footer .link ul li {
+	list-style-type: square;
+	padding-bottom: 3px;
+	transition: all 0.3s;
+}
+
+
+.footer .link .title {
+	display: inline-block;
+	color: #000000;
+	margin-left: -18px;
+	padding-bottom: 10px;
+}
+.footer .link .code .title{
+	display: inline-block;
+	color: #000000;
+	margin-left: 2px;
+	padding-bottom: 10px;
+}
+.footer .link .item {
+	border-right: 1px solid #ccc;
+	display: inline-block;
+	padding-left: 30px;
+	width: 136px;
+	height: 146px;
+}
+
+.footer .link .code {
+	display: inline-block;
+	padding-left: 30px;
+	width: 114px;
+}
+/* 底部关于我们 */
+.footer .about{
+	background-color: rgb(215,35,126);
+	text-align: center;
+	margin-top: 30px;
+}
+.footer .about li{
+	display: inline-block;
+	padding: 10px 1px;
+}
+.footer .about li::after{
+	content: "|";
+	color: #FFFFFF;
+	padding-left: 5px;
+}
+.footer .about li:last-child::after{
+	content: "";
+}
+.footer .about a{
+	color: #FFFFFF;
+}
+.footer .about a:hover{
+	color: #ccc;
+}
+/* 底部版权信息 */
+.footer .Copyright{
+	text-align: center;
+	padding-top: 10px;
+}
+.footer .Copyright a{
+	color: gray;
+}
+.footer .put_on_records a img{
+	display: inline-block;
+	padding-right: 4px;
+}
+.footer .Copyright a:hover{
+	color: rgb(250, 42, 131);
+}
+/* 底部备案信息 */
+.footer .put_on_records span{
+	display: block;
+	padding-top: 5px;
+	text-align: center;
+}
+.footer .put_on_records a{
+	color: gray;
+}
+.footer .put_on_records a:hover{
+	color: rgb(250, 42, 131);
+}
+/* 底部认证信息 */
+.footer .identification {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.footer .identification a{
+	display: inline-block;
+	margin-right: 30px;
+}
+.icon_identification{
+	background: url(../img/index/identification.png);
+	display: inline-block;
+	font-style: normal;
+}
+.icon_identification_Unionpay{
+	width: 105px;
+	height: 40px;
+	background-position: 0 0;
+}
+.icon_identification_Alipay{
+	width: 89px;
+	height: 40px;
+	background-position: 0 -50px;
+}
+.icon_identification_CreditEnterprise{
+	width: 91px;
+	height: 40px;
+	background-position: 0 -100px;
+}
+.icon_identification_LegalRights{
+	width: 99px;
+	height: 28px;
+	background-position: 0 -156px;
+}
+.icon_identification_RedLink{
+	width: 66px;
+	height: 40px;
+	background-position: 0 -200px;
+}
+.icon_identification_callPolice{
+	width: 71px;
+	height: 40px;
+	background-position: 0 -250px;
+}
+.icon_identification_netPolice{
+	width: 75px;
+	height: 37px;
+	background-position: 0 -303px;
+}
+.icon_identification_ccredit{
+	width: 89px;
+	height: 40px;
+	background-position: 0 -350px;
+}
+.icon_identification_integrityWeb{
+	width: 77px;
+	height: 40px;
+	background-position: 0 -400px;
+}
+.icon_identification_credibleWeb{
+	width: 77px;
+	height: 40px;
+	background-position: 0 -450px;
 }
