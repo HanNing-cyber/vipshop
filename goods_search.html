@@ -119,9 +119,10 @@
 						<img src="img/goods_search/images/sort.jpg" class="sort"></div>
 					<div class="sales float-left">销量</div>
 					<!-- 价格筛选 -->
-					<div class="price-screen float-left">
+					<div class="price-screen float-left relative">
 						<input type="text" class="min-price" placeholder="￥" /> -
 						<input type="text" class="max-price" placeholder="￥" />
+						<button type="button" class="confirm">确定</button>
 					</div>
 					<div class="float-right"><button type="button" class="next-page">下一页 ></button></div>
 					<div class="float-right"><button type="button" class="last-page">
@@ -132,13 +133,19 @@
 
 				<div class="goods-box">
 					<ul class="goods-list clearfix">
+						<!-- 商品的总盒子item -->
 						<li class="goods-item float-left relative">
+							<!-- 边框移入移出 -->
 							<div class="goods-border"></div>
+							<!-- 商品图片 -->
 							<div class="goods-img">
 								<img src="img/goods_search/goods1.jpg" width="180px">
 							</div>
+							<!-- 价格 数字在.num里 -->
 							<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">45</span></div>
-							<div class="goods-reduction"><s>￥169</s>2.7折</div>
+							<!-- 折扣 数字在.per里 -->
+							<div class="goods-reduction"><s>￥169</s><span class="per">2.7</span>折</div>
+							<!-- 描述 -->
 							<div class="goods-describe">
 								佩佩【12支】丝绒慕斯唇釉套装哑光水润持久保湿不易脱色
 							</div>
@@ -149,7 +156,7 @@
 								<img src="img/goods_search/goods2.jpg" width="180px">
 							</div>
 							<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">69</span></div>
-							<div class="goods-reduction"><s>￥109</s>6.4折</div>
+							<div class="goods-reduction"><s>￥109</s><span class="per">6.4</span>折</div>
 							<div class="goods-describe">
 								Dior迪奥烈艳蓝金哑光唇膏 999 3.5g
 							</div>
@@ -160,7 +167,7 @@
 								<img src="img/goods_search/goods3.jpg" width="180px">
 							</div>
 							<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">69</span></div>
-							<div class="goods-reduction"><s>￥266</s>3.5折</div>
+							<div class="goods-reduction"><s>￥266</s><span class="per">3.5</span>折</div>
 							<div class="goods-describe">
 								卡姿兰【1盒6色】粉悦木马轻雾感口红小样套盒 哑光雾面唇膏
 							</div>
@@ -171,7 +178,7 @@
 								<img src="img/goods_search/goods4.jpg" width="180px">
 							</div>
 							<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">99</span></div>
-							<div class="goods-reduction"><s>￥162</s>2.8折</div>
+							<div class="goods-reduction"><s>￥162</s><span class="per">2.8</span>折</div>
 							<div class="goods-describe">
 								完美日记【显白不挑皮】缎色柔光小粉钻唇膏滋润持久雾面哑光显白口红
 							</div>
@@ -182,7 +189,7 @@
 								<img src="img/goods_search/goods5.jpg" width="180px">
 							</div>
 							<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">119</span></div>
-							<div class="goods-reduction"><s>￥109</s>6.6折</div>
+							<div class="goods-reduction"><s>￥109</s><span class="per">6.6</span>折</div>
 							<div class="goods-describe">
 								美宝莲【水润嘟嘟唇】经典款小灯管纵情耀系列绝色持久唇膏口红3g
 							</div>
@@ -193,7 +200,7 @@
 								<img src="img/goods_search/goods6.jpg" width="180px">
 							</div>
 							<div class="goods-price">折后价<span class="rmb">￥</span><span class="num">127</span></div>
-							<div class="goods-reduction"><s>￥259</s>4.7折</div>
+							<div class="goods-reduction"><s>￥259</s><span class="per">4.7</span>折</div>
 							<div class="goods-describe">
 								MAC魅可MAC子弹头经典唇膏【多色可选】小辣椒/正红色/脏橘色
 							</div>
@@ -204,7 +211,7 @@
 								<img src="img/goods_search/goods7.jpg" width="180px">
 							</div>
 							<div class="goods-price">折后价<span class="rmb">￥</span><span class="num">279</span></div>
-							<div class="goods-reduction"><s>￥154</s>3.2折</div>
+							<div class="goods-reduction"><s>￥154</s><span class="per">3.2</span>折</div>
 							<div class="goods-describe">
 								Karen Murrell 天然有机金管正装口红三支礼盒 5/8/12附化妆袋
 							</div>
@@ -215,7 +222,7 @@
 								<img src="img/goods_search/goods8.jpg" width="180px">
 							</div>
 							<div class="goods-price">折后价<span class="rmb">￥</span><span class="num">149</span></div>
-							<div class="goods-reduction"><s>￥126</s>5.5折</div>
+							<div class="goods-reduction"><s>￥126</s><span class="per">5.5</span>折</div>
 							<div class="goods-describe">
 								蓝色之恋【新年好礼 璀璨星耀小黑管】红唇焰舞口红滋润烂番茄锦鲤色3.8g
 							</div>
@@ -226,7 +233,7 @@
 								<img src="img/goods_search/goods9.jpg" width="180px">
 							</div>
 							<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">20</span></div>
-							<div class="goods-reduction"><s>￥287</s>5折</div>
+							<div class="goods-reduction"><s>￥287</s><span class="per">5</span>折</div>
 							<div class="goods-describe">
 								美康粉黛【显白热卖色】醉美东方唇膏红管国风口红姨妈烂番茄豆沙色
 							</div>
@@ -237,7 +244,7 @@
 								<img src="img/goods_search/goods10.jpg" width="180px">
 							</div>
 							<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">99</span></div>
-							<div class="goods-reduction"><s>￥299</s>6.6折</div>
+							<div class="goods-reduction"><s>￥299</s><span class="per">6.6</span>折</div>
 							<div class="goods-describe">
 								3CE三熹玉爆款哑光口红加享迷你口红套装
 							</div>
@@ -280,28 +287,29 @@
 				$(this).siblings().removeClass('change-color');
 				$(this).siblings().find('.sort').css('display', 'inline-block');
 				$(this).addClass('change-color');
-				$(this).find('.sort').css('display', 'none');
-				$(this).find('.pink-up').css('display', 'inline-block')
 				// 借助数组里面的sort方法
 				var arr = [];
 				$('.goods-list .goods-item').each(function() {
 					arr.push($(this));
 				});
 				// sort
-				var isupdown = $('.pink-up').is(':visible')
+				var isupdown = $('.sort').is(':visible');
 				if (isupdown) {
 					arr.sort(function($itemA, $itemB) {
 						var priceA = $itemA.find('.num').text();
 						var priceB = $itemB.find('.num').text();
 						return priceA - priceB;
 					});
+					$(this).find('.sort').css('display', 'none');
+					$(this).find('.pink-up').css('display', 'inline-block')
 				} else {
 					arr.sort(function($itemA, $itemB) {
 						var priceA = $itemA.find('.num').text();
 						var priceB = $itemB.find('.num').text();
 						return priceB - priceA;
 					});
-
+					$('.pink-up').css('display', 'none')
+					$('.pink-down').css('display', 'inline-block')
 				}
 				// 插入DOM
 				arr.forEach(function(item, index) {
@@ -323,11 +331,10 @@
 				});
 				// sort
 				arr.sort(function($itemA, $itemB) {
-					var priceA = $itemA.find('num').text();
-					var priceB = $itemB.find('num').text();
+					var priceA = $itemA.find('.per').text();
+					var priceB = $itemB.find('.per').text();
 					return priceA - priceB;
 				});
-				console.log(arr)
 				// 插入DOM
 				arr.forEach(function(item, index) {
 					$('.goods-list').append(item)
@@ -339,6 +346,63 @@
 				$(this).siblings().removeClass('change-color');
 				$(this).siblings().find('.sort').css('display', 'inline-block');
 				$(this).addClass('change-color');
+			})
+
+			// 价格区间
+			// 鼠标点击或失去焦点，出现或隐藏确定按钮
+			$('.min-price').click(function() {
+				$('.price-screen').addClass('screen-border');
+				$('.confirm').css('display', 'inline-block')
+			});
+			$(document).click(function() {
+				$('.price-screen').removeClass('screen-border');
+				$('.confirm').css('display', 'none')
+			});
+			$(".price-screen").click(function(event) {
+				event.stopPropagation();
+			});
+			$('.max-price').click(function() {
+				$('.price-screen').addClass('screen-border');
+				$('.confirm').css('display', 'inline-block')
+			});
+
+			// 筛选
+			$('.confirm').click(function() {
+				var arr = [];
+				$('.goods-list .goods-item').each(function(index) {
+					var $price = $('.num').eq(index); //每遍历一次，按照索引，依次变成$price
+					oPrice = $price.get(0);
+					arr.push(oPrice);
+				});
+				console.log(arr)
+				var brr = [];
+				var oMin = document.querySelector('.min-price');
+				var oMax = document.querySelector('.max-price');
+				var min = oMin.value;
+				var max = oMax.value;
+
+				for (var i = 0; i < arr.length; i++) {
+					var price = arr[i].innerText;
+					var priceNum = parseFloat(price);
+					if (priceNum >= min && priceNum <= max) {
+						brr.push(priceNum);
+						console.log(priceNum)
+						console.log(min)
+						console.log(max)
+					}
+				}
+				// 排序
+				// brr.sort(function(itemA,itemB){
+				// 	var priceA=brr[i];
+				// 	var priceB=brr[i+1];
+				// 	return priceA-priceB;
+				// });
+				console.log(brr);
+				// // 插入DOM
+				// var oList = document.querySelector('.goods-list');
+				// brr.forEach(function(item, index) {
+				// 	oList.appendChild(item);
+				// });
 			})
 		</script>
 	</body>
