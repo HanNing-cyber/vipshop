@@ -59,11 +59,6 @@
 	background-position: -164px -142px;
 }
 
-/* 文字工具类 */
-.ffffff_14 {
-	color: #FFFFFF;
-	font-size: 14px;
-}
 
 /* header_nav */
 .top_nav {
@@ -240,13 +235,13 @@
 	border: 1px solid #ccc;
 	border-bottom: 0;
 	background-color: #FFFFFF;
-	padding-right: 9px;
 }
 
 .top_nav .specialSale .title.show::after,
 .top_nav .member .title.show::after,
 .top_nav .service .title.show::after {
-	content: "";
+	content: "/";
+	color: rgba(0,0,0,0);
 }
 
 .top_nav .specialSale .box,
@@ -300,10 +295,11 @@
 }
 
 .top_nav .mobileCode .title.show::after {
-	content: "";
+	content: "/";
+	color: rgba(0,0,0,0);
 	position: absolute;
-	bottom: -3px;
 	left: 1px;
+	bottom: -3px;
 	width: 85%;
 	height: 5px;
 	z-index: 101;
@@ -313,7 +309,6 @@
 .top_nav .mobileCode .title.show {
 	border: 1px solid #ccc;
 	background-color: #FFFFFF;
-	padding-right: 9px;
 	padding-right: 19px;
 }
 
@@ -371,7 +366,11 @@
 }
 
 /* logo solgan 可更换*/
-.top_content .container div {
+.top_content .container .logo,
+.top_content .container .slogan,
+.top_content .container .search,
+.top_content .container .shoppingCart
+{
 	display: inline-block;
 }
 
@@ -407,7 +406,7 @@
 .top_content .input_box .search_btn {
 	position: absolute;
 	top: 0;
-	right: -53px;
+	right: -16px;
 	padding-top: 6px;
 	width: 53px;
 	height: 30px;
@@ -442,13 +441,50 @@
 /* 搜索下拉框 */
 .top_content .pullDown {
 	position: absolute;
-	top: 42px;
+	top: 36px;
 	left: 0;
-	width: 320px;
+	width: 339px;
+	height: 260px;
 	background-color: #FFFFFF;
 	border: 1px solid #ccc;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	border-top: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	display: none;
+}
+.top_content .pullDown .history{
+	border-right: 1px solid #ccc;
+	width: 140px;
+	height: 100%;
+	padding-top: 10px;
+}
+.top_content .pullDown .recommend{
+	width: 140px;
+	height: 100%;
+	padding-left: 15px;
+}
+.top_content .pullDown .recommend .title{
+	display: inline-block;
+	padding-top: 10px;
+	padding-right: 30px;
+}
+.top_content .pullDown .recommend a{
+	display: inline-block;
+	padding: 5px;
+	border-radius: 2px;
+	border: 1px solid #ccc;
+	margin-right: 8px;
+	margin-top: 10px;
+}
+.top_content .pullDown .recommend a:hover{
+	display: inline-block;
+	padding: 5px;
+	border-radius: 2px;
+	border: 1px solid rgb(250, 42, 131);
+	color: rgb(250, 42, 131);
+	margin-right: 8px;
+	margin-top: 10px;
 }
 
 /* 购物袋 */
