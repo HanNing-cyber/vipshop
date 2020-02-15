@@ -1,0 +1,71 @@
+.bg{
+	background: url(../../img/login/loginbg.png) top center;
+	height: 600px;
+}
+/* 布局 */
+.float-left{
+	float: left;
+}
+.float-right{
+	float: right;
+}
+.relative{
+	position: relative;
+}
+.top{
+	vertical-align: top;
+}
+
+/* 内容 */
+.head-box{
+	height: 100px;
+}
+.head-box .logo{
+	margin-top: 15px;
+}
+.head-box .serve{
+	margin-top: 30px;
+}
+.login-box{
+	border: 1px solid #ddd;
+	width: 400px;
+	background-color: white;
+	position: absolute;
+	right: 0px;
+	top: 50px;
+}
+.outtitle{
+	border-bottom: 1px solid #ddd;
+}
+.QR{
+	border: 1px solid #aaa;
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	font-size: 20px;
+	margin-left: 40px;
+	padding-right: 60px;
+	font-weight: 900;
+	color: #f10180;
+}
+.user{
+	border: 1px solid transparent;
+	font-size: 20px;
+	margin-left: 60px;
+	font-weight: 600;
+	color: dimgray;
+}
+.intitle{
+	margin: 10px 20px;
+}
+.code-box{
+	height: 260px;
+	width: 100%;
+	padding-top: 60px;
+}
+.code-box .code{
+	margin: 0 auto;
+	height: 150px;
+	width: 150px;
+	border: 1px solid #aaa;
+}
