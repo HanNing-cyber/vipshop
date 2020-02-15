@@ -282,13 +282,13 @@
 				$(this).find('.pink-up').css('display','inline-block')
 				// 方法2：借助数组里面的sort方法
 				var arr = [];
-				$('.goods-list .goods-item .num').each(function() {
+				$('.goods-list .goods-item').each(function() {
 					arr.push($(this));
 				});
 				// sort
 				arr.sort(function($itemA, $itemB) {
-					var priceA = $itemA.find('num').text();
-					var priceB = $itemB.find('num').text();
+					var priceA = $itemA.find('.num').text();
+					var priceB = $itemB.find('.num').text();
 					return priceA - priceB;
 				});
 				console.log(arr)
