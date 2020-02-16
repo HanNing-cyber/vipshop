@@ -4,6 +4,8 @@
 	margin-bottom: 0px;
 	/* header下方小阴影 */
 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+	/*  */
+	width: 100%;
 }
 
 
@@ -646,7 +648,260 @@
 	background-color: #FFFFFF;
 }
 
+/* 大导航 */
+.nav .vertical_nav {
+	display: inline-block;
+}
 
+.nav .all_classify {
+	background-color: rgb(241, 1, 128);
+	display: inline-block;
+	color: #FFFFFF;
+	font-size: 16px;
+	width: 156px;
+	height: 44px;
+	text-align: center;
+	line-height: 44px;
+}
+
+.nav .all_classify .title {
+	cursor: pointer;
+}
+
+/* 横向 大导航 */
+.nav .crosswise_nav li a {
+	color: #333;
+	font-size: 16px;
+}
+
+.nav .crosswise_nav li a:hover {
+	color: #f10180;
+	font-size: 16px;
+}
+
+.nav .crosswise_nav li:first-child a {
+	color: #f10180;
+	font-weight: bold;
+}
+
+
+.nav .crosswise_nav {
+	display: inline-block;
+	padding: 2px;
+	margin-left: -5px;
+	padding-left: 30px;
+}
+
+/* 间距 */
+.nav .crosswise_nav li {
+	display: inline-block;
+	margin-right: 18px;
+}
+
+/* 更多 的box */
+.nav .crosswise_nav .more {
+	padding: 10px 0 10px 20px;
+	width: 64px;
+}
+
+.nav .crosswise_nav .more.active {
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
+}
+
+.nav .crosswise_nav .more_box::before {
+	content: "";
+	position: absolute;
+	top: -3px;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	height: 5px;
+}
+
+/* 更多 向下的箭头 */
+.nav .crosswise_nav .more_arrow {
+	position: absolute;
+	top: 6px;
+	right: 10px;
+	font-style: normal;
+	transform: rotate(180deg);
+}
+
+/* 更多下拉 */
+.nav .crosswise_nav .more_box {
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	border-top: 0;
+	text-align: center;
+	width: 100%;
+	display: none;
+}
+
+.nav .crosswise_nav .more_box span {
+	display: block;
+	padding: 10px;
+}
+
+/* 纵向 大导航 */
+.nav .channel_list {
+	position: absolute;
+	top: 44px;
+	left: 0;
+	background-color: rgb(241, 1, 128);
+	display: inline-block;
+	width: 156px;
+	text-align: center;
+	display: none;
+}
+
+.nav .channel_list .channel {
+	color: #FFFFFF;
+	cursor: pointer;
+	height: 45px;
+	line-height: 45px;
+}
+
+.nav .channel_list .channel:hover {
+	color: #f10180;
+	background-color: #FFFFFF;
+}
+
+/* 下拉导航---向右展开 */
+.nav .channel_list .list .title {
+	display: inline-block;
+	color: #000000;
+	padding-right: 10px;
+	width: 83px;
+	margin-right: 10px;
+	height: 100%;
+}
+
+.nav .channel_list .list .right_arrow {
+	font-style: normal;
+	transform: rotate(90deg);
+	position: absolute;
+	right: 0;
+}
+
+.nav .channel_list .list .con {
+	word-break: keep-all;
+	display: inline-block;
+	width: 400px;
+}
+
+.nav .channel_list .list a {
+	padding-right: 10px;
+}
+
+.nav .channel_list .list a:hover {
+	color: #f10180;
+}
+
+.nav .channel_list .list .item {
+	margin-bottom: 24px;
+}
+
+/* 灰色背景 */
+.nav .channel_list .list {
+	position: absolute;
+	top: 0;
+	left: 156px;
+	background-color: rgb(245, 245, 245);
+	width: 846px;
+	height: 495px;
+	text-align: left;
+	border-top: 1px solid rgb(245, 245, 245);
+	display: none;
+}
+
+/* 标签 白色背景 */
+.nav .channel_list .tags {
+	background-color: #FFFFFF;
+	width: 520px;
+	height: 480px;
+	padding-left: 26px;
+	padding-top: 15px;
+	padding-right: 20px;
+	/* 竖向滚动条 */
+	overflow-y: scroll;
+}
+
+/* 品牌推荐 */
+.nav .channel_list .brands {
+	padding: 16px;
+	width: 240px;
+}
+
+/* 标题 */
+.nav .channel_list .brands .title {
+	color: #000000;
+	padding-bottom: 20px;
+	margin-top: 10px;
+}
+
+/* 品牌图片 盒子 */
+.nav .channel_list .brand_box a {
+	display: inline-block;
+	border: 1px solid #FFFFFF;
+	width: 68px;
+	height: 68px;
+	text-align: center;
+	color: #000000;
+	background-color: #FFFFFF;
+	padding: 0;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+.nav .channel_list .brand_box img {
+	display: inline-block;
+	width: 54px;
+	margin-top: 15px;
+}
+
+.nav .channel_list .brand_box .name {
+	display: inline-block;
+	margin-top: 5px;
+}
+
+.nav .channel_list .brand_box a:hover {
+	border: 1px solid #f10180;
+	color: #000000;
+}
+
+/* --------大导航条跟随---------- */
+/* 父级加高度,防止"跳" */
+.nav_parent {
+	display: block;
+	height: 44px;
+}
+
+.nav_con {
+	width: 1000px;
+	height: 44px;
+	margin: 0 auto;
+}
+
+.nav {
+	display: block;
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+.nav.fixed {
+	position: fixed;
+	z-index: 10010;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	height: 44px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 /* --------全局footer----------- */
 .footer {
@@ -845,123 +1100,4 @@
 	width: 77px;
 	height: 40px;
 	background-position: 0 -450px;
-}
-
-/* 大导航 */
-.nav .vertical_nav {
-	display: inline-block;
-}
-
-.nav .all_classify {
-	background-color: rgb(241, 1, 128);
-	display: inline-block;
-	color: #FFFFFF;
-	font-size: 16px;
-	width: 156px;
-	height: 44px;
-	text-align: center;
-	line-height: 44px;
-	margin-right: 20px;
-}
-
-.nav .all_classify .title {
-	cursor: pointer;
-}
-
-/* 横向 大导航 */
-.nav .crosswise_nav li a {
-	color: #333;
-	font-size: 16px;
-}
-
-.nav .crosswise_nav li a:hover {
-	color: #f10180;
-	font-size: 16px;
-}
-
-.nav .crosswise_nav li:first-child a {
-	color: #f10180;
-	font-weight: bold;
-}
-
-
-.nav .crosswise_nav {
-	display: inline-block;
-}
-
-/* 间距 */
-.nav .crosswise_nav li {
-	display: inline-block;
-	margin-right: 18px;
-}
-
-/* 更多 的box */
-.nav .crosswise_nav .more {
-	padding: 10px 0 10px 20px;
-	width: 64px;
-}
-
-.nav .crosswise_nav .more.active {
-	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
-}
-
-.nav .crosswise_nav .more_box::before {
-	content: "";
-	position: absolute;
-	top: -3px;
-	left: 0;
-	width: 100%;
-	background-color: #fff;
-	height: 5px;
-}
-
-/* 更多 向下的箭头 */
-.crosswise_nav .more_arrow {
-	position: absolute;
-	top: 6px;
-	right: 10px;
-	font-style: normal;
-	transform: rotate(180deg);
-}
-
-/* 更多下拉 */
-.crosswise_nav .more_box {
-	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
-	background-color: #FFFFFF;
-	position: absolute;
-	top: 40px;
-	left: 0;
-	border-top: 0;
-	text-align: center;
-	width: 100%;
-	display: none;
-}
-
-.nav .crosswise_nav .more_box span {
-	display: block;
-	padding: 10px;
-}
-
-/* 纵向 大导航 */
-.nav .channel_list {
-	position: absolute;
-	top: 44px;
-	left: 0;
-	background-color: rgb(241, 1, 128);
-	display: inline-block;
-	width: 156px;
-	text-align: center;
-	display: none;
-}
-
-.nav .channel_list .channel {
-	color: #FFFFFF;
-	cursor: pointer;
-	height: 45px;
-	line-height: 45px;
-}
-
-.nav .channel_list .channel:hover {
-	color: #f10180;
-	background-color: #FFFFFF;
 }
