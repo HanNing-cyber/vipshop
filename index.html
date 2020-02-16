@@ -13,6 +13,7 @@
 		<title>唯品会（原Vipshop.com）特卖会：品牌特卖_确保正品_确保低价_货到付款</title>
 	</head>
 	<body>
+		<!-- 注意：大导航z-index:80 -->
 		<!-- 全局header -->
 		<div class="header">
 			<div class="top_nav">
@@ -191,7 +192,7 @@
 							<span class="number vertical-mid">0</span>
 						</a>
 						<div class="box">
-							<span>好像还未登录！<a href="#" class="link">马上登录</a> 查看购物袋吧！</span>
+							<span>好像还未登录！<a href="login.html" class="link">马上登录</a> 查看购物袋吧！</span>
 						</div>
 					</div>
 				</div>
@@ -2033,27 +2034,76 @@
 		<!-- banner -->
 		<div class="banner">
 			<div class="container">
-				<div class="swiper-container">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<img src="./img/index/banner_show_01.jpg">
-							<span class="title">罗蒙品牌钜献 全场低至69元</span>
+				<div class="border_color relative">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img class="vertical-top" src="./img/index/banner_show_02.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="vertical-top" src="./img/index/banner_show_01.jpg">
+							</div>
 						</div>
-						<div class="swiper-slide">
-							<img src="./img/index/banner_show_02.jpg">
-							<span class="title">超级爆款日 笔记本电脑低至2199元</span>
-						</div>
+						<!-- 如果需要导航按钮 -->
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
 					</div>
 					<!-- 如果需要分页器 -->
-					<div class="swiper-pagination"></div>
-
-					<!-- 如果需要导航按钮 -->
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
-
+					<div class="swiper-pagination relative"></div>
 				</div>
 			</div>
 		</div>
+
+		<!-- 右侧栏 -->
+		<div class="scrollBar">
+			
+		</div>
+
+		<!-- 活动页 -->
+		<div class="activity">
+			<div class="container">
+				<img class="activity_title" src="./img/index/activity_title_01.webp">
+				<div class="activity_show">
+					<a href="#"><img class="vertical-top" src="img/index/activity_show_1.webp"></a>
+					<a href="#"><img class="vertical-top" src="./img/index/activity_show_2.webp"></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 每日必看 -->
+		<div class="everyday">
+			<div class="container">
+				<img class="everyday_title" src="./img/index/everyday_title.jpg">
+				<div class="everyday_show">
+						<a href="#" class="item relative">
+							<img class="vertical-top" src="img/index/every_show_1.png" >
+							<!-- <ul class="shopping_box">
+								<li class="relative">
+									<img class="bgImg" src="./img/index/end_shopping_1.jpg">
+									<div class="brand">
+										<img class="brandImg" src="img/index/brand_ORUNZHE.png" >
+										<span class="des">共655款</span>
+									</div>
+									<span class="price">
+										<img class="priceImg" src="img/index/end_price_icon.png" >
+										<span>￥33</span>
+									</span>
+								</li>
+								<li>
+									
+								</li>
+								<li>
+									
+								</li>
+							</ul> -->
+						</a>
+						<a href="#" class="item relative">
+							<img class="vertical-top" src="img/index/every_show_2.png" >
+						</a>
+				</div>
+			</div>
+		</div>
+
 
 		<!-- 全局footer -->
 		<div class="footer">
@@ -2167,27 +2217,91 @@
 		<script src="./lib/swiper-5.3.0/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 		<!-- 全局header、footer----勿删 -->
 		<script src="./js/header&footer.js" type="text/javascript" charset="utf-8"></script>
+
 		<!-- 初始化Swiper -->
 		<script>
 			var mySwiper = new Swiper('.swiper-container', {
 				direction: 'horizontal', // 垂直切换选项
 				loop: true, // 循环模式选项
-				autoplay:true, //自动切换
-				effect : 'fade',//淡入淡出
-				
-				// 如果需要分页器
-				pagination: {
-					el: '.swiper-pagination',
-					type : 'progressbar',
+				autoplay: true, //自动切换
+				effect: 'fade', //淡入淡出
+				clickable: true, //允许点击
+
+				//用户操作swiper之后，允许继续轮播
+				autoplay: {
+					disableOnInteraction: false,
 				},
 
-				// 如果需要前进后退按钮
+				// 分页器
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+					//自定义分页器
+					renderBullet: function(index, className) {
+						switch (index) {
+							case 0:
+								text = '超级爆款日 笔记本电脑低至2199元';
+								break;
+							case 1:
+								text = '罗蒙品牌钜献 全场低至69元';
+								break;
+						}
+						return '<span class="' + className + '">' + text + '</span>';
+					},
+				},
+
+				// 前进后退按钮
 				navigation: {
 					nextEl: '.swiper-button-next',
 					prevEl: '.swiper-button-prev',
 				},
 
-			})
+				//自定义分页器
+				on: {
+					transitionStart: function() {
+						//当前slide的序号
+						console.log('当前slide序号：' + this.realIndex);
+						//动画
+						/* -------如果增加图片，在此处增加if */
+						$('.swiper-pagination-bullet')
+						if (this.realIndex == 0) {
+							$('.swiper-pagination-bullet').css({
+								'left': '294px',
+							});
+						}
+						if (this.realIndex == 1) {
+							$('.swiper-pagination-bullet').css({
+								'left': '489px',
+							});
+						}
+					},
+				}
+			});
+			//触摸跳转轮播
+			console.log(mySwiper.pagination.bullets)
+			for (i = 0; i < mySwiper.pagination.bullets.length; i++) {
+				mySwiper.pagination.bullets[i].onmouseover = function() {
+					this.click();
+					console.log(i);
+				};
+			};
+			//箭头移入移出
+			$('.swiper-container').on('mouseenter', function() {
+				$('.swiper-button-next').stop(true).animate({
+					'right': '10px'
+				});
+				$('.swiper-button-prev').stop(true).animate({
+					'left': '10px'
+				});
+			});
+			$('.swiper-container').on('mouseleave', function() {
+				$('.swiper-button-next').stop(true).animate({
+					'right': '-45px'
+				});
+				$('.swiper-button-prev').stop(true).animate({
+					'left': '-45px'
+				});
+			});
 		</script>
 	</body>
 </html>

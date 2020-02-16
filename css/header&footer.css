@@ -2,10 +2,13 @@
 .header {
 	/* 在此处修改header距离主内容的距离 */
 	margin-bottom: 0px;
+	
+	
+	
+	/* -------宽度勿删 勿改!----- */
+	width: 100%;
 	/* header下方小阴影 */
 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-	/*  */
-	width: 100%;
 }
 
 
@@ -211,6 +214,7 @@
 }
 
 .top_nav .location {
+	z-index: 200;
 	width: 54px;
 	padding-left: 15px;
 	padding-right: 23px;
@@ -886,6 +890,8 @@
 }
 
 .nav {
+	position: relative;
+	z-index: 80;
 	display: block;
 	width: 100%;
 	background-color: #FFFFFF;
@@ -893,7 +899,7 @@
 
 .nav.fixed {
 	position: fixed;
-	z-index: 10010;
+	z-index: 80;
 	top: 0px;
 	left: 0px;
 	right: 0px;
