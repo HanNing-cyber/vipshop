@@ -28,13 +28,64 @@
 							<div class="user float-left">账户登录</div>
 						</div>
 					</div>
+					<!-- 扫描二维码登录 -->
 					<div class="code-box">
 						<div class="code">
 							<img src="img/login/QR.png" class="top" >
 						</div>
+						<div class="phone">
+							<img src="img/login/phone.png" width="130px" >
+						</div>
+						<div class="content">
+							<img src="img/login/scan.png" class="middle" ><a href="" class="middle">打开<span>唯品会APP-个人中心</span>，扫一扫登录</a>
+						</div>
+					</div>
+					<!-- 用户框 -->
+					<div class="user-box">
+						<div class="name-input relative">
+							<img src="img/login/user.png" class="middle" width="25px" >
+							<input type="text" name="" id="name" class="middle" placeholder="手机号/用户名/邮箱" />
+							<img src="img/login/error.png" class="middle" >
+						    <div class="error">请输入登录名</div>
+						</div>
+						<div class="password-input relative">
+							<img src="img/login/password.png" class="middle" width="25px" >
+							<input type="text" name="" id="password" class="middle" placeholder="密码" />
+							<img src="img/login/error.png" class="middle" >
+						    <div class="error">请输入密码</div>
+						</div>
+						
+					</div>
+					
+					
+					<div class="vchat">
+						<span class=" middle">—————————</span>
+						<img src="img/login/vchat.png" class=" middle" >
+						<span class="middle">—————————</span>
+					</div>
+					<div class="other clearfix">
+						<div class="sina float-left"><div class="insina">新浪微博</div></div>
+						<div class="qq float-left"><div class="inqq">QQ</div></div>
+						<div class="pay float-left">支付宝</div>
+					    <div class="more float-left">更多</div>
+						<div class="register float-left">免费注册</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		
+		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('.code-box .code').mouseenter(function () {
+				$('.code').css('margin-left','40px');
+				$('.phone').css('opacity','1');
+				$('.code').css('transition','all 0.5s');
+				$('.phone').css('transition','all 0.5s');
+			});
+			$('.code-box').mouseleave(function () {
+				$('.code').css('margin-left','125px');
+				$('.phone').css('opacity','0');
+			});
+		</script>
 	</body>
 </html>
