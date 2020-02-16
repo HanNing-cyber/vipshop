@@ -39,7 +39,7 @@
 							<div class="login_box">
 								<div class="inf clearfix">
 									<i class="fl icon_header icon_header_user vertical-mid"></i>
-									<a href="#">您好！[请登录]</a>
+									<a href="login.html">您好！[请登录]</a>
 								</div>
 								<div class="link">
 									<a href="#">我的收藏</a>
@@ -2035,9 +2035,14 @@
 			<div class="container">
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide">Slide 1</div>
-						<div class="swiper-slide">Slide 2</div>
-						<div class="swiper-slide">Slide 3</div>
+						<div class="swiper-slide">
+							<img src="./img/index/banner_show_01.jpg">
+							<span class="title">罗蒙品牌钜献 全场低至69元</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/index/banner_show_02.jpg">
+							<span class="title">超级爆款日 笔记本电脑低至2199元</span>
+						</div>
 					</div>
 					<!-- 如果需要分页器 -->
 					<div class="swiper-pagination"></div>
@@ -2046,8 +2051,6 @@
 					<div class="swiper-button-prev"></div>
 					<div class="swiper-button-next"></div>
 
-					<!-- 如果需要滚动条 -->
-					<div class="swiper-scrollbar"></div>
 				</div>
 			</div>
 		</div>
@@ -2165,27 +2168,26 @@
 		<!-- 全局header、footer----勿删 -->
 		<script src="./js/header&footer.js" type="text/javascript" charset="utf-8"></script>
 		<!-- 初始化Swiper -->
-		<!-- 	<script>        
-		  var mySwiper = new Swiper ('.swiper-container', {
-		    direction: 'horizontal', // 垂直切换选项
-		    loop: true, // 循环模式选项
-		    
-		    // 如果需要分页器
-		    pagination: {
-		      el: '.swiper-pagination',
-		    },
-		    
-		    // 如果需要前进后退按钮
-		    navigation: {
-		      nextEl: '.swiper-button-next',
-		      prevEl: '.swiper-button-prev',
-		    },
-		    
-		    // 如果需要滚动条
-		    scrollbar: {
-		      el: '.swiper-scrollbar',
-		    },
-		  })        
-		  </script> -->
+		<script>
+			var mySwiper = new Swiper('.swiper-container', {
+				direction: 'horizontal', // 垂直切换选项
+				loop: true, // 循环模式选项
+				autoplay:true, //自动切换
+				effect : 'fade',//淡入淡出
+				
+				// 如果需要分页器
+				pagination: {
+					el: '.swiper-pagination',
+					type : 'progressbar',
+				},
+
+				// 如果需要前进后退按钮
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+
+			})
+		</script>
 	</body>
 </html>
