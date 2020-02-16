@@ -109,11 +109,11 @@
 			<div class="body-box">
 				<div class="operation-box clearfix">
 					<div class="multiple float-left change-color">综合</div>
-					<div class="price-sort float-left">价格
+					<div class="price-sort float-left priceSort">价格
 						<img src="img/goods_search/images/pink-up.jpg" class="pink-up">
 						<img src="img/goods_search/images/pink-down.jpg" class="pink-down">
 						<img src="img/goods_search/images/sort.jpg" class="sort"></div>
-					<div class="reduction-sort float-left">折扣
+					<div class="reduction-sort float-left reductionSort">折扣
 						<img src="img/goods_search/images/pink-up.jpg" class="pink-up">
 						<img src="img/goods_search/images/pink-down.jpg" class="pink-down">
 						<img src="img/goods_search/images/sort.jpg" class="sort"></div>
@@ -122,137 +122,253 @@
 					<div class="price-screen float-left relative">
 						<input type="text" class="min-price" placeholder="￥" /> -
 						<input type="text" class="max-price" placeholder="￥" />
-						<button type="button" class="confirm">确定</button>
+						<button type="button" class="confirm confirmSort">确定</button>
 					</div>
+					<div class="curr float-left"></div>
 					<div class="float-right"><button type="button" class="next-page">下一页 ></button></div>
 					<div class="float-right"><button type="button" class="last-page">
 							<>
 						</button></div>
 					<div class="page float-right"><span>1</span>/1</div>
 				</div>
-
-				<div class="goods-box">
-					<ul class="goods-list clearfix">
-						<!-- 商品的总盒子item -->
-						<li class="goods-item float-left relative">
-							<!-- 边框移入移出 -->
-							<div class="goods-border"></div>
-							<!-- 商品图片 -->
-							<div class="goods-img">
-								<img src="img/goods_search/goods1.jpg" width="180px">
-							</div>
-							<!-- 价格 数字在.num里 -->
-							<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">45</span></div>
-							<!-- 折扣 数字在.per里 -->
-							<div class="goods-reduction"><s>￥169</s><span class="per">2.7</span>折</div>
-							<!-- 描述 -->
-							<div class="goods-describe">
-								佩佩【12支】丝绒慕斯唇釉套装哑光水润持久保湿不易脱色
-							</div>
-						</li>
-						<li class="goods-item float-left relative">
-							<div class="goods-border"></div>
-							<div class="goods-img">
-								<img src="img/goods_search/goods2.jpg" width="180px">
-							</div>
-							<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">69</span></div>
-							<div class="goods-reduction"><s>￥109</s><span class="per">6.4</span>折</div>
-							<div class="goods-describe">
-								Dior迪奥烈艳蓝金哑光唇膏 999 3.5g
-							</div>
-						</li>
-						<li class="goods-item float-left relative">
-							<div class="goods-border"></div>
-							<div class="goods-img">
-								<img src="img/goods_search/goods3.jpg" width="180px">
-							</div>
-							<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">69</span></div>
-							<div class="goods-reduction"><s>￥266</s><span class="per">3.5</span>折</div>
-							<div class="goods-describe">
-								卡姿兰【1盒6色】粉悦木马轻雾感口红小样套盒 哑光雾面唇膏
-							</div>
-						</li>
-						<li class="goods-item float-left relative">
-							<div class="goods-border"></div>
-							<div class="goods-img">
-								<img src="img/goods_search/goods4.jpg" width="180px">
-							</div>
-							<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">99</span></div>
-							<div class="goods-reduction"><s>￥162</s><span class="per">2.8</span>折</div>
-							<div class="goods-describe">
-								完美日记【显白不挑皮】缎色柔光小粉钻唇膏滋润持久雾面哑光显白口红
-							</div>
-						</li>
-						<li class="goods-item float-left relative">
-							<div class="goods-border"></div>
-							<div class="goods-img">
-								<img src="img/goods_search/goods5.jpg" width="180px">
-							</div>
-							<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">119</span></div>
-							<div class="goods-reduction"><s>￥109</s><span class="per">6.6</span>折</div>
-							<div class="goods-describe">
-								美宝莲【水润嘟嘟唇】经典款小灯管纵情耀系列绝色持久唇膏口红3g
-							</div>
-						</li>
-						<li class="goods-item float-left relative">
-							<div class="goods-border"></div>
-							<div class="goods-img">
-								<img src="img/goods_search/goods6.jpg" width="180px">
-							</div>
-							<div class="goods-price">折后价<span class="rmb">￥</span><span class="num">127</span></div>
-							<div class="goods-reduction"><s>￥259</s><span class="per">4.7</span>折</div>
-							<div class="goods-describe">
-								MAC魅可MAC子弹头经典唇膏【多色可选】小辣椒/正红色/脏橘色
-							</div>
-						</li>
-						<li class="goods-item float-left relative">
-							<div class="goods-border"></div>
-							<div class="goods-img">
-								<img src="img/goods_search/goods7.jpg" width="180px">
-							</div>
-							<div class="goods-price">折后价<span class="rmb">￥</span><span class="num">279</span></div>
-							<div class="goods-reduction"><s>￥154</s><span class="per">3.2</span>折</div>
-							<div class="goods-describe">
-								Karen Murrell 天然有机金管正装口红三支礼盒 5/8/12附化妆袋
-							</div>
-						</li>
-						<li class="goods-item float-left relative">
-							<div class="goods-border"></div>
-							<div class="goods-img">
-								<img src="img/goods_search/goods8.jpg" width="180px">
-							</div>
-							<div class="goods-price">折后价<span class="rmb">￥</span><span class="num">149</span></div>
-							<div class="goods-reduction"><s>￥126</s><span class="per">5.5</span>折</div>
-							<div class="goods-describe">
-								蓝色之恋【新年好礼 璀璨星耀小黑管】红唇焰舞口红滋润烂番茄锦鲤色3.8g
-							</div>
-						</li>
-						<li class="goods-item float-left relative">
-							<div class="goods-border"></div>
-							<div class="goods-img">
-								<img src="img/goods_search/goods9.jpg" width="180px">
-							</div>
-							<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">20</span></div>
-							<div class="goods-reduction"><s>￥287</s><span class="per">5</span>折</div>
-							<div class="goods-describe">
-								美康粉黛【显白热卖色】醉美东方唇膏红管国风口红姨妈烂番茄豆沙色
-							</div>
-						</li>
-						<li class="goods-item float-left relative">
-							<div class="goods-border"></div>
-							<div class="goods-img">
-								<img src="img/goods_search/goods10.jpg" width="180px">
-							</div>
-							<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">99</span></div>
-							<div class="goods-reduction"><s>￥299</s><span class="per">6.6</span>折</div>
-							<div class="goods-describe">
-								3CE三熹玉爆款哑光口红加享迷你口红套装
-							</div>
-						</li>
-					</ul>
-				</div>
+			</div>
+			<div class="goods-box">
+				<ul class="goods-list">
+					<!-- 商品的总盒子item -->
+					<li class="goods-item  relative">
+						<!-- 边框移入移出 -->
+						<div class="goods-border"></div>
+						<!-- 商品图片 -->
+						<div class="goods-img">
+							<img src="img/goods_search/goods1.jpg" width="180px">
+						</div>
+						<!-- 价格 数字在.num里 -->
+						<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">45</span></div>
+						<!-- 折扣 数字在.per里 -->
+						<div class="goods-reduction"><s>￥169</s><span class="per">2.7</span>折</div>
+						<!-- 描述 -->
+						<div class="goods-describe">
+							佩佩【12支】丝绒慕斯唇釉套装哑光水润持久保湿不易脱色
+						</div>
+					</li>
+					<li class="goods-item  relative">
+						<div class="goods-border"></div>
+						<div class="goods-img">
+							<img src="img/goods_search/goods2.jpg" width="180px">
+						</div>
+						<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">69</span></div>
+						<div class="goods-reduction"><s>￥109</s><span class="per">6.4</span>折</div>
+						<div class="goods-describe">
+							Dior迪奥烈艳蓝金哑光唇膏 999 3.5g
+						</div>
+					</li>
+					<li class="goods-item  relative">
+						<div class="goods-border"></div>
+						<div class="goods-img">
+							<img src="img/goods_search/goods3.jpg" width="180px">
+						</div>
+						<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">69</span></div>
+						<div class="goods-reduction"><s>￥266</s><span class="per">3.5</span>折</div>
+						<div class="goods-describe">
+							卡姿兰【1盒6色】粉悦木马轻雾感口红小样套盒 哑光雾面唇膏
+						</div>
+					</li>
+					<li class="goods-item  relative">
+						<div class="goods-border"></div>
+						<div class="goods-img">
+							<img src="img/goods_search/goods4.jpg" width="180px">
+						</div>
+						<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">99</span></div>
+						<div class="goods-reduction"><s>￥162</s><span class="per">2.8</span>折</div>
+						<div class="goods-describe">
+							完美日记【显白不挑皮】缎色柔光小粉钻唇膏滋润持久雾面哑光显白口红
+						</div>
+					</li>
+					<li class="goods-item  relative">
+						<div class="goods-border"></div>
+						<div class="goods-img">
+							<img src="img/goods_search/goods5.jpg" width="180px">
+						</div>
+						<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">119</span></div>
+						<div class="goods-reduction"><s>￥109</s><span class="per">6.6</span>折</div>
+						<div class="goods-describe">
+							美宝莲【水润嘟嘟唇】经典款小灯管纵情耀系列绝色持久唇膏口红3g
+						</div>
+					</li>
+					<li class="goods-item  relative">
+						<div class="goods-border"></div>
+						<div class="goods-img">
+							<img src="img/goods_search/goods6.jpg" width="180px">
+						</div>
+						<div class="goods-price">折后价<span class="rmb">￥</span><span class="num">127</span></div>
+						<div class="goods-reduction"><s>￥259</s><span class="per">4.7</span>折</div>
+						<div class="goods-describe">
+							MAC魅可MAC子弹头经典唇膏【多色可选】小辣椒/正红色/脏橘色
+						</div>
+					</li>
+					<li class="goods-item relative">
+						<div class="goods-border"></div>
+						<div class="goods-img">
+							<img src="img/goods_search/goods7.jpg" width="180px">
+						</div>
+						<div class="goods-price">折后价<span class="rmb">￥</span><span class="num">279</span></div>
+						<div class="goods-reduction"><s>￥154</s><span class="per">3.2</span>折</div>
+						<div class="goods-describe">
+							Karen Murrell 天然有机金管正装口红三支礼盒 5/8/12附化妆袋
+						</div>
+					</li>
+					<li class="goods-item relative">
+						<div class="goods-border"></div>
+						<div class="goods-img">
+							<img src="img/goods_search/goods8.jpg" width="180px">
+						</div>
+						<div class="goods-price">折后价<span class="rmb">￥</span><span class="num">149</span></div>
+						<div class="goods-reduction"><s>￥126</s><span class="per">5.5</span>折</div>
+						<div class="goods-describe">
+							蓝色之恋【新年好礼 璀璨星耀小黑管】红唇焰舞口红滋润烂番茄锦鲤色3.8g
+						</div>
+					</li>
+					<li class="goods-item  relative">
+						<div class="goods-border"></div>
+						<div class="goods-img">
+							<img src="img/goods_search/goods9.jpg" width="180px">
+						</div>
+						<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">20</span></div>
+						<div class="goods-reduction"><s>￥287</s><span class="per">5</span>折</div>
+						<div class="goods-describe">
+							美康粉黛【显白热卖色】醉美东方唇膏红管国风口红姨妈烂番茄豆沙色
+						</div>
+					</li>
+					<li class="goods-item relative">
+						<div class="goods-border"></div>
+						<div class="goods-img">
+							<img src="img/goods_search/goods10.jpg" width="180px">
+						</div>
+						<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">99</span></div>
+						<div class="goods-reduction"><s>￥299</s><span class="per">6.6</span>折</div>
+						<div class="goods-describe">
+							3CE三熹玉爆款哑光口红加享迷你口红套装
+						</div>
+					</li>
+					<li class="goods-item  relative">
+						<!-- 边框移入移出 -->
+						<div class="goods-border"></div>
+						<!-- 商品图片 -->
+						<div class="goods-img">
+							<img src="img/goods_search/goods1.jpg" width="180px">
+						</div>
+						<!-- 价格 数字在.num里 -->
+						<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">45</span></div>
+						<!-- 折扣 数字在.per里 -->
+						<div class="goods-reduction"><s>￥169</s><span class="per">2.7</span>折</div>
+						<!-- 描述 -->
+						<div class="goods-describe">
+							佩佩【12支】丝绒慕斯唇釉套装哑光水润持久保湿不易脱色
+						</div>
+					</li>
+					<li class="goods-item  relative">
+						<div class="goods-border"></div>
+						<div class="goods-img">
+							<img src="img/goods_search/goods2.jpg" width="180px">
+						</div>
+						<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">69</span></div>
+						<div class="goods-reduction"><s>￥109</s><span class="per">6.4</span>折</div>
+						<div class="goods-describe">
+							Dior迪奥烈艳蓝金哑光唇膏 999 3.5g
+						</div>
+					</li>
+					<li class="goods-item  relative">
+						<div class="goods-border"></div>
+						<div class="goods-img">
+							<img src="img/goods_search/goods3.jpg" width="180px">
+						</div>
+						<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">69</span></div>
+						<div class="goods-reduction"><s>￥266</s><span class="per">3.5</span>折</div>
+						<div class="goods-describe">
+							卡姿兰【1盒6色】粉悦木马轻雾感口红小样套盒 哑光雾面唇膏
+						</div>
+					</li>
+					<li class="goods-item  relative">
+						<div class="goods-border"></div>
+						<div class="goods-img">
+							<img src="img/goods_search/goods4.jpg" width="180px">
+						</div>
+						<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">99</span></div>
+						<div class="goods-reduction"><s>￥162</s><span class="per">2.8</span>折</div>
+						<div class="goods-describe">
+							完美日记【显白不挑皮】缎色柔光小粉钻唇膏滋润持久雾面哑光显白口红
+						</div>
+					</li>
+					<li class="goods-item  relative">
+						<div class="goods-border"></div>
+						<div class="goods-img">
+							<img src="img/goods_search/goods5.jpg" width="180px">
+						</div>
+						<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">119</span></div>
+						<div class="goods-reduction"><s>￥109</s><span class="per">6.6</span>折</div>
+						<div class="goods-describe">
+							美宝莲【水润嘟嘟唇】经典款小灯管纵情耀系列绝色持久唇膏口红3g
+						</div>
+					</li>
+					<li class="goods-item  relative">
+						<div class="goods-border"></div>
+						<div class="goods-img">
+							<img src="img/goods_search/goods6.jpg" width="180px">
+						</div>
+						<div class="goods-price">折后价<span class="rmb">￥</span><span class="num">127</span></div>
+						<div class="goods-reduction"><s>￥259</s><span class="per">4.7</span>折</div>
+						<div class="goods-describe">
+							MAC魅可MAC子弹头经典唇膏【多色可选】小辣椒/正红色/脏橘色
+						</div>
+					</li>
+					<li class="goods-item relative">
+						<div class="goods-border"></div>
+						<div class="goods-img">
+							<img src="img/goods_search/goods7.jpg" width="180px">
+						</div>
+						<div class="goods-price">折后价<span class="rmb">￥</span><span class="num">279</span></div>
+						<div class="goods-reduction"><s>￥154</s><span class="per">3.2</span>折</div>
+						<div class="goods-describe">
+							Karen Murrell 天然有机金管正装口红三支礼盒 5/8/12附化妆袋
+						</div>
+					</li>
+					<li class="goods-item relative">
+						<div class="goods-border"></div>
+						<div class="goods-img">
+							<img src="img/goods_search/goods8.jpg" width="180px">
+						</div>
+						<div class="goods-price">折后价<span class="rmb">￥</span><span class="num">149</span></div>
+						<div class="goods-reduction"><s>￥126</s><span class="per">5.5</span>折</div>
+						<div class="goods-describe">
+							蓝色之恋【新年好礼 璀璨星耀小黑管】红唇焰舞口红滋润烂番茄锦鲤色3.8g
+						</div>
+					</li>
+					<li class="goods-item  relative">
+						<div class="goods-border"></div>
+						<div class="goods-img">
+							<img src="img/goods_search/goods9.jpg" width="180px">
+						</div>
+						<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">20</span></div>
+						<div class="goods-reduction"><s>￥287</s><span class="per">5</span>折</div>
+						<div class="goods-describe">
+							美康粉黛【显白热卖色】醉美东方唇膏红管国风口红姨妈烂番茄豆沙色
+						</div>
+					</li>
+					<li class="goods-item relative">
+						<div class="goods-border"></div>
+						<div class="goods-img">
+							<img src="img/goods_search/goods10.jpg" width="180px">
+						</div>
+						<div class="goods-price">快枪价<span class="rmb">￥</span><span class="num">99</span></div>
+						<div class="goods-reduction"><s>￥299</s><span class="per">6.6</span>折</div>
+						<div class="goods-describe">
+							3CE三熹玉爆款哑光口红加享迷你口红套装
+						</div>
+					</li>
+				</ul>
 			</div>
 		</div>
+
 
 
 		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
@@ -272,8 +388,23 @@
 					$('.down').css('display', 'none');
 					$('.up').css('display', 'inline-block');
 				}
+				// 点击后获取操作条变化后的位置
+				operationTop =$('.operation-box').offset().top;
 			})
-
+            // 操作条跟随页面滚动
+            var operationTop =$('.operation-box').offset().top;
+            $(window).scroll(function () {
+                // 获取scrollTop
+            	var scrollTop = $(this).scrollTop();
+            	
+            	console.log(scrollTop);
+            	console.log(operationTop)
+            	if(scrollTop > operationTop){
+            		$('.operation-box').addClass('fixed');
+            	} else{
+            		$('.operation-box').removeClass('fixed');
+            	}
+            });
 
 			// 商品移入加边框
 			$('.goods-list .goods-item').hover(function() {
@@ -283,7 +414,7 @@
 			})
 
 			// 商品价格排序
-			$('.price-sort').click(function() {
+			$('.priceSort').click(function() {
 				$(this).siblings().removeClass('change-color');
 				$(this).siblings().find('.sort').css('display', 'inline-block');
 				$(this).addClass('change-color');
@@ -293,24 +424,27 @@
 					arr.push($(this));
 				});
 				// sort
-				var isupdown = $('.sort').is(':visible');
+				var isupdown = $('.curr').is(':visible');
 				if (isupdown) {
 					arr.sort(function($itemA, $itemB) {
 						var priceA = $itemA.find('.num').text();
 						var priceB = $itemB.find('.num').text();
 						return priceA - priceB;
 					});
-					$(this).find('.sort').css('display', 'none');
 					$(this).find('.pink-up').css('display', 'inline-block')
+					$(this).find('.sort').css('display', 'none')
+					$('.curr').css('display','none')
 				} else {
 					arr.sort(function($itemA, $itemB) {
 						var priceA = $itemA.find('.num').text();
 						var priceB = $itemB.find('.num').text();
 						return priceB - priceA;
 					});
-					$('.pink-up').css('display', 'none')
-					$('.pink-down').css('display', 'inline-block')
+					$(this).find('.pink-up').css('display', 'none')
+					$(this).find('.pink-down').css('display', 'inline-block')
+					$('.curr').css('display','block')
 				}
+
 				// 插入DOM
 				arr.forEach(function(item, index) {
 					$('.goods-list').append(item)
@@ -318,35 +452,41 @@
 			});
 
 			// 商品折扣排序
-			$('.reduction-sort').click(function() {
+			$('.reductionSort').click(function() {
 				$(this).siblings().removeClass('change-color');
 				$(this).siblings().find('.sort').css('display', 'inline-block');
 				$(this).addClass('change-color');
-				$(this).find('.sort').css('display', 'none');
-				$(this).find('.pink-up').css('display', 'inline-block')
-				// 方法2：借助数组里面的sort方法
 				var arr = [];
 				$('.goods-list .goods-item').each(function() {
 					arr.push($(this));
 				});
 				// sort
-				arr.sort(function($itemA, $itemB) {
-					var priceA = $itemA.find('.per').text();
-					var priceB = $itemB.find('.per').text();
-					return priceA - priceB;
-				});
+				var isupdown = $('.curr').is(':visible');
+				if (isupdown) {
+					arr.sort(function($itemA, $itemB) {
+						var priceA = $itemA.find('.per').text();
+						var priceB = $itemB.find('.per').text();
+						return priceA - priceB;
+					});
+					$(this).find('.pink-up').css('display', 'inline-block')
+					$(this).find('.sort').css('display', 'none')
+					$('.curr').css('display','none')
+				} else {
+					arr.sort(function($itemA, $itemB) {
+						var priceA = $itemA.find('.per').text();
+						var priceB = $itemB.find('.per').text();
+						return priceB - priceA;
+					});
+					$(this).find('.pink-up').css('display', 'none')
+					$(this).find('.pink-down').css('display', 'inline-block')
+					$('.curr').css('display','block')	
+				}
 				// 插入DOM
 				arr.forEach(function(item, index) {
 					$('.goods-list').append(item)
 				});
 			});
 
-			// 点击综合取消排序
-			$('.multiple').click(function() {
-				$(this).siblings().removeClass('change-color');
-				$(this).siblings().find('.sort').css('display', 'inline-block');
-				$(this).addClass('change-color');
-			})
 
 			// 价格区间
 			// 鼠标点击或失去焦点，出现或隐藏确定按钮
@@ -367,43 +507,29 @@
 			});
 
 			// 筛选
-			$('.confirm').click(function() {
-				var arr = [];
-				$('.goods-list .goods-item').each(function(index) {
-					var $price = $('.num').eq(index); //每遍历一次，按照索引，依次变成$price
-					oPrice = $price.get(0);
-					arr.push(oPrice);
-				});
-				console.log(arr)
-				var brr = [];
-				var oMin = document.querySelector('.min-price');
-				var oMax = document.querySelector('.max-price');
-				var min = oMin.value;
-				var max = oMax.value;
-
-				for (var i = 0; i < arr.length; i++) {
-					var price = arr[i].innerText;
-					var priceNum = parseFloat(price);
-					if (priceNum >= min && priceNum <= max) {
-						brr.push(priceNum);
-						// console.log(priceNum)
-						// console.log(min)
-						// console.log(max)
+			$('.confirmSort').click(function() {
+				// 获取最小价格和最大价格的值
+				var min = $('.min-price').val().trim();
+				var max = $('.max-price').val().trim();
+				$('.goods-list .goods-item').each(function() {
+					// 将价格转为数字，进行比较
+					var $price = parseFloat($(this).find('.num').text());
+					// 符合条件--显示   不符合条件--隐藏
+					if ($price >= min && $price <= max) {
+						$(this).css('display', 'inline-block');
+					} else {
+						$(this).css('display', 'none');
 					}
-				}
-				console.log(brr);
-				// 排序
-				// brr.sort(function(itemA,itemB){
-				// 	var priceA=brr[i];
-				// 	var priceB=brr[i+1];
-				// 	return priceA-priceB;
-				// });
-				// // 插入DOM
-				// var oList = document.querySelector('.goods-list');
-				// brr.forEach(function(item, index) {
-				// 	oList.appendChild(item);
-				// });
+				});
+			});
+			console.log()
+			// 点击综合取消排序
+			$('.multiple').click(function() {
+				$(this).siblings().removeClass('change-color');
+				$(this).siblings().find('.sort').css('display', 'inline-block');
+				$(this).addClass('change-color');
 			})
+			
 		</script>
 	</body>
 </html>
