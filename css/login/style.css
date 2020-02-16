@@ -15,6 +15,9 @@
 .top{
 	vertical-align: top;
 }
+.middle{
+	vertical-align: middle;
+}
 
 /* 内容 */
 .head-box{
@@ -59,13 +62,82 @@
 	margin: 10px 20px;
 }
 .code-box{
-	height: 260px;
-	width: 100%;
+	height: 230px;
 	padding-top: 60px;
+	display: none;
 }
 .code-box .code{
-	margin: 0 auto;
+	margin-left: 125px;
 	height: 150px;
 	width: 150px;
-	border: 1px solid #aaa;
+	border: 1px solid #ddd;
+}
+.code-box .phone{
+	position: absolute;
+	right:40px;
+	top: 80px;
+	opacity: 0;
+}
+.code-box .content {
+	width: 250px;
+	padding-top: 30px;
+	margin: 0 auto;
+}
+.content img{
+	margin-right: 5px;
+}
+.content span{
+	color: #f10180;
+}
+.login-box .vchat{
+	margin: 0 auto;
+	color: #ddd;
+	height: 56px;
+	width: 320px;
+}
+.login-box .vchat img{
+	margin: 0px 10px;
+}
+.other{
+	padding: 0px 25px;
+}
+.pay,.more,.register{
+	padding: 15px 16px;
+}
+.sina,.qq{
+	padding: 15px 0;
+}
+.insina,.inqq{
+	border-right: 1px solid #ddd;
+	padding: 0 16px;
+}
+.register{
+	font-size: 15px;
+    margin-top: -3px;
+}
+.user-box{
+	width: 313px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+.name-input,.password-input{
+	width: 280px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 10px 5px 10px 10px;
+}
+.password-input{
+	margin-top: 30px;
+}
+#name,#password{
+	margin-left: 10px;
+	width: 210px;
+	font-size: 15px;
+	border: 0;
+	outline: 0;
+}
+.user-box .error{
+	position: absolute;
+	bottom: -22px;
+	left: 0px;
 }
