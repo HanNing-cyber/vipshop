@@ -114,13 +114,16 @@
 	font-size: 15px;
     margin-top: -3px;
 }
+.register a{
+	color: #000000;
+}
 .user-box{
 	width: 313px;
 	margin: 0 auto;
 	padding-top: 30px;
 	display: none;
 }
-.name-input,.password-input{
+.name-input,.password-input,.tel-input{
 	width: 290px;
 	border: 1px solid #ddd;
 	border-radius: 3px;
@@ -129,7 +132,7 @@
 .password-input{
 	margin-top: 30px;
 }
-#name,#password{
+#name,#password,#tel{
 	margin-left: 10px;
 	width: 210px;
 	font-size: 15px;
@@ -137,7 +140,49 @@
 	outline: 0;
 	background-color: white;
 }
+.test-confirm{
+	width: 313px;
+	margin: 0 auto;
+	padding-top: 30px;
+	display: none;
+}
+.test-input{
+	width: 150px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 10px 5px 10px 10px;
+	margin-top: 30px;
+}
+#test{
+	margin-left: 10px;
+	width: 80px;
+	font-size: 15px;
+	border: 0;
+	outline: 0;
+	background-color: white;
+}
+.get-test{
+	position: absolute;
+	right: 4px;
+	top: 106px;
+}
+#get-btn{
+	padding: 12px 27px 13px;
+	color: white;
+	background-color: #F10180;
+	border: 0;
+	border-radius: 4px;
+	outline: 0;
+	font-size: 15px;
+}
 .user-box .error{
+	position: absolute;
+	bottom: -22px;
+	left: 0px;
+	color: red;
+	display: none;
+}
+.test-confirm .error{
 	position: absolute;
 	bottom: -22px;
 	left: 0px;
@@ -147,11 +192,12 @@
 .error-img{
 	display: none;
 }
-.msg-log,.lost-pass{
+.msg-log,.lost-pass,.user-log{
 	margin-top: 30px;
 }
-.msg-log{
+.msg-log,.user-log{
 	font-size: 15px;
+	color: dimgray;
 }
 .lost-pass{
 	padding-right: 5px;
