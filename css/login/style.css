@@ -1,6 +1,6 @@
 .bg{
 	background: url(../../img/login/loginbg.png) top center;
-	height: 600px;
+	height: 650px;
 }
 /* 布局 */
 .float-left{
@@ -64,7 +64,6 @@
 .code-box{
 	height: 230px;
 	padding-top: 60px;
-	display: none;
 }
 .code-box .code{
 	margin-left: 125px;
@@ -119,9 +118,10 @@
 	width: 313px;
 	margin: 0 auto;
 	padding-top: 30px;
+	display: none;
 }
 .name-input,.password-input{
-	width: 280px;
+	width: 290px;
 	border: 1px solid #ddd;
 	border-radius: 3px;
 	padding: 10px 5px 10px 10px;
@@ -135,9 +135,43 @@
 	font-size: 15px;
 	border: 0;
 	outline: 0;
+	background-color: white;
 }
 .user-box .error{
 	position: absolute;
 	bottom: -22px;
 	left: 0px;
+	color: red;
+	display: none;
+}
+.error-img{
+	display: none;
+}
+.msg-log,.lost-pass{
+	margin-top: 30px;
+}
+.msg-log{
+	font-size: 15px;
+}
+.lost-pass{
+	padding-right: 5px;
+}
+.btn{
+	padding-top: 65px;
+	padding-bottom: 30px;
+}
+.login-btn{
+	border: 0;
+	background-color: #f10180;
+	color: white;
+	padding: 12px 136px;
+	font-size: 18px;
+	border-radius: 4px;
+	outline: 0;
+}
+
+.foot-box{
+	height: 75px;
+	line-height: 75px;
+	text-align: center;
 }
