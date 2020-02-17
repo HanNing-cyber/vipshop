@@ -13,7 +13,7 @@
 		<title>唯品会（原Vipshop.com）特卖会：品牌特卖_确保正品_确保低价_货到付款</title>
 	</head>
 	<body>
-		<!-- 注意：大导航z-index:80 -->
+		<!-- 注意：大导航z-index:80 右侧滚动z-index:100 -->
 		<!-- 全局header -->
 		<div class="header">
 			<div class="top_nav">
@@ -2056,7 +2056,104 @@
 
 		<!-- 右侧栏 -->
 		<div class="scrollBar">
-			
+			<div class="scrollBar_bg">
+				<div class="user relative">
+					<div class="user_icon">
+						<img src="./img/index/user.png">
+						<span>账号</span>
+					</div>
+					<div class="user_box clearfix">
+						<a class="fr" href="javascript:;">
+							<b>×</b>
+						</a>
+						<div class="head_img">
+							<img src="./img/index/user_img.jpg">
+						</div>
+						<div class="tips">
+							<span>你好！请<a href="login.html"> 登录 </a>|<a href="register.html"> 注册 </a></span>
+						</div>
+						<div class="link_box">
+							<a href="#" class="link_item">
+								<img src="./img/index/order_%23d9d9d9.png">
+								<span>我的订单</span>
+							</a>
+							<a href="#" class="link_item">
+								<img src="./img/index/rmb_%23d9d9d9.png">
+								<span>我的唯品币</span>
+							</a>
+						</div>
+						<div class="member_box">
+							<a href="#">会员俱乐部</a>
+						</div>
+					</div>
+				</div>
+				<div class="shoppingCart relative">
+					<div class="shoppingCart_icon">
+						<img src="./img/index/shoppingCart.png">
+						<span>购物袋</span>
+						<i>0</i>
+					</div>
+					<div class="shoppingCart_box clearfix">
+						<a class="fr" href="javascript:;">
+							<b>×</b>
+						</a>
+						<div class="head_img">
+							<img src="./img/index/user_img.jpg">
+						</div>
+						<div class="tips">
+							<span>你好！请<a href="login.html"> 登录 </a>|<a href="register.html"> 注册 </a></span>
+						</div>
+					</div>
+				</div>
+				<div class="discountCoupon unify_item relative">
+					<div class="discountCoupon_icon unify_icon">
+						<img src="./img/index/discount_coupon_icon.png">
+					</div>
+					<div class="discountCoupon_box unify_box">
+						<span>我的优惠券</span>
+					</div>
+				</div>
+				<div class="brandCollection unify_item relative">
+					<div class="brandCollection_icon unify_icon">
+						<img src="./img/index/favorites.png">
+					</div>
+					<div class="brandCollection_box unify_box">
+						<span>品牌收藏</span>
+					</div>
+				</div>
+				<div class="shoppingCollection unify_item relative">
+					<div class="shoppingCollection_icon unify_icon">
+						<img src="./img/index/collection_icon.png">
+					</div>
+					<div class="shoppingCollection_box unify_box">
+						<span>商品收藏</span>
+					</div>
+				</div>
+				<div class="history unify_item relative">
+					<div class="history_icon unify_icon">
+						<img src="./img/index/history.png">
+					</div>
+					<div class="history_box unify_box">
+						<span>我的足迹</span>
+					</div>
+				</div>
+				<div class="feedBack unify_item relative">
+					<div class="feedBack_icon unify_icon">
+						<img src="./img/index/feedback.png">
+					</div>
+					<div class="feedBack_box unify_box">
+						<span>会员反馈</span>
+					</div>
+				</div>
+				<div class="backTop unify_item relative">
+					<div class="backTop_icon unify_icon">
+						<img src="./img/index/back_top.png">
+					</div>
+					<div class="backTop_box unify_box">
+						<span>返回顶部</span>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<!-- 活动页 -->
@@ -2064,8 +2161,12 @@
 			<div class="container">
 				<img class="activity_title" src="./img/index/activity_title_01.webp">
 				<div class="activity_show">
-					<a href="#"><img class="vertical-top" src="img/index/activity_show_1.webp"></a>
-					<a href="#"><img class="vertical-top" src="./img/index/activity_show_2.webp"></a>
+					<a href="#" class="relative">
+						<img class="vertical-top " src="img/index/activity_show_1.webp">
+					</a>
+					<a href="#" class="relative">
+						<img class="vertical-top relative" src="./img/index/activity_show_2.webp">
+					</a>
 				</div>
 			</div>
 		</div>
@@ -2075,35 +2176,1606 @@
 			<div class="container">
 				<img class="everyday_title" src="./img/index/everyday_title.jpg">
 				<div class="everyday_show">
-						<a href="#" class="item relative">
-							<img class="vertical-top" src="img/index/every_show_1.png" >
-							<!-- <ul class="shopping_box">
-								<li class="relative">
+					<a href="#" class="item relative">
+						<div class="first_bg">
+							<img class="vertical-top" src="img/index/every_show_1.png">
+						</div>
+						<ul class="shopping_end clearfix">
+							<li class="relative fl">
+								<div class="bgImg">
 									<img class="bgImg" src="./img/index/end_shopping_1.jpg">
-									<div class="brand">
-										<img class="brandImg" src="img/index/brand_ORUNZHE.png" >
-										<span class="des">共655款</span>
+								</div>
+								<div class="brand">
+									<img class="brandImg" src="img/index/brand_end_01.png">
+									<span class="des">共1748款</span>
+								</div>
+								<span class="price">
+									<img class="vertical-mid" src="img/index/end_price_icon.png">
+									<span class="vertical-mid">￥29</span>
+								</span>
+							</li>
+							<li class="relative fl">
+								<div class="bgImg">
+									<img class="bgImg" src="./img/index/end_shopping_2.jpg">
+								</div>
+								<div class="brand">
+									<img class="brandImg" src="img/index/brand_end_02.png">
+									<span class="des">共640款</span>
+								</div>
+								<span class="price">
+									<img class="vertical-mid" src="img/index/end_price_icon.png">
+									<span class="vertical-mid">￥36</span>
+								</span>
+							</li>
+							<li class="relative fl">
+								<div class="bgImg">
+									<img class="bgImg" src="./img/index/end_shopping_3.jpg">
+								</div>
+								<div class="brand">
+									<img class="brandImg" src="img/index/brand_end_03.png">
+									<span class="des">共319款</span>
+								</div>
+								<span class="price">
+									<img class="vertical-mid" src="img/index/end_price_icon.png">
+									<span class="vertical-mid">￥29</span>
+								</span>
+							</li>
+						</ul>
+					</a>
+					<a href="#" class="item relative">
+						<div class="second_bg">
+							<img class="vertical-top" src="img/index/every_show_2.png">
+						</div>
+						<ul class="shopping_sort clearfix">
+							<li class="relative fl">
+								<div class="showImg">
+									<img src="./img/index/everyday_sort_01_img.jpg">
+								</div>
+								<div class="sloganImg">
+									<img src="./img/index/eneryday_sort_solgan_01.png">
+								</div>
+								<div class="titleSpan">
+									<span>护肤套装</span>
+								</div>
+								<div class="bgImg">
+									<img src="img/index/everyday_sort_01_bg.jpg">
+								</div>
+							</li>
+							<li class="relative fl">
+								<div class="showImg">
+									<img src="./img/index/everyday_sort_02_img.jpg">
+								</div>
+								<div class="sloganImg">
+									<img src="./img/index/eneryday_sort_solgan_02.png">
+								</div>
+								<div class="titleSpan">
+									<span>手机</span>
+								</div>
+								<div class="bgImg">
+									<img src="img/index/everyday_sort_01_bg.jpg">
+								</div>
+							</li>
+							<li class="relative fl">
+								<div class="showImg">
+									<img src="./img/index/everyday_sort_03_img.jpg">
+								</div>
+								<div class="sloganImg">
+									<img src="./img/index/eneryday_sort_solgan_03.png">
+								</div>
+								<div class="titleSpan">
+									<span>面膜</span>
+								</div>
+								<div class="bgImg">
+									<img src="img/index/everyday_sort_01_bg.jpg">
+								</div>
+							</li>
+						</ul>
+					</a>
+				</div>
+				<div class="quickly relative">
+					<div class="quickly_bg">
+						<img src="img/index/quickly_activity_bg.jpg">
+					</div>
+					<div class="quickly_show relative">
+						<ul class="list_1 clearfix">
+							<li class="item relative fl">
+								<a href="#">
+									<div class="showImg">
+										<img src="./img/index/quickly_show_1_1.jpg">
 									</div>
-									<span class="price">
-										<img class="priceImg" src="img/index/end_price_icon.png" >
-										<span>￥33</span>
-									</span>
-								</li>
-								<li>
-									
-								</li>
-								<li>
-									
-								</li>
-							</ul> -->
-						</a>
-						<a href="#" class="item relative">
-							<img class="vertical-top" src="img/index/every_show_2.png" >
-						</a>
+									<div class="brandImg">
+										<img src="./img/index/quickly_icon_1_1.png">
+									</div>
+									<div class="titleSpan">
+										<img class="vertical-mid" src="./img/index/quickly_price_icon.png">
+										<span class="vertical-mid">￥159</span>
+									</div>
+								</a>
+							</li>
+							<li class="item relative fl">
+								<a href="#">
+									<div class="showImg">
+										<img src="./img/index/quickly_show_1_2.jpg">
+									</div>
+									<div class="brandImg">
+										<img src="./img/index/quickly_icon_1_2.png">
+									</div>
+									<div class="titleSpan">
+										<img class="vertical-mid" src="./img/index/quickly_price_icon.png">
+										<span class="vertical-mid">￥58</span>
+									</div>
+								</a>
+							</li>
+							<li class="item relative fl">
+								<a href="#">
+									<div class="showImg">
+										<img src="./img/index/quickly_show_1_3.jpg">
+									</div>
+									<div class="brandImg">
+										<img src="./img/index/quickly_icon_1_3.png">
+									</div>
+									<div class="titleSpan">
+										<img class="vertical-mid" src="./img/index/quickly_price_icon.png">
+										<span class="vertical-mid">￥59</span>
+									</div>
+								</a>
+							</li>
+							<li class="item relative fl">
+								<a href="#">
+									<div class="showImg">
+										<img src="./img/index/quickly_show_1_4.jpg">
+									</div>
+									<div class="brandImg">
+										<img src="./img/index/quickly_icon_1_4.png">
+									</div>
+									<div class="titleSpan">
+										<img class="vertical-mid" src="./img/index/quickly_price_icon.png">
+										<span class="vertical-mid">￥89</span>
+									</div>
+								</a>
+							</li>
+							<li class="item relative fl">
+								<a href="#">
+									<div class="showImg">
+										<img src="./img/index/quickly_show_1_5.jpg">
+									</div>
+									<div class="brandImg">
+										<img src="./img/index/quickly_icon_1_5.png">
+									</div>
+									<div class="titleSpan">
+										<img class="vertical-mid" src="./img/index/quickly_price_icon.png">
+										<span class="vertical-mid">￥56</span>
+									</div>
+								</a>
+							</li>
+							<li class="item relative fl">
+								<a href="#">
+									<div class="showImg">
+										<img src="./img/index/quickly_show_1_6.jpg">
+									</div>
+									<div class="brandImg">
+										<img src="./img/index/quickly_icon_1_6.png">
+									</div>
+									<div class="titleSpan">
+										<img class="vertical-mid" src="./img/index/quickly_price_icon.png">
+										<span class="vertical-mid">￥79</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<ul class="list_2 clearfix">
+							<li class="item relative fl">
+								<a href="#">
+									<div class="showImg">
+										<img src="./img/index/quickly_show_2_1.jpg">
+									</div>
+									<div class="brandImg">
+										<img src="./img/index/quickly_icon_2_1.png">
+									</div>
+									<div class="titleSpan">
+										<img class="vertical-mid" src="./img/index/quickly_price_icon.png">
+										<span class="vertical-mid">￥126</span>
+									</div>
+								</a>
+							</li>
+							<li class="item relative fl">
+								<a href="#">
+									<div class="showImg">
+										<img src="./img/index/quickly_show_2_2.jpg">
+									</div>
+									<div class="brandImg">
+										<img src="./img/index/quickly_icon_2_2.png">
+									</div>
+									<div class="titleSpan">
+										<img class="vertical-mid" src="./img/index/quickly_price_icon.png">
+										<span class="vertical-mid">￥1399起</span>
+									</div>
+								</a>
+							</li>
+							<li class="item relative fl">
+								<a href="#">
+									<div class="showImg">
+										<img src="./img/index/quickly_show_2_3.jpg">
+									</div>
+									<div class="brandImg">
+										<img src="./img/index/quickly_icon_2_3.png">
+									</div>
+									<div class="titleSpan">
+										<img class="vertical-mid" src="./img/index/quickly_price_icon.png">
+										<span class="vertical-mid">￥119</span>
+									</div>
+								</a>
+							</li>
+							<li class="item relative fl">
+								<a href="#">
+									<div class="showImg">
+										<img src="./img/index/quickly_show_2_4.jpg">
+									</div>
+									<div class="brandImg">
+										<img src="./img/index/quickly_icon_2_4.png">
+									</div>
+									<div class="titleSpan">
+										<img class="vertical-mid" src="./img/index/quickly_price_icon.png">
+										<span class="vertical-mid">￥59</span>
+									</div>
+								</a>
+							</li>
+							<li class="item relative fl">
+								<a href="#">
+									<div class="showImg">
+										<img src="./img/index/quickly_show_2_5.jpg">
+									</div>
+									<div class="brandImg">
+										<img src="./img/index/quickly_icon_2_5.png">
+									</div>
+									<div class="titleSpan">
+										<img class="vertical-mid" src="./img/index/quickly_price_icon.png">
+										<span class="vertical-mid">￥63</span>
+									</div>
+								</a>
+							</li>
+							<li class="item relative fl">
+								<a href="#">
+									<div class="showImg">
+										<img src="./img/index/quickly_show_2_6.jpg">
+									</div>
+									<div class="brandImg">
+										<img src="./img/index/quickly_icon_2_6.png">
+									</div>
+									<div class="titleSpan">
+										<img class="vertical-mid" src="./img/index/quickly_price_icon.png">
+										<span class="vertical-mid">￥110</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 
+		<!-- 每日上新 -->
+		<div class="update">
+			<div class="container relative">
+				<img class="update_title" src="./img/index/new_activity.png">
+				<ul class="floor_nav">
+					<li>
+						<div class="icon_wrapper vertical-mid">
+							<img src="./img/index/floor_icon_01_gray.png" >
+						</div>
+						<span class="vertical-mid">精选</span>
+					</li>
+					<li>
+						<div class="icon_wrapper vertical-mid">
+							<img src="./img/index/floor_icon_02_gray.png" >
+						</div>
+						<span class="vertical-mid">女装</span>
+					</li>
+					<li>
+						<div class="icon_wrapper vertical-mid">
+							<img src="./img/index/floor_icon_03_gray.png" >
+						</div>
+						<span class="vertical-mid">鞋包</span>
+					</li>
+					<li>
+						<div class="icon_wrapper vertical-mid">
+							<img src="./img/index/floor_icon_04_gray.png" >
+						</div>
+						<span class="vertical-mid">男装</span>
+					</li>
+					<li>
+						<div class="icon_wrapper vertical-mid">
+							<img src="./img/index/floor_icon_05_gray.png" >
+						</div>
+						<span class="vertical-mid">运动</span>
+					</li>
+					<li>
+						<div class="icon_wrapper vertical-mid">
+							<img src="./img/index/floor_icon_06_gray.png" >
+						</div>
+						<span class="vertical-mid">饰品</span>
+					</li>
+					<li>
+						<div class="icon_wrapper vertical-mid">
+							<img src="./img/index/floor_icon_07_gray.png" >
+						</div>
+						<span class="vertical-mid">美妆</span>
+					</li>
+					<li>
+						<div class="icon_wrapper vertical-mid">
+							<img src="./img/index/floor_icon_08_gray.png" >
+						</div>
+						<span class="vertical-mid">母婴</span>
+					</li>
+					<li>
+						<div class="icon_wrapper vertical-mid">
+							<img src="./img/index/floor_icon_09_gray.png" >
+						</div>
+						<span class="vertical-mid">居家</span>
+					</li>
+					<li>
+						<div class="icon_wrapper vertical-mid">
+							<img src="./img/index/floor_icon_10_gray.png" >
+						</div>
+						<span class="vertical-mid">国际</span>
+					</li>
+					<li>
+						<div class="icon_wrapper vertical-mid">
+							<img src="./img/index/floor_icon_11_gray.png" >
+						</div>
+						<span class="vertical-mid">生活</span>
+					</li>
+					<li>
+						<div class="icon_wrapper vertical-mid">
+							<img src="./img/index/floor_icon_12_gray.png" >
+						</div>
+						<span class="vertical-mid">预告</span>
+					</li>
+				</ul>
+				<div class="handpick floor_index">
+					<div class="title">
+						<img src="./img/index/floor_top.png">
+						<div class="count_down">
+							<span class="hours"></span>
+							<span class="minutes"></span>
+							<span class="seconds"></span>
+						</div>
+					</div>
+					<ul class="list">
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_1.jpg">
+								</div>
+								<div class="item_title">
+									<span>化歌儿Wacoal内衣品牌矩献</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.5</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_2.jpg">
+								</div>
+								<div class="item_title">
+									<span>回南天家电除湿除菌回南天家电除湿除菌</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.3</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_3.jpg">
+								</div>
+								<div class="item_title">
+									<span>耐克Nike男女运动专场耐克Nike男女运动专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">2.6</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上5.8折起</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_4.jpg">
+								</div>
+								<div class="item_title">
+									<span>雅莹集团女装新春特惠专场雅莹集团女装新春特惠专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">0.5</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_5.jpg">
+								</div>
+								<div class="item_title">
+									<span>2020新年当红首选 我的“膜”力2020新年当红首选 我的“膜”力</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">0.9</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_6.jpg">
+								</div>
+								<div class="item_title">
+									<span>播broadcast女装专场播broadcast女装专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">5</span>
+									<span class="des_1 vertical-top">折封顶 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">全场折上2.8折起</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="women floor_index">
+					<div class="title">
+						<img src="./img/index/floor_women.png">
+					</div>
+					<ul class="list">
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_2_show_1.jpg">
+								</div>
+								<div class="item_title">
+									<span>卡邦尼CARBAMMI女装专场卡邦尼CARBAMMI女装专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">4</span>
+									<span class="des_1 vertical-top">折封顶 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_2_show_2.jpg">
+								</div>
+								<div class="item_title">
+									<span>ABLE JEANS女装专场/span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.3</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_2_show_3.jpg">
+								</div>
+								<div class="item_title">
+									<span>依妙EMU女装专场依妙EMU女装专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">2.2</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上5.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_2_show_4.jpg">
+								</div>
+								<div class="item_title">
+									<span>丽莫LAPORA女装专场丽莫LAPORA女装专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">4.4</span>
+									<span class="des_1 vertical-top">折封顶 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_2_show_5.jpg">
+								</div>
+								<div class="item_title">
+									<span>红贝缇HON.B女上装专场红贝缇HON.B女上装专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.2</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_2_show_6.jpg">
+								</div>
+								<div class="item_title">
+									<span>ZHUCHONGYUN女装专场ZHUCHONGYUN女装专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.5</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">全场折上2.8折起</span> -->
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="man floor_index">
+					<div class="title">
+						<img src="./img/index/floor_man.png">
+					</div>
+					<ul class="list">
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_1.jpg">
+								</div>
+								<div class="item_title">
+									<span>化歌儿Wacoal内衣品牌矩献</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.5</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_2.jpg">
+								</div>
+								<div class="item_title">
+									<span>回南天家电除湿除菌回南天家电除湿除菌</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.3</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_3.jpg">
+								</div>
+								<div class="item_title">
+									<span>耐克Nike男女运动专场耐克Nike男女运动专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">2.6</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上5.8折起</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_4.jpg">
+								</div>
+								<div class="item_title">
+									<span>雅莹集团女装新春特惠专场雅莹集团女装新春特惠专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">0.5</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_5.jpg">
+								</div>
+								<div class="item_title">
+									<span>2020新年当红首选 我的“膜”力2020新年当红首选 我的“膜”力</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">0.9</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_6.jpg">
+								</div>
+								<div class="item_title">
+									<span>播broadcast女装专场播broadcast女装专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">5</span>
+									<span class="des_1 vertical-top">折封顶 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">全场折上2.8折起</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="shoes floor_index">
+					<div class="title">
+						<img src="./img/index/floor_shoes.png">
+					</div>
+					<ul class="list">
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_1.jpg">
+								</div>
+								<div class="item_title">
+									<span>化歌儿Wacoal内衣品牌矩献</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.5</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_2.jpg">
+								</div>
+								<div class="item_title">
+									<span>回南天家电除湿除菌回南天家电除湿除菌</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.3</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_3.jpg">
+								</div>
+								<div class="item_title">
+									<span>耐克Nike男女运动专场耐克Nike男女运动专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">2.6</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上5.8折起</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_4.jpg">
+								</div>
+								<div class="item_title">
+									<span>雅莹集团女装新春特惠专场雅莹集团女装新春特惠专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">0.5</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_5.jpg">
+								</div>
+								<div class="item_title">
+									<span>2020新年当红首选 我的“膜”力2020新年当红首选 我的“膜”力</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">0.9</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_6.jpg">
+								</div>
+								<div class="item_title">
+									<span>播broadcast女装专场播broadcast女装专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">5</span>
+									<span class="des_1 vertical-top">折封顶 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">全场折上2.8折起</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="sports floor_index">
+					<div class="title">
+						<img src="./img/index/floor_sports.png">
+					</div>
+					<ul class="list">
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_1.jpg">
+								</div>
+								<div class="item_title">
+									<span>化歌儿Wacoal内衣品牌矩献</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.5</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_2.jpg">
+								</div>
+								<div class="item_title">
+									<span>回南天家电除湿除菌回南天家电除湿除菌</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.3</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_3.jpg">
+								</div>
+								<div class="item_title">
+									<span>耐克Nike男女运动专场耐克Nike男女运动专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">2.6</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上5.8折起</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_4.jpg">
+								</div>
+								<div class="item_title">
+									<span>雅莹集团女装新春特惠专场雅莹集团女装新春特惠专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">0.5</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_5.jpg">
+								</div>
+								<div class="item_title">
+									<span>2020新年当红首选 我的“膜”力2020新年当红首选 我的“膜”力</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">0.9</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_6.jpg">
+								</div>
+								<div class="item_title">
+									<span>播broadcast女装专场播broadcast女装专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">5</span>
+									<span class="des_1 vertical-top">折封顶 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">全场折上2.8折起</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="ornament floor_index">
+					<div class="title">
+						<img src="./img/index/floor_ornament.png">
+					</div>
+					<ul class="list">
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_1.jpg">
+								</div>
+								<div class="item_title">
+									<span>化歌儿Wacoal内衣品牌矩献</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.5</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_2.jpg">
+								</div>
+								<div class="item_title">
+									<span>回南天家电除湿除菌回南天家电除湿除菌</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.3</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_3.jpg">
+								</div>
+								<div class="item_title">
+									<span>耐克Nike男女运动专场耐克Nike男女运动专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">2.6</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上5.8折起</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_4.jpg">
+								</div>
+								<div class="item_title">
+									<span>雅莹集团女装新春特惠专场雅莹集团女装新春特惠专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">0.5</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_5.jpg">
+								</div>
+								<div class="item_title">
+									<span>2020新年当红首选 我的“膜”力2020新年当红首选 我的“膜”力</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">0.9</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_6.jpg">
+								</div>
+								<div class="item_title">
+									<span>播broadcast女装专场播broadcast女装专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">5</span>
+									<span class="des_1 vertical-top">折封顶 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">全场折上2.8折起</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="beauty floor_index">
+					<div class="title">
+						<img src="./img/index/floor_beauty.png">
+					</div>
+					<ul class="list">
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_1.jpg">
+								</div>
+								<div class="item_title">
+									<span>化歌儿Wacoal内衣品牌矩献</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.5</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_2.jpg">
+								</div>
+								<div class="item_title">
+									<span>回南天家电除湿除菌回南天家电除湿除菌</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.3</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_3.jpg">
+								</div>
+								<div class="item_title">
+									<span>耐克Nike男女运动专场耐克Nike男女运动专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">2.6</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上5.8折起</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_4.jpg">
+								</div>
+								<div class="item_title">
+									<span>雅莹集团女装新春特惠专场雅莹集团女装新春特惠专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">0.5</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_5.jpg">
+								</div>
+								<div class="item_title">
+									<span>2020新年当红首选 我的“膜”力2020新年当红首选 我的“膜”力</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">0.9</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_6.jpg">
+								</div>
+								<div class="item_title">
+									<span>播broadcast女装专场播broadcast女装专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">5</span>
+									<span class="des_1 vertical-top">折封顶 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">全场折上2.8折起</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="mom floor_index">
+					<div class="title">
+						<img src="./img/index/floor_mom.png">
+					</div>
+					<ul class="list">
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_1.jpg">
+								</div>
+								<div class="item_title">
+									<span>化歌儿Wacoal内衣品牌矩献</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.5</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_2.jpg">
+								</div>
+								<div class="item_title">
+									<span>回南天家电除湿除菌回南天家电除湿除菌</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.3</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_3.jpg">
+								</div>
+								<div class="item_title">
+									<span>耐克Nike男女运动专场耐克Nike男女运动专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">2.6</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上5.8折起</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_4.jpg">
+								</div>
+								<div class="item_title">
+									<span>雅莹集团女装新春特惠专场雅莹集团女装新春特惠专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">0.5</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_5.jpg">
+								</div>
+								<div class="item_title">
+									<span>2020新年当红首选 我的“膜”力2020新年当红首选 我的“膜”力</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">0.9</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_6.jpg">
+								</div>
+								<div class="item_title">
+									<span>播broadcast女装专场播broadcast女装专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">5</span>
+									<span class="des_1 vertical-top">折封顶 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">全场折上2.8折起</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="home floor_index">
+					<div class="title">
+						<img src="./img/index/floor_home.png">
+					</div>
+					<ul class="list">
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_1.jpg">
+								</div>
+								<div class="item_title">
+									<span>化歌儿Wacoal内衣品牌矩献</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.5</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_2.jpg">
+								</div>
+								<div class="item_title">
+									<span>回南天家电除湿除菌回南天家电除湿除菌</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.3</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_3.jpg">
+								</div>
+								<div class="item_title">
+									<span>耐克Nike男女运动专场耐克Nike男女运动专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">2.6</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上5.8折起</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_4.jpg">
+								</div>
+								<div class="item_title">
+									<span>雅莹集团女装新春特惠专场雅莹集团女装新春特惠专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">0.5</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_5.jpg">
+								</div>
+								<div class="item_title">
+									<span>2020新年当红首选 我的“膜”力2020新年当红首选 我的“膜”力</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">0.9</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_6.jpg">
+								</div>
+								<div class="item_title">
+									<span>播broadcast女装专场播broadcast女装专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">5</span>
+									<span class="des_1 vertical-top">折封顶 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">全场折上2.8折起</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="international floor_index">
+					<div class="title">
+						<img src="./img/index/floor_international.png">
+					</div>
+					<ul class="list">
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_1.jpg">
+								</div>
+								<div class="item_title">
+									<span>化歌儿Wacoal内衣品牌矩献</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.5</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_2.jpg">
+								</div>
+								<div class="item_title">
+									<span>回南天家电除湿除菌回南天家电除湿除菌</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.3</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_3.jpg">
+								</div>
+								<div class="item_title">
+									<span>耐克Nike男女运动专场耐克Nike男女运动专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">2.6</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上5.8折起</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_4.jpg">
+								</div>
+								<div class="item_title">
+									<span>雅莹集团女装新春特惠专场雅莹集团女装新春特惠专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">0.5</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_5.jpg">
+								</div>
+								<div class="item_title">
+									<span>2020新年当红首选 我的“膜”力2020新年当红首选 我的“膜”力</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">0.9</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_6.jpg">
+								</div>
+								<div class="item_title">
+									<span>播broadcast女装专场播broadcast女装专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">5</span>
+									<span class="des_1 vertical-top">折封顶 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">全场折上2.8折起</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="life floor_index">
+					<div class="title">
+						<img src="./img/index/floor_life.png">
+					</div>
+					<ul class="list">
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_1.jpg">
+								</div>
+								<div class="item_title">
+									<span>化歌儿Wacoal内衣品牌矩献</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.5</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_2.jpg">
+								</div>
+								<div class="item_title">
+									<span>回南天家电除湿除菌回南天家电除湿除菌</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.3</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_3.jpg">
+								</div>
+								<div class="item_title">
+									<span>耐克Nike男女运动专场耐克Nike男女运动专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">2.6</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上5.8折起</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_4.jpg">
+								</div>
+								<div class="item_title">
+									<span>雅莹集团女装新春特惠专场雅莹集团女装新春特惠专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">0.5</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_5.jpg">
+								</div>
+								<div class="item_title">
+									<span>2020新年当红首选 我的“膜”力2020新年当红首选 我的“膜”力</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">0.9</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_6.jpg">
+								</div>
+								<div class="item_title">
+									<span>播broadcast女装专场播broadcast女装专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">5</span>
+									<span class="des_1 vertical-top">折封顶 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">全场折上2.8折起</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="tomorrow floor_index">
+					<div class="title">
+						<img src="./img/index/floor_tomorrow.png">
+					</div>
+					<ul class="list">
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_1.jpg">
+								</div>
+								<div class="item_title">
+									<span>化歌儿Wacoal内衣品牌矩献</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.5</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_2.jpg">
+								</div>
+								<div class="item_title">
+									<span>回南天家电除湿除菌回南天家电除湿除菌</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">1.3</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_3.jpg">
+								</div>
+								<div class="item_title">
+									<span>耐克Nike男女运动专场耐克Nike男女运动专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">2.6</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上5.8折起</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_4.jpg">
+								</div>
+								<div class="item_title">
+									<span>雅莹集团女装新春特惠专场雅莹集团女装新春特惠专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">0.5</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_5.jpg">
+								</div>
+								<div class="item_title">
+									<span>2020新年当红首选 我的“膜”力2020新年当红首选 我的“膜”力</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">0.9</span>
+									<span class="des_1 vertical-top">折起 </span>
+									<!-- <span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">部分商品折上4.8折起</span> -->
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="item_img">
+									<img src="img/index/floor_1_show_6.jpg">
+								</div>
+								<div class="item_title">
+									<span>播broadcast女装专场播broadcast女装专场</span>
+								</div>
+								<div class="item_des">
+									<span class="number vertical-top">5</span>
+									<span class="des_1 vertical-top">折封顶 </span>
+									<span class="symbol vertical-top"> | </span>
+									<span class="des_2 vertical-top">全场折上2.8折起</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			
+			</div>
+		</div>
 
 		<!-- 全局footer -->
 		<div class="footer">
@@ -2217,7 +3889,8 @@
 		<script src="./lib/swiper-5.3.0/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 		<!-- 全局header、footer----勿删 -->
 		<script src="./js/header&footer.js" type="text/javascript" charset="utf-8"></script>
-
+		<!-- 当前页 index.js -->
+		<script src="./js/index/index.js" type="text/javascript" charset="utf-8"></script>
 		<!-- 初始化Swiper -->
 		<script>
 			var mySwiper = new Swiper('.swiper-container', {
@@ -2260,7 +3933,7 @@
 				on: {
 					transitionStart: function() {
 						//当前slide的序号
-						console.log('当前slide序号：' + this.realIndex);
+						// console.log('当前slide序号：' + this.realIndex);
 						//动画
 						/* -------如果增加图片，在此处增加if */
 						$('.swiper-pagination-bullet')
@@ -2282,7 +3955,7 @@
 			for (i = 0; i < mySwiper.pagination.bullets.length; i++) {
 				mySwiper.pagination.bullets[i].onmouseover = function() {
 					this.click();
-					console.log(i);
+					// console.log(i);
 				};
 			};
 			//箭头移入移出
