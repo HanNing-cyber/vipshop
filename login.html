@@ -5,6 +5,8 @@
 		<title></title>
 		<!-- 重置样式表 -->
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<!-- valid插件 -->
+		<link rel="stylesheet" type="text/css" href="lib/Validform_v5.3.2/css/style.css"/>
 		<!-- 登录の样式 -->
 		<link rel="stylesheet" type="text/css" href="css/login/style.css" />
 	</head>
@@ -24,8 +26,8 @@
 				<div class="login-box">
 					<div class="outtitle">
 						<div class="intitle clearfix">
-							<div class="QR float-left">扫码登录</div>
-							<div class="user float-left">账户登录</div>
+							<div class="QR float-left QR-change">扫码登录</div>
+							<div class="user float-left user-change">账户登录</div>
 						</div>
 					</div>
 					<!-- 扫描二维码登录 -->
@@ -41,22 +43,29 @@
 						</div>
 					</div>
 					<!-- 用户框 -->
-					<div class="user-box">
+					<div class="user-box clearfix">
+						<form class="form">
 						<div class="name-input relative">
 							<img src="img/login/user.png" class="middle" width="25px" >
-							<input type="text" name="" id="name" class="middle" placeholder="手机号/用户名/邮箱" />
-							<img src="img/login/error.png" class="middle" >
-						    <div class="error">请输入登录名</div>
+							<input type="text" datatype="*6-16" nullmsg="必须填写用户名" errormsg="用户名至少6个字符" id="name" class="middle" placeholder="手机号/用户名/邮箱" />
+							<img src="img/login/error.png" class="middle error-img" width="22px" >
+						    <div class="error"></div>
 						</div>
 						<div class="password-input relative">
 							<img src="img/login/password.png" class="middle" width="25px" >
-							<input type="text" name="" id="password" class="middle" placeholder="密码" />
-							<img src="img/login/error.png" class="middle" >
-						    <div class="error">请输入密码</div>
+							<input type="password" datatype="n6-16" nullmsg="必须填写密码" errormsg="密码至少6位数字" id="password" class="middle" placeholder="密码" />
+							<img src="img/login/error.png" class="middle error-img" width="22px" >
+						    <div class="error"></div>
 						</div>
-						
+						<div class="msg-log float-left">
+							短信验证登录
+						</div>
+						<div class="lost-pass float-right">忘记密码</div>
+						<div class="btn">
+							<button type="button" class="login-btn">登录</button>
+						</div>
+						</form>
 					</div>
-					
 					
 					<div class="vchat">
 						<span class=" middle">—————————</span>
@@ -73,9 +82,75 @@
 				</div>
 			</div>
 		</div>
+		<div class="container">
+			<div class="foot-box">
+				Copyright 2008-2020 vip.com，All Rights Reserved ICP证：粤 B2-20080329
+			</div>
+		</div>
+		
 		
 		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/Validform_v5.3.2/js/Validform_v5.3.2_min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
+			$(function () {
+				
+			})
+			// 鼠标移入移出变色
+			$('.QR-change').hover(function () {
+				$('.QR-change').css('color','#f10180');
+			},function () {
+				// 如果二维码登录框显示，title就不变色，防止页面刷新，click事件没执行，title会因为移入移出变色
+				var isCode =$('.code-box').is(':visible')
+				if(isCode){
+					$('.QR-change').css('color','#f10180');
+				} else{
+					$('.QR-change').css('color','dimgray');
+				}
+			})
+			$('.user-change').hover(function () {
+				$('.user-change').css('color','#f10180');
+			},function () {
+				$('.user-change').css('color','dimgray');
+			})
+			// 点击title变换登录框
+			$('.QR').click(function () {
+				$('.user-box').css('display','none');
+				$('.code-box').css('display','block');
+				$(this).css('color','#f10180');
+				$('.user').css('color','dimgray');
+				$(this).removeClass('QR-change');
+				$('.user').addClass('user-change');
+			})
+			$('.user').click(function () {
+				$('.code-box').css('display','none');
+				$('.user-box').css('display','block');
+				$(this).css('color','#f10180');
+				$('.QR').css('color','dimgray');
+				$(this).removeClass('user-change');
+				$('.QR').addClass('QR-change');
+			})
+			
+			// 表单验证
+			$('.form').Validform({
+				tiptype:function (msg,o,cssctl) {
+					// 错误信息提示对象
+					var $tip= o.obj.next().next('.error');
+					var $errorImg =o.obj.next('.error-img');
+					var $borderRed =o.obj.parent();
+					// 显示提示信息
+					$tip.text(msg);
+					if(o.type==3){
+						// 验证失败，显示提示框
+						$tip.css('display','inline-block');
+						$errorImg.css('display','inline-block');
+						$borderRed.css('border','1px solid red')
+					}else{
+						$tip.css('display','none');
+						$errorImg.css('display','none');
+						$borderRed.css('border','1px solid #ddd')
+					}
+				}
+			});
 			$('.code-box .code').mouseenter(function () {
 				$('.code').css('margin-left','40px');
 				$('.phone').css('opacity','1');
