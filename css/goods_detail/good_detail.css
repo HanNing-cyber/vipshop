@@ -1,0 +1,508 @@
+.exhibition {
+	margin-top: 20px;
+	display: block;
+}
+
+/* 雪碧图 */
+.icon_detail {
+	background: url(../../img/goods_detail/detail_sprite.png);
+	font-style: normal;
+	display: inline-block;
+}
+
+/* 收藏 */
+.icon_detail_collection {
+	width: 18px;
+	height: 17px;
+	background-position: -186px -169px;
+}
+
+/* 红色圈勾 */
+.icon_detail_redIcon {
+	width: 22px;
+	height: 22px;
+	background-position: -185px -233px;
+}
+
+/* 灰色感叹圈 */
+.icon_detail_grayIcon {
+	width: 22px;
+	height: 22px;
+	background-position: -209px -233px;
+}
+
+/* 商品展示图 */
+
+.exhibition .show {
+	width: 420px;
+	margin-right: 20px;
+}
+
+.exhibition .show .bgImg {
+	/* cursor: crosshair; */
+	text-align: center;
+	width: 420px;
+	height: 420px;
+	overflow: hidden;
+}
+
+/* 缩略图 */
+.exhibition .show .bigImg {
+	width: 420px;
+	height: 420px;
+	position: relative;
+	z-index: 99;
+	margin-bottom: 7px;
+	background-color: #f7f7f7;
+}
+
+.exhibition .show .choiceImg .choice {
+	width: 62px;
+	height: 62px;
+	margin: 0 7px 0 0;
+	float: left;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	border: 1px solid #f2f2f2;
+	background-color: #f7f7f7;
+	cursor: pointer;
+}
+
+.exhibition .show .choiceImg .choice:last-child {
+	margin: 0 0 0 0;
+}
+
+.exhibition .show .choiceImg .choice:hover {
+	border: 1px solid #f43499;
+}
+
+/* 编号 */
+.exhibition .show .inf {
+	width: 100%;
+	display: inline-block;
+	padding: 12px 0;
+	border-bottom: 1px #e2e2e2 dashed;
+}
+
+.exhibition .inf .commodity_num {
+	margin-right: 20px;
+}
+
+/* 收藏   */
+.exhibition .inf .commodity_collection {
+	cursor: pointer;
+}
+
+/* 分享 */
+.exhibition .inf .commodity_share {
+	padding: 0 9px;
+	height: 22px;
+	line-height: 22px;
+	display: inline-block;
+	background: #fafafa;
+	border: solid 1px #c2c2c2;
+	border-radius: 2px;
+	cursor: pointer;
+	position: relative;
+	z-index: 100;
+	transition: border .3s;
+}
+
+.exhibition .inf .commodity_share .share_box img {
+	display: inline-block;
+	width: 15px;
+	height: 17px;
+	margin-right: 4px;
+}
+
+.exhibition .inf .commodity_share .share_box i {
+	font-style: normal;
+	border: solid 3px transparent;
+	border-top-color: #999;
+	margin-left: 2px;
+	margin-top: 4px;
+	display: inline-block;
+}
+
+.exhibition .inf .commodity_share .share_box.active::after {
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background-color: #FFFFFF;
+	z-index: 100;
+}
+
+/* 分享图标 */
+.exhibition .inf .commodity_share .share_pull {
+	width: 92px;
+	padding: 5px 9px;
+	position: absolute;
+	border: solid 1px #c2c2c2;
+	border-radius: 2px;
+	border-top-left-radius: 0;
+	background: #fff;
+	top: 22px;
+	left: -1px;
+	display: none;
+}
+
+/* 100%正品 天天有3折 */
+.exhibition .inf_slogan {
+	display: inline-block;
+	width: 100%;
+	margin-top: 20px;
+}
+
+/* 商品右侧操作 */
+.exhibition .operation {
+	width: 560px;
+}
+
+/* 品牌链接 */
+.exhibition .operation .brand_link a {
+	color: #007cFF;
+}
+
+.exhibition .operation .brand_link a:hover {
+	color: #f10180;
+}
+
+.exhibition .operation .brand_link {
+	display: block;
+	width: 340px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 16px;
+	cursor: pointer;
+	line-height: 22px;
+	min-height: 22px;
+}
+
+/* 标题 */
+.exhibition .operation .title {
+	font-size: 16px;
+	color: #333;
+	max-height: 40px;
+	overflow: hidden;
+	line-height: 20px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	font-weight: 700;
+}
+
+/* 描述信息 */
+.exhibition .operation .des span:first-child {
+	color: #f10180;
+	margin-right: 10px;
+	font-weight: 700;
+}
+
+.exhibition .operation .des span:last-child {
+	font-size: 14px;
+	color: #999;
+	max-height: 85px;
+	overflow: hidden;
+}
+
+/* 价格信息 */
+.exhibition .operation .Price_box {
+	background: #f9f9f9;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 20px;
+	width: 540px;
+}
+
+
+.exhibition .operation .specialPrice {
+	height: 60px;
+	position: relative;
+	overflow: hidden;
+	max-width: 540px;
+	display: block;
+}
+
+.exhibition .operation .sp_title {
+	font-size: 14px;
+	background: #de3d96;
+	border-radius: 32.5px;
+	padding: 2px 8px;
+	margin-top: 18px;
+	color: #fff;
+	display: inline-block;
+	max-width: 90px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.exhibition .operation .sp_RMB {
+	margin-top: 13px;
+	margin-left: 8px;
+	font-size: 24px;
+	color: #333;
+}
+
+.exhibition .operation .sp_price {
+	font-size: 38px;
+	font-family: arial;
+	max-width: 200px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: inline-block;
+	color: #333;
+}
+
+.exhibition .operation .original {
+	padding-left: 10px;
+	padding-right: 0;
+	margin-top: 20px;
+	font-size: 16px;
+	color: #999;
+	text-decoration: line-through;
+}
+
+.exhibition .operation .discount {
+	padding-left: 10px;
+	padding-right: 0;
+	margin-top: 20px;
+	font-size: 16px;
+	color: #999;
+}
+
+/* 倒计时 */
+.shopping_count_down {
+	padding-top: 16px;
+	padding-left: 30px;
+	display: inline-block;
+}
+
+.shopping_count_down span {
+	font-size: 14px;
+	color: #de3d96;
+}
+
+
+
+.shopping_count_down .hours,
+.shopping_count_down .mins,
+.shopping_count_down .sec {
+	width: 24px;
+	height: 24px;
+	border-radius: 2px;
+	background-color: #fbebf4;
+	line-height: 24px;
+	text-align: center;
+	display: inline-block;
+	margin: 0 6px;
+}
+
+
+/* 唯品价 */
+.exhibition .operation .ourPrice {
+	color: #666;
+	margin-top: 0;
+	margin-bottom: 10px;
+	line-height: normal;
+	font-size: 16px;
+	display: block;
+}
+
+.exhibition .operation .op_title {
+	display: inline-block;
+	margin-right: 0;
+}
+
+.exhibition .operation .op_RMB {
+	font-size: 16px;
+}
+
+.exhibition .operation .op_price {}
+
+
+/* 左侧小标题tip */
+.exhibition .address .tip,
+.exhibition .freight_des .tip,
+.exhibition .num_choice .tip,
+.exhibition .service_tel .tip,
+.exhibition .service_des .tip,
+.exhibition .service_hint .tip {
+	font-size: 12px;
+	text-align: left;
+	color: #999;
+	line-height: 32px;
+	overflow: hidden;
+	margin-right: 10px;
+}
+
+.exhibition .address .selecte {
+	display: inline-block;
+	border: 1px solid #CCC;
+	padding: 10px;
+	color: #333;
+	width: 252px;
+	cursor: pointer;
+}
+
+.exhibition .address .selecte i {
+	color: #666;
+	font-style: normal;
+	font-size: 16px;
+	position: absolute;
+	font-weight: bold;
+	top: 5px;
+	right: 8px;
+	transform: rotate(180deg);
+}
+
+/* 地址提示信息 */
+.exhibition .address_des {
+	color: #666;
+	margin-left: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* 运费提示信息 */
+.exhibition .freight_des span:last-child {
+	color: #333;
+}
+
+/* 数量加减 */
+.exhibition .num_choice {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.exhibition .num_choice .show {
+	position: relative;
+	height: 28px;
+	border: 1px solid #b3b3b3;
+	transition: .3s ease-out;
+	background-color: #fff;
+	color: #333;
+	display: inline-block;
+	width: 104px;
+}
+
+/* 减 */
+.exhibition .num_choice .num_minus {
+	display: inline-block;
+	height: 28px;
+	width: 28px;
+	line-height: 28px;
+	font-size: 24px;
+	color: #ccc;
+	text-align: center;
+}
+
+/* 加 */
+.exhibition .num_choice .num_add {
+	display: inline-block;
+	height: 28px;
+	width: 28px;
+	line-height: 28px;
+	font-size: 24px;
+	color: #ccc;
+	text-align: center;
+}
+
+/* 显示 */
+.exhibition .num_choice .num_show {
+	width: 38px;
+	display: inline-block;
+	font-size: 16px;
+	height: 28px;
+	line-height: 28px;
+	border-left: 1px solid #e4e3e3;
+	border-right: 1px solid #e4e3e3;
+	text-align: center;
+}
+
+
+/* 加入购物袋 */
+
+.add_cart {
+	width: 198px;
+	height: 46px;
+	background-color: rgba(214, 1, 128, 1);
+	border: 1px solid rgba(214, 1, 128, 1);
+	outline: 0;
+	display: inline-block;
+	border-radius: 3px;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: top;
+	transition: 0.3s;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-size: 18px;
+	margin-bottom: 12px;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+
+.add_cart img {
+	margin-right: 5px;
+	width: 25px;
+	height: 25px;
+}
+
+.add_cart:hover {
+	background-color: rgba(214, 1, 128, 0.7);
+	border: 1px solid rgba(214, 1, 128, 0.7);
+}
+
+/* 客服热线 */
+.operation .service_tel {
+	font-size: 12px;
+	margin-top: 89px;
+	border-top: 1px dashed #e6e6e6;
+	padding-top: 10px;
+}
+
+/* 服务 */
+.operation .service_des_item {
+	display: inline-block;
+	margin-right: 5px;
+	margin-top: 5px;
+	color: #666;
+}
+
+.operation .service_des_box {
+	display: inline-block;
+	width: 440px;
+}
+
+.operation .service_des_arrow span {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	font-size: 18px;
+	color: #ccc;
+	font-weight: bold;
+	transform: rotate(180deg);
+}
+
+.operation .service_des_arrow {
+	display: inline-block;
+}
+
+/* 提示 */
+.operation .service_hint span:last-child{
+	color: #666;
+	width: 480px;
+	padding-top: 8px;
+}
+.operation .service_hint i{
+	margin-top: 8px;
+	margin-right: 4px;
+}
