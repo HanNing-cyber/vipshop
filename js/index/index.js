@@ -2,60 +2,76 @@
 $(document).ready(function() {
 	/* -------------右侧固定栏------------ */
 	/* 用户中心 */
-	$('.scrollBar .user').on('mouseenter', function () {
+	$('.scrollBar .user').on('mouseenter', function() {
 		$('.scrollBar .user_icon').addClass('active');
-		$('.scrollBar .user_box').stop(true).animate({'left':'-247px'});
+		$('.scrollBar .user_box').stop(true).animate({
+			'left': '-247px'
+		});
 	});
-	$('.scrollBar .user').on('mouseleave', function () {
+	$('.scrollBar .user').on('mouseleave', function() {
 		$('.scrollBar .user_icon').removeClass('active');
-		$('.scrollBar .user_box').stop(true).animate({'left':'40px'});
+		$('.scrollBar .user_box').stop(true).animate({
+			'left': '40px'
+		});
 	});
 	/* 我的订单  我的唯品币 触摸 */
-	$('.scrollBar .user_box .link_item').eq(0).on('mouseenter', function () {
-		$(this).find('img').attr('src','img/index/order_%23df147f.png');
-		$(this).find('span').css('color','#df147f');
+	$('.scrollBar .user_box .link_item').eq(0).on('mouseenter', function() {
+		$(this).find('img').attr('src', 'img/index/order_%23df147f.png');
+		$(this).find('span').css('color', '#df147f');
 	});
-	$('.scrollBar .user_box .link_item').eq(0).on('mouseleave', function () {
-		$(this).find('img').attr('src','img/index/order_%23d9d9d9.png');
-		$(this).find('span').css('color','#666');
+	$('.scrollBar .user_box .link_item').eq(0).on('mouseleave', function() {
+		$(this).find('img').attr('src', 'img/index/order_%23d9d9d9.png');
+		$(this).find('span').css('color', '#666');
 	});
-	$('.scrollBar .user_box .link_item').eq(1).on('mouseenter', function () {
-		$(this).find('img').attr('src','img/index/rmb_%23df147f.png');
-		$(this).find('span').css('color','#df147f');
+	$('.scrollBar .user_box .link_item').eq(1).on('mouseenter', function() {
+		$(this).find('img').attr('src', 'img/index/rmb_%23df147f.png');
+		$(this).find('span').css('color', '#df147f');
 	});
-	$('.scrollBar .user_box .link_item').eq(1).on('mouseleave', function () {
-		$(this).find('img').attr('src','img/index/rmb_%23d9d9d9.png');
-		$(this).find('span').css('color','#666');
+	$('.scrollBar .user_box .link_item').eq(1).on('mouseleave', function() {
+		$(this).find('img').attr('src', 'img/index/rmb_%23d9d9d9.png');
+		$(this).find('span').css('color', '#666');
 	});
 	/* 关闭 */
-	$('.scrollBar .user_box b ').on('click', function () {
+	$('.scrollBar .user_box b ').on('click', function() {
 		$('.scrollBar .user_icon').removeClass('active');
-		$('.scrollBar .user_box').stop(true).animate({'left':'40px'});
+		$('.scrollBar .user_box').stop(true).animate({
+			'left': '40px'
+		});
 	});
 	/* 购物袋 */
-	$('.scrollBar .shoppingCart .shoppingCart_icon').on('click', function () {
+	$('.scrollBar .shoppingCart .shoppingCart_icon').on('click', function() {
 		var isClick = $('.scrollBar .shoppingCart_box').hasClass('active');
-		if(!isClick){
-			$('.scrollBar .shoppingCart_box').stop(true).animate({'left':'-247px'});
+		if (!isClick) {
+			$('.scrollBar .shoppingCart_box').stop(true).animate({
+				'left': '-247px'
+			});
 			$('.scrollBar .shoppingCart_box').addClass('active');
-		}else{
-			$('.scrollBar .shoppingCart_box').stop(true).animate({'left':'40px'});
+		} else {
+			$('.scrollBar .shoppingCart_box').stop(true).animate({
+				'left': '40px'
+			});
 			$('.scrollBar .shoppingCart_box').removeClass('active');
 		}
 	});
 	/* 关闭 */
-	$('.scrollBar .shoppingCart_box b ').on('click', function () {
-		$('.scrollBar .shoppingCart_box').stop(true).animate({'left':'40px'});
+	$('.scrollBar .shoppingCart_box b ').on('click', function() {
+		$('.scrollBar .shoppingCart_box').stop(true).animate({
+			'left': '40px'
+		});
 		$('.scrollBar .shoppingCart_box').removeClass('active');
 	});
 	/* 其他菜单弹出 */
-	$('.scrollBar .unify_item').on('mouseenter', function () {
+	$('.scrollBar .unify_item').on('mouseenter', function() {
 		$(this).children('.unify_icon').addClass('active');
-		$(this).children('.unify_box').stop(true).animate({'left':'-122px'},200)
+		$(this).children('.unify_box').stop(true).animate({
+			'left': '-122px'
+		}, 200)
 	});
-	$('.scrollBar .unify_item').on('mouseleave', function () {
+	$('.scrollBar .unify_item').on('mouseleave', function() {
 		$(this).children('.unify_icon').removeClass('active');
-		$(this).children('.unify_box').stop(true).animate({'left':'0'},200)
+		$(this).children('.unify_box').stop(true).animate({
+			'left': '0'
+		}, 200)
 	});
 	/* 返回顶部 */
 	$('.scrollBar .backTop .backTop_icon').click(function() {
@@ -64,35 +80,56 @@ $(document).ready(function() {
 		});
 	});
 	/* 唯品快抢  动态变化 */
-	function rotate(){
+	function rotate() {
 		var isShow = $('.quickly .quickly_show .list_1').is(':visible');
-		if(isShow){
-			$('.quickly .quickly_show .list_1').hide("fast");
-			$('.quickly .quickly_show .list_2').show("fast");
-		}else{
-			$('.quickly .quickly_show .list_2').hide("fast");
-			$('.quickly .quickly_show .list_1').show("fast");
+		if (isShow) {
+			$('.quickly .quickly_show .list_1').hide();
+			$('.quickly .quickly_show .list_2').show();
+		} else {
+			$('.quickly .quickly_show .list_2').hide();
+			$('.quickly .quickly_show .list_1').show();
 		}
 	};
 	rotate();
-	var timer = setInterval(function () {
+	var timer = setInterval(function() {
 		rotate();
-	},2000);
+	}, 3000);
 	// /* --------------------倒计时---------------------*/
-	// /* 获取当前时间 */
-	// var nowTime = new Date();
-	// /* 设定目标时间 */
-	// var evenningTime = new Date().setHours(20);
-	// var morningTime = new Date().setHours(10);
-	// /* 判断距离时间段 */
-	// if(nowTime > 10 && nowTime < 20){
-	// 	/* 进行20:00倒计时 */
-		
-	// }else{
-	// 	/* 进行10:00倒计时 */
-		
-	// }
-	
+	var result = "";
+	//获取当前时间
+	var now = new Date();
+	//设置结束时间
+	var deadline = 10;
+	//获取要显示的区域
+	var $Hour = $('.handpick .count_down .hours');
+	var $Min = $('.handpick .count_down .minutes');
+	var $Sec = $('.handpick .count_down .seconds');
+	setInterval(function() {
+		const ten = new Date();
+		if (new Date(now).getHours() > deadline) {
+			ten.setDate(new Date(now).getDate() + 1);
+		}
+		ten.setHours(deadline);
+		ten.setMinutes(0);
+		ten.setSeconds(0);
+		const interval = Math.ceil(ten.valueOf() - new Date(now).valueOf()) / 1000;
+		const hour = Math.floor(interval / 3600);
+		const minutes = Math.floor((interval % 3600) / 60);
+		const second = Math.floor(interval % 60);
+		now = Date.now();
+		//判断
+		function fix(x) {
+			if (x < 10) {
+				return "0" + x;
+			} else {
+				return x;
+			}
+		}
+		//放入显示的数字
+		$Hour.text(fix(hour));
+		$Min.text(fix(minutes));
+		$Sec.text(fix(second));
+	});
 	/* 楼层跳转 */
 	$('.floor_nav li').click(function() {
 		//获取索引
@@ -111,6 +148,7 @@ $(document).ready(function() {
 	/* 楼层导航跟随 */
 	var floor_top = $('.update_title').offset().top;
 	$(window).scroll(function() {
+		var menu = $('.floor_nav');
 		//获取scrollTop == 滚动的距离
 		var scrollTop = $(this).scrollTop();
 		// //临界值
@@ -122,6 +160,22 @@ $(document).ready(function() {
 			$('.floor_nav').removeClass('fixed');
 		}
 	});
-	
-});
 
+	/* 遮罩 */
+	$('.update .item_show').on('mouseenter', function() {
+		$(this).children('.item_collection').animate({
+			'opacity': '1'
+		});
+		$(this).children('.item_mask').css({
+			'background-color': 'rgba(255, 255, 255, 0.3)'
+		});
+	});
+	$('.update .item_show').on('mouseleave', function() {
+		$(this).children('.item_collection').animate({
+			'opacity': '0'
+		});
+		$(this).children('.item_mask').css({
+			'background-color': 'rgba(255, 255, 255, 0)'
+		});
+	});
+});
