@@ -2,6 +2,7 @@
 .banner {
 	background: url(../../img/index/banner.jpg) top center no-repeat;
 	height: 500px;
+	background-color: #ad7554;
 }
 
 /* 白色半透明框 */
@@ -485,7 +486,6 @@
 	display: inline-block;
 }
 
-/* 左右联动 */
 .floor_nav {
 	position: absolute;
 	top: 150px;

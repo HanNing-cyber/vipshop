@@ -52,23 +52,16 @@ $(document).ready(function() {
 		$Min.text(fix(minutes));
 		$Sec.text(fix(second));
 	});
-	/* 楼层跳转 */
-	$('.floor_nav li').click(function() {
-		//获取索引
-		var i = $(this).index();
-		//获取楼层的scrollTop
-		var top = $('.floor_index').eq(i).offset().top;
-		$('html, body').stop(true).animate({
-			scrollTop: top
-		});
-		//根据索引进行左右联动
-		$('.floor_nav li').removeClass('active');
-		$(this).addClass('active');
-	});
 	//默认显示第一个
 	$('.floor_nav li').eq(0).addClass('active');
 	/* 楼层导航跟随 */
 	var floor_top = $('.update_title').offset().top;
+	//设置放置楼层距离的数组
+	var arr = [];
+	$('.floor_index').each(function () {
+		arr.push(parseInt($(this).offset().top));
+	});
+	console.log(arr);
 	$(window).scroll(function() {
 		var menu = $('.floor_nav');
 		//获取scrollTop == 滚动的距离
@@ -76,13 +69,74 @@ $(document).ready(function() {
 		// //临界值
 		if (scrollTop > floor_top) {
 			$('.floor_nav').addClass('fixed');
+			//活动层
+			var IntScrollTop = parseInt(scrollTop);
+			if(IntScrollTop > arr[0]){
+				$('.floor_nav li').removeClass('active');
+				$('.floor_nav li').eq(0).addClass('active');
+			}
+			if(IntScrollTop > arr[1]){
+				$('.floor_nav li').removeClass('active');
+				$('.floor_nav li').eq(1).addClass('active');
+			}
+			if(IntScrollTop > arr[2]){
+				$('.floor_nav li').removeClass('active');
+				$('.floor_nav li').eq(2).addClass('active');
+			}
+			if(IntScrollTop > arr[3]){
+				$('.floor_nav li').removeClass('active');
+				$('.floor_nav li').eq(3).addClass('active');
+			}
+			if(IntScrollTop > arr[4]){
+				$('.floor_nav li').removeClass('active');
+				$('.floor_nav li').eq(4).addClass('active');
+			}
+			if(IntScrollTop > arr[5]){
+				$('.floor_nav li').removeClass('active');
+				$('.floor_nav li').eq(5).addClass('active');
+			}
+			if(IntScrollTop > arr[6]){
+				$('.floor_nav li').removeClass('active');
+				$('.floor_nav li').eq(6).addClass('active');
+			}
+			if(IntScrollTop > arr[7]){
+				$('.floor_nav li').removeClass('active');
+				$('.floor_nav li').eq(7).addClass('active');
+			}
+			if(IntScrollTop > arr[8]){
+				$('.floor_nav li').removeClass('active');
+				$('.floor_nav li').eq(8).addClass('active');
+			}
+			if(IntScrollTop > arr[9]){
+				$('.floor_nav li').removeClass('active');
+				$('.floor_nav li').eq(9).addClass('active');
+			}
+			if(IntScrollTop > arr[10]){
+				$('.floor_nav li').removeClass('active');
+				$('.floor_nav li').eq(10).addClass('active');
+			}
+			if(IntScrollTop > arr[11]){
+				$('.floor_nav li').removeClass('active');
+				$('.floor_nav li').eq(11).addClass('active');
+			}
+			if(IntScrollTop > arr[12]){
+				$('.floor_nav li').removeClass('active');
+				$('.floor_nav li').eq(12).addClass('active');
+			}
 		} else {
-			$('.floor_nav li').removeClass('active');
-			$('.floor_nav li').eq(0).addClass('active');
 			$('.floor_nav').removeClass('fixed');
 		}
 	});
-
+	/* 楼层跳转 */
+	$('.floor_nav li').click(function() {
+		//获取索引
+		var i = $(this).index();
+		//获取楼层的scrollTop
+		var top = $('.floor_index').eq(i+1).offset().top;
+		$('html, body').stop(true).animate({
+			scrollTop: top
+		});
+	});
 	/* 遮罩 */
 	$('.update .item_show').on('mouseenter', function() {
 		$(this).children('.item_collection').animate({
