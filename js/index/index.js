@@ -28,7 +28,7 @@ $(document).ready(function() {
 	var $Sec = $('.handpick .count_down .seconds');
 	setInterval(function() {
 		const ten = new Date();
-		if (new Date(now).getHours() > deadline) {
+		if (new Date(now).getHours() > deadline-1) {
 			ten.setDate(new Date(now).getDate() + 1);
 		}
 		ten.setHours(deadline);

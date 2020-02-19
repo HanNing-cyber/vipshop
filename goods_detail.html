@@ -2135,12 +2135,36 @@
 
 
 		<!-- 商品选项卡 -->
-		<div class="container">
-			<div class="exhibition clearfix">
-				<div class="show fl">
+		<div class="exhibition clearfix">
+			<div class="container">
+				<div class="show fl relative">
 					<div class="bigImg">
-						<img src="./img/goods_detail/show_big_01.jpg">
+						<div class="pic">
+							<img id="showImg" src="./img/goods_detail/show_big_01.jpg">
+						</div>
+						<div class="pic">
+							<img id="showImg" src="./img/goods_detail/show_big_02.jpg">
+						</div>
+						<div class="pic">
+							<img id="showImg" src="./img/goods_detail/show_big_03.jpg">
+						</div>
+						<div class="pic">
+							<img id="showImg" src="./img/goods_detail/show_big_04.jpg">
+						</div>
+						<div class="pic">
+							<img id="showImg" src="./img/goods_detail/show_big_05.jpg">
+						</div>
+						<div class="pic">
+							<img id="showImg" src="./img/goods_detail/show_big_06.jpg">
+						</div>
+						<!-- 放大镜 -->
+						<div class="mask"></div>
 					</div>
+					<!-- 放大后的 -->
+					<div class="loupe relative">
+						<img src="./img/goods_detail//show_big_01.jpg" class="loupe_pic">
+					</div>
+					<!-- 图片选项卡 -->
 					<div class="choiceImg">
 						<div class="choice">
 							<img class="vertical-top" src="./img/goods_detail/show_small_01.jpg">
@@ -2291,16 +2315,350 @@
 				</div>
 			</div>
 		</div>
+		
+		<!-- 商品介绍 -->
+		<div class="information relative">
+			<div class="container">
+				<ul class="level_floor_nav clearfix relative">
+					<li class="fl">规格参数</li>
+					<li class="fl">商品展示</li>
+					<li class="fl">全部口碑<span>(999+)</span></span>
+					<li class="fl">商品咨询</li>
+					<li class="fl">关于我们</li>
+					<li class="fl"></li>
+				</ul>
+				<div class="title">
+					<i class="icon_detail icon_detail_rhombus vertical-mid"></i>
+					<span class="vertical-mid">商品参数</span>
+					<span class="vertical-mid">DETAIL</span>
+					<img src="img/goods_detail/icon_repeat.png">
+				</div>
 
+				<table>
+					<tbody>
+						<tr>
+							<th>是否套装：</th>
+							<td>是</td>
+							<th>功效：</th>
+							<td>滋润</td>
+						</tr>
+						<tr>
+							<th>色系：</th>
+							<td>多彩色系</td>
+							<th>品牌名称：</th>
+							<td>佩佩</td>
+						</tr>
+						<tr>
+							<th>商品名称：</th>
+							<td>【12支】丝绒慕斯唇釉套装哑光水润持久保湿不易脱色</td>
+							<th>产地：</th>
+							<td>中国</td>
+						</tr>
+						<tr>
+							<th>有效期： </th>
+							<td>三年</td>
+							<th>消费提醒：</th>
+							<td>国家药监局提示您：请正确认识化妆品功效，化妆品不能替代药品，不能治疗皮肤病等疾病</td>
+						</tr>
+						<tr class="tr_hidden">
+							<th>规格：</th>
+							<td>12支</td>
+							<th>洗涤说明：</th>
+							<td>无</td>
+						</tr>
+						<tr class="tr_hidden">
+							<th>配件/备注：</th>
+							<td>有外盒有塑封</td>
+							<th>商品编号：</th>
+							<td>20190111K01-2</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="table_view_more relative">查看更多<span>^</span></div>
+				<div class="title">
+					<i class="icon_detail icon_detail_rhombus vertical-mid"></i>
+					<span class="vertical-mid">价格走势</span>
+					<span class="vertical-mid">PRICE</span>
+					<img src="img/goods_detail/icon_repeat.png">
+				</div>
+				<img src="./img/goods_detail/curve_price.png">
+				<img src="img/goods_detail/icon_repeat.png">
+				<div class="authorization">
+					<img class="authorization" src="img/index/authorization.jpg">
+				</div>
+				<div class="title">
+					<i class="icon_detail icon_detail_rhombus vertical-mid"></i>
+					<span class="vertical-mid">商品展示</span>
+					<span class="vertical-mid">IMAGE</span>
+					<img src="img/goods_detail/icon_repeat.png">
+				</div>
+				<div class="product_exhibition_box">
+					<img src="./img/goods_detail/product_exhibition_01.jpg">
+					<img src="./img/goods_detail/product_exhibition_02.jpg">
+					<img src="./img/goods_detail/product_exhibition_03.jpg">
+					<img src="./img/goods_detail/product_exhibition_04.jpg">
+					<img src="./img/goods_detail/product_exhibition_05.jpg">
+					<img src="./img/goods_detail/product_exhibition_07.jpg">
+					<img src="./img/goods_detail/product_exhibition_08.jpg">
+					<img src="./img/goods_detail/product_exhibition_09.jpg">
+					<img src="./img/goods_detail/product_exhibition_10.jpg">
+					<img src="./img/goods_detail/product_exhibition_11.jpg">
+					<img src="./img/goods_detail/product_exhibition_12.jpg">
+					<img src="./img/goods_detail/product_exhibition_13.jpg">
+					<img src="./img/goods_detail/product_exhibition_14.jpg">
+					<img src="./img/goods_detail/product_exhibition_15.jpg">
+					<img src="./img/goods_detail/product_exhibition_16.jpg">
+				</div>
+			</div>
+		</div>
 
-		<!-- 横向楼层跳转 -->
+		<!-- 用户评价 -->
+		<div class="evaluate">
+			<div class="container">
+				<div class="evaluate_top">
+					<div class="title">
+						<span>全部口碑</span>
+					</div>
+					<div class="evaluate_data clearfix">
+						<div class="percent fl">
+							<span>98.50%</span>
+							<span>的用户对商品满意</span>
+						</div>
+						<div class="classify fl clearfix">
+							<span>好评</span>
+							<span>最新</span>
+							<span>有图(321)</span>
+							<span>滋润(152)</span>
+							<span>可以(184)</span>
+							<span>不错(218)</span>
+							<span>好看(258)</span>
+							<span>待改进</span>
+							<span>便宜(355)</span>
+							<span>很喜欢(488)</span>
+							<span>挺好的(498)</span>
+						</div>
+					</div>
+					<ul class="evaluate_item">
+						<li class="clearfix">
+							<div class="users fl clearfix">
+								<div class="users_img fl">
+									<img src="./img/goods_detail/ia_100000075.jpg" >
+								</div>
+								<div class="users_name fl">
+									<span class="name">可乐</span>
+									<i class="icon_detail icon_detail_gold  vertical-mid"></i>
+									<span class="grade vertical-mid">金卡会员</span>
+								</div>
+							</div>
+							<div class="msg fl">
+								<div class="msg_text">一直很信赖唯品会，唯品会上的东西很满意，买了两盒，一盒自己用，一盒送给朋友，包装特别好看，而且个头小不担心用不完，颜色又多特别好看，特别喜欢，也希望唯品会越做越好</div>
+								<div class="msg_time">2020-02-14 18:59:36</div>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="users fl clearfix">
+								<div class="users_img fl">
+									<img src="./img/goods_detail/ia_100000075.jpg" >
+								</div>
+								<div class="users_name fl">
+									<span class="name">可乐</span>
+									<i class="icon_detail icon_detail_gold  vertical-mid"></i>
+									<span class="grade vertical-mid">金卡会员</span>
+								</div>
+							</div>
+							<div class="msg fl">
+								<div class="msg_text">东西很好，每一支颜色都不一样，涂上去很水润，已经第二次买了，朋友都很喜欢，涂上去，一直不敢在别的地方买唇釉，但一直信赖唯品会，希望唯品会越来越好</div>
+								<div class="msg_time">2020-02-14 18:59:36</div>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="users fl clearfix">
+								<div class="users_img fl">
+									<img src="./img/goods_detail/ia_100000076.png" >
+								</div>
+								<div class="users_name fl">
+									<span class="name">185*****291</span>
+									<i class="icon_detail icon_detail_gold  vertical-mid"></i>
+									<span class="grade vertical-mid">金卡会员</span>
+								</div>
+							</div>
+							<div class="msg fl">
+								<div class="tag">
+									<span>不易脱色</span>
+									<span>显气色</span>
+								</div>
+								<div class="msg_text">首先，收货速度特别的快！是发的顺丰快递！ 口红很实惠，总共有12支颜色！很喜欢！一天一色不带重样的，想到就心花路放🌸！然后这个口红只需要涂一点点然后涂抹均匀就可以了！不要抹太多！不然太夸张了！抱着试一试的心态买的，还行。我估计可以用一年了，一只都可以用超久的！</div>
+								<div class="msg_img">
+									<div class="msg_img_small">
+										<img src="./img/goods_detail/ia_100000251.jpg" >
+									</div>
+									<div class="msg_img_big">
+										<img src="./img/goods_detail/ia_100000251.jpg" >
+									</div>
+								</div>
+								<div class="msg_time">2020-02-13 17:26:44</div>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="users fl clearfix">
+								<div class="users_img fl">
+									<img src="./img/goods_detail/ia_100000077.jpg" >
+								</div>
+								<div class="users_name fl">
+									<span class="name">Lily</span>
+									<i class="icon_detail icon_detail_gold  vertical-mid"></i>
+									<span class="grade vertical-mid">金卡会员</span>
+								</div>
+							</div>
+							<div class="msg fl">
+								<div class="tag">
+									<span>不易脱色</span>
+									<span>显气色</span>
+									<span>滋润</span>
+								</div>
+								<div class="msg_text">第二次回购了，特别令我惊艳！真的好好看！这款唇釉如果妆前涂唇膏的话，我的天，颜色可以显色一天，就算吃饭掉了，颜色也是淡淡的！而且真的好好卸哦！不拔干哦(´-ω-`)（我涂了番茄色体验一天的真实感受）</div>
+								<div class="msg_choice">
+									<span>颜色：其他颜色</span>
+									<span>尺码：均码</span>
+								</div>
+								<div class="msg_time">2020-01-28 20:51:04</div>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="users fl clearfix">
+								<div class="users_img fl">
+									<img src="./img/goods_detail/ia_100000078.jpg" >
+								</div>
+								<div class="users_name fl">
+									<span class="name">毋忘我</span>
+									<i class="icon_detail icon_detail_platina  vertical-mid"></i>
+									<span class="grade vertical-mid">白金卡会员</span>
+								</div>
+							</div>
+							<div class="msg fl">
+								<div class="msg_text">收到后立马试了试，很满意，这个价钱能买到这么如意的口红，值得大家够买，很保湿，不易脱色，比我买的几百的口红还要好，而且这么多种颜色，每天换着来用，心情都美美哒</div>
+								<div class="msg_choice">
+									<span>颜色：其他颜色</span>
+									<span>尺码：均码</span>
+								</div>
+								<div class="msg_time">2020-01-06 08:04:23</div>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="users fl clearfix">
+								<div class="users_img fl">
+									<img src="./img/goods_detail/ia_100000080.png" >
+								</div>
+								<div class="users_name fl">
+									<span class="name">159*****474</span>
+									<i class="icon_detail icon_detail_gold  vertical-mid"></i>
+									<span class="grade vertical-mid">金卡会员</span>
+								</div>
+							</div>
+							<div class="msg fl">
+								<div class="msg_text">挺好的。这么便宜买这么多只，虽然挺小的一瓶，但是能用很久，携带也方便。颜色都挺好看的。非常值。这种哑光雾面的口红，特别润的那种，我觉得还不错哦</div>
+								<div class="msg_choice">
+									<span>颜色：其他颜色</span>
+									<span>尺码：均码</span>
+								</div>
+								<div class="msg_time">2020-01-04 18:33:01</div>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="users fl clearfix">
+								<div class="users_img fl">
+									<img src="./img/goods_detail/ia_100000076.png" >
+								</div>
+								<div class="users_name fl">
+									<span class="name">159*****662</span>
+									<i class="icon_detail icon_detail_silver  vertical-mid"></i>
+									<span class="grade vertical-mid">银卡会员</span>
+								</div>
+							</div>
+							<div class="msg fl">
+								<div class="tag">
+									<span>不易脱色</span>
+									<span>显气色</span>
+									<span>遮盖力度好</span>
+								</div>
+								<div class="msg_text">挺好的。这么便宜买这么多只，虽然挺小的一瓶，但是能用很久，携带也方便。颜色都挺好看的。非常值。之前有人说干。我想说，这种哑光雾面的口红。都会稍微偏干。特别润的那种，不会有亚光的效果！我觉得还不错哦</div>
+								<div class="msg_img">
+									<div class="msg_img_small">
+										<img src="./img/goods_detail/ia_100000258.jpg" >
+									</div>
+									<div class="msg_img_big">
+										<img src="./img/goods_detail/ia_100000258.jpg" >
+									</div>
+								</div>
+								<div class="msg_time">2020-02-13 17:26:44</div>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="users fl clearfix">
+								<div class="users_img fl">
+									<img src="./img/goods_detail/ia_100000081.jpg" >
+								</div>
+								<div class="users_name fl">
+									<span class="name">等待</span>
+									<i class="icon_detail icon_detail_gold  vertical-mid"></i>
+									<span class="grade vertical-mid">金卡会员</span>
+								</div>
+							</div>
+							<div class="msg fl">
+								<div class="tag">
+									<span>保湿</span>
+									<span>滋润</span>
+									<span>显气色</span>
+									<span>遮盖力度好</span>
+								</div>
+								<div class="msg_text">非常好上色，一抹成型，而且不干不起皮，就是瓶子太小只了，希望可以出个大瓶系列，轻微掉色，喝水，吃饭什么的，但掉得不严重，总体还不错，毕竟价格在这里，之前买了露华泷，还有爱丽小屋的染唇液，不好上色，还比这个贵，试了几种喜欢的颜色，你们自己参考吧，确实挺好的</div>
+								<div class="msg_img">
+									<div class="msg_img_small">
+										<img src="./img/goods_detail/ia_100000262.jpg" >
+									</div>
+									<div class="msg_img_small">
+										<img src="./img/goods_detail/ia_100000263.jpg" >
+									</div>
+									<div class="msg_img_small">
+										<img src="./img/goods_detail/ia_100000264.jpg" >
+									</div>
+									<div class="msg_img_small">
+										<img src="./img/goods_detail/ia_100000265.jpg" >
+									</div>
+									<div class="msg_img_small">
+										<img src="./img/goods_detail/ia_100000266.jpg" >
+									</div>
+									<div class="msg_img_big">
+										<img src="./img/goods_detail/ia_100000262.jpg" >
+									</div>
+									<div class="msg_img_big">
+										<img src="./img/goods_detail/ia_100000263.jpg" >
+									</div>
+									<div class="msg_img_big">
+										<img src="./img/goods_detail/ia_100000264.jpg" >
+									</div>
+									<div class="msg_img_big">
+										<img src="./img/goods_detail/ia_100000265.jpg" >
+									</div>
+									<div class="msg_img_big">
+										<img src="./img/goods_detail/ia_100000266.jpg" >
+									</div>
+								</div>
+								<div class="msg_time">2020-02-13 17:26:44</div>
+							</div>
+						</li>
+					</ul>
+					<div class="evaluate_page">
+						<span class="page_prev">&lt;</span>
+						<span class="page_num">1</span>
+						<span class="page_next">&gt;</span>
+						<span class="page_show">第1页</span>
+					</div>
+				</div>
+			</div>
+		</div>
 
-
-
-		<!-- 商品详细信息 -->
-
-
-
+		
 
 
 
