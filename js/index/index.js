@@ -68,7 +68,8 @@ $(document).ready(function() {
 		var scrollTop = $(this).scrollTop();
 		// //临界值
 		if (scrollTop > floor_top) {
-			$('.floor_nav').addClass('fixed');
+			//变为绝对定位 随屏幕滚动
+			$('.floor_nav').css('top',scrollTop - floor_top + 150)
 			//活动层
 			var IntScrollTop = parseInt(scrollTop);
 			if(IntScrollTop > arr[0]){
@@ -124,7 +125,7 @@ $(document).ready(function() {
 				$('.floor_nav li').eq(12).addClass('active');
 			}
 		} else {
-			$('.floor_nav').removeClass('fixed');
+			return;
 		}
 	});
 	/* 楼层跳转 */

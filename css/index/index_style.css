@@ -498,12 +498,6 @@
 	text-align: center;
 }
 
-.floor_nav.fixed {
-	position: fixed;
-	top: 80px;
-	left: 73px;
-}
-
 .floor_nav li {
 	padding: 5px 10px;
 	border: 1px solid rgba(214, 1, 128, 0);
