@@ -256,9 +256,9 @@
 				calNum();
 				calSum();
 			});
-			$('.clear').click(function () {
+			$('.goods-del').click(function () {
 				//数量显示
-				$(this).parent().siblings('.adjust').children('.num').text('0');
+				$(this).parent('td').siblings('.adjust-td').find('.num').text('0');
 				//小计显示
 				$(this).parent().siblings('.goods-sum .sum-num').text('0');
 				//调用计算总数量函数
