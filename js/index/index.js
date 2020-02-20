@@ -63,7 +63,6 @@ $(document).ready(function() {
 	});
 	console.log(arr);
 	$(window).scroll(function() {
-		var menu = $('.floor_nav');
 		//获取scrollTop == 滚动的距离
 		var scrollTop = $(this).scrollTop();
 		// //临界值
@@ -133,7 +132,8 @@ $(document).ready(function() {
 		//获取索引
 		var i = $(this).index();
 		//获取楼层的scrollTop
-		var top = $('.floor_index').eq(i+1).offset().top;
+		var top = $('.floor_index').eq(i).offset().top;
+		top = top +20;
 		$('html, body').stop(true).animate({
 			scrollTop: top
 		});
