@@ -42,7 +42,7 @@
 							<img src="img/login/scan.png" class="middle" ><a href="" class="middle">打开<span>唯品会APP-个人中心</span>，扫一扫登录</a>
 						</div>
 					</div>
-					<!-- 用户框 -->
+					<!-- 账户登录 -->
 					<div class="user-box clearfix">
 						<form class="form">
 						<div class="name-input relative">
@@ -66,6 +66,34 @@
 						</div>
 						</form>
 					</div>
+					<!-- 短信验证登录 -->
+					<div class="test-confirm clearfix relative">
+						<form class="form">
+						<div class="tel-input relative">
+							<img src="img/login/tel.png" class="middle" width="15px" style="margin-right: 5px;">
+							<input type="text" datatype="m" nullmsg="必须输入手机号码" errormsg="请输入合格的手机号码！" id="tel" placeholder="输入手机号" class="middle" />
+							<img src="img/login/error.png" class="middle error-img" width="22px">
+							<div class="error"></div>
+						</div>
+						<div class="test-input relative">
+							<img src="img/register/test.png" class="middle" width="25px" >
+							<input type="text" datatype="m" nullmsg="必须输入验证码" errormsg="请输入正确的验证码！" id="test" placeholder="输入验证码" class="middle" />
+							<img src="img/register/error.png" class="middle error-img" width="22px">
+							<div class="error"></div>
+						</div>
+						<div class="get-test">
+							<button type="button" id="get-btn">获取验证码</button>
+						</div>
+						<div class="user-log float-left">
+							密码验证登录
+						</div>
+						<div class="btn">
+							<button type="button" class="login-btn">登录</button>
+						</div>
+						</form>
+					</div>
+					
+					
 					
 					<div class="vchat">
 						<span class=" middle">—————————</span>
@@ -77,7 +105,7 @@
 						<div class="qq float-left"><div class="inqq">QQ</div></div>
 						<div class="pay float-left">支付宝</div>
 					    <div class="more float-left">更多</div>
-						<div class="register float-left">免费注册</div>
+						<div class="register float-left"><a href="register.html">免费注册</a></div>
 					</div>
 				</div>
 			</div>
@@ -92,9 +120,6 @@
 		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="lib/Validform_v5.3.2/js/Validform_v5.3.2_min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			$(function () {
-				
-			})
 			// 鼠标移入移出变色
 			$('.QR-change').hover(function () {
 				$('.QR-change').css('color','#f10180');
@@ -128,6 +153,32 @@
 				$('.QR').css('color','dimgray');
 				$(this).removeClass('user-change');
 				$('.QR').addClass('QR-change');
+			})
+			// 点击短信/密码验证登录切换登录框
+			$('.msg-log').click(function () {
+				$('.user-box').css('display','none');
+				$('.test-confirm').css('display','block');
+			})
+			$('.user-log').click(function () {
+				$('.test-confirm').css('display','none');
+				$('.user-box').css('display','block');
+			})
+			// 短信/密码验证登录移入移出变色
+			$('.msg-log').hover(function () {
+				$(this).css('color','#f10180');
+			},function () {
+				$(this).css('color','dimgray');
+			})
+			$('.user-log').hover(function () {
+				$(this).css('color','#f10180');
+			},function () {
+				$(this).css('color','dimgray');
+			})
+			// 免费注册移入移出变色
+			$('.register a').hover(function () {
+				$(this).css('color','#f10180');
+			},function () {
+				$(this).css('color','black');
 			})
 			
 			// 表单验证
