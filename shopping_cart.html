@@ -3,7 +3,289 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+		<!-- 重置样式表 -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<!-- valid插件 -->
+		<link rel="stylesheet" type="text/css" href="lib/Validform_v5.3.2/css/style.css" />
+		<!-- 购物车の样式 -->
+		<link rel="stylesheet" type="text/css" href="css/shopping_cart/style.css" />
 	</head>
 	<body>
+		<div class="head-border">
+			<div class="container">
+				<table class="table">
+					<tr>
+						<td rowspan="2">
+							<div class="logo">
+								<img src="img/shopping_cart/shop-logo.png" width="200px">
+							</div>
+						</td>
+						<td class="clearfix head">
+							<div class="number float-right">
+								<img src="img/shopping_cart/number.png" class="middle">
+								<span class="middle">会员服务</span>
+							</div>
+							<div class="customer float-right">
+								<img src="img/shopping_cart/customer.png" class="middle">
+								<span class="middle">在线客服</span>
+							</div>
+							<div class="tel float-right">
+								<img src="img/shopping_cart/tel.png" class="middle">
+								<span class="middle">400-6789-888</span>
+							</div>
+							<div class="order-ctrl float-right">
+								<span class="middle ">订单管理</span>
+							</div>
+							<div class="user float-right">
+								<span class="middle">您好，********！</span>
+								<img src="img/shopping_cart/user.png" class="middle">
+								<span>[退出]</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="serve-img float-right">
+								<img src="img/shopping_cart/serve.png" width="400px">
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="container">
+			<div class="procedure">
+				<img src="img/shopping_cart/look.png" width="700px">
+			</div>
+
+			<div class="date">
+				<div class="result">
+				</div>
+			</div>
+			<div class="tips relative clearfix">
+				<div class="delivery float-left">配送至<span>青岛市</span></div>
+				<div class="tip float-left"><span class="middle">请在倒计时结束前提交订单，下单后你另有 30 分钟的支付时间。</span>
+					<img src="img/shopping_cart/tip.png" class="middle">
+				</div>
+				<div class="order-tip">
+					<ul style="list-style-type: circle;">
+						<li>
+							好商品需要精挑细选，特意为你留足20分钟考虑时间；
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="cart-box">
+				<table class="cart">
+					<thead class="cart-head">
+						<tr>
+							<td class="goods">精选特卖</td>
+							<td class="price">单价</td>
+							<td class="number">数量</td>
+							<td class="small-sum">小计</td>
+							<td class="del">操作</td>
+						</tr>
+					</thead>
+					<tbody class="cart-body">
+						<tr>
+							<td class="goods-td clearfix">
+								<div class="goods-img float-left">
+									<img src="img/shopping_cart/good1.jpg" width="60px">
+								</div>
+								<div class="goods-font float-left clearfix">
+									<div class="font">
+										<span class="self-support">自营</span>
+										<span class="content">【1盒6色】粉悦木马轻雾感口红小样套盒 哑光雾面唇膏非</span>
+									</div>
+									<div class="size">尺码：1.4g*6</div>
+									<div class="sign">折后价</div>
+								</div>
+							</td>
+							<td>
+								<div class="now-price"><span>¥69</span></div>
+								<div class="before-price"><s>¥354</s></div>
+							</td>
+							<td class="adjust-td">
+								<div class="adjust">
+									<button class="minus float-left" type="button">-</button>
+									<div class="num float-left">1</div><button class="add float-left" type="button">+</button>
+								</div>
+							</td>
+							<td>
+								<div class="goods-sum">069</div>
+							</td>
+							<td>
+								<div class="goods-del">删除</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="goods-td clearfix">
+								<div class="goods-img float-left">
+									<img src="img/shopping_cart/good1.jpg" width="60px">
+								</div>
+								<div class="goods-font float-left clearfix">
+									<div class="font">
+										<span class="self-support">自营</span>
+										<span class="content">【1盒6色】粉悦木马轻雾感口红小样套盒 哑光雾面唇膏非</span>
+									</div>
+									<div class="size">尺码：1.4g*6</div>
+									<div class="sign">折后价</div>
+								</div>
+							</td>
+							<td>
+								<div class="now-price"><span>¥69</span></div>
+								<div class="before-price"><s>¥354</s></div>
+							</td>
+							<td class="adjust-td">
+								<div class="adjust">
+									<button class="minus float-left" type="button">-</button>
+									<div class="num float-left">1</div><button class="add float-left" type="button">+</button>
+								</div>
+							</td>
+							<td>
+								<div class="goods-sum">69</div>
+							</td>
+							<td>
+								<div class="goods-del">删除</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="goods-td clearfix">
+								<div class="goods-img float-left">
+									<img src="img/shopping_cart/good1.jpg" width="60px">
+								</div>
+								<div class="goods-font float-left clearfix">
+									<div class="font">
+										<span class="self-support">自营</span>
+										<span class="content">【1盒6色】粉悦木马轻雾感口红小样套盒 哑光雾面唇膏非</span>
+									</div>
+									<div class="size">尺码：1.4g*6</div>
+									<div class="sign">折后价</div>
+								</div>
+							</td>
+							<td>
+								<div class="now-price"><span>¥69</span></div>
+								<div class="before-price"><s>¥354</s></div>
+							</td>
+							<td class="adjust-td">
+								<div class="adjust">
+									<button class="minus float-left" type="button">-</button>
+									<div class="num float-left">1</div><button class="add float-left" type="button">+</button>
+								</div>
+							</td>
+							<td>
+								<div class="goods-sum">69</div>
+							</td>
+							<td>
+								<div class="goods-del">删除</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="cart-foot">
+					<div class="clearfix">
+						<div class="freight float-left">运费</div>
+						<div class="freight-tip float-left float-left">唯品自营: 唯品自营商品已满足新会员专享首单满38元免邮（限唯品自营商品，部分商品不可用）</div>
+					</div>
+					<div class="clearfix">
+						<div class="limit float-left">限制</div>
+						<div class="limit-tip float-left float-left">唯品快抢商品仅支持叠加参与买赠、返券、免邮活动，不支持使用优惠券及满减、折扣、任选活动</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="pay-box">
+				<div class="coupon float-left">优惠券</div>
+				<div class="sum-box">
+					共<span class="total">0</span>件商品 共计花费<span class="sum">0</span>元
+				</div>
+			</div>
+			<div class="calculation">
+				
+			</div>
+		</div>
+
+
+
+
+
+		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// 特价售卖倒计时
+			window.onload = function() {
+				var oResult = document.querySelector(".result");
+				var time = 1200;
+				setInterval(function() {
+					time = time - 1;
+					var minute = parseInt(time / 60);
+					var second = parseInt(time % 60);
+					oResult.innerHTML = '特卖商品 ' + minute + ' : ' + second;
+                
+				}, 1000);
+			}
+            
+			$('.tips .tip img').hover(function() {
+				$('.order-tip').css('opacity', '1');
+				$('.order-tip').css('transition', 'all 0.5s');
+			}, function() {
+				$('.order-tip').css('opacity', '0');
+			})
+			
+			
+			$('.add').click(function () {
+				//数量显示
+				var $num = $(this).siblings('.num');
+				var num =parseFloat($num.text());
+				num++;
+				$num.text(num);
+				//小计显示
+				var price = $(this).parent().siblings('.now-price').text();
+				$(this).parent().siblings('.goods-sum').text(num * price);
+				//调用计算总数量函数
+				calNum();
+				calSum();
+			});
+			$('.minus').click(function () {
+				//数量显示
+				var $num = $(this).siblings('.num');
+				var num =parseFloat($num.text());
+				num--;
+				$num.text(num);
+				//小计显示
+				var price = $(this).parent().siblings('.now-price').text();
+				$(this).parent().siblings('.goods-sum').text(num * price);
+				//调用计算总数量函数
+				calNum();
+				calSum();
+			});
+			$('.clear').click(function () {
+				//数量显示
+				$(this).parent().siblings('.adjust').children('.num').text('0');
+				//小计显示
+				$(this).parent().siblings('.goods-sum').text('0');
+				//调用计算总数量函数
+				calNum();
+				calSum();
+			});
+			//计算总数量
+			function calNum() {
+				var total = 0;
+				$('.num').each(function (index) {
+					var n = parseFloat($(this).text());//每一个元素里的数字   this指每一个元素
+					total += n;
+				});
+				$('.total').text(total);
+			};
+			//计算总价格
+			function calSum(){
+				var sum = 0;
+				$('.goods-sum').each(function (index) {
+					var n = parseFloat($(this).text());
+					sum += n;
+				});
+				$('.sum-box .sum').text(sum);
+			};
+		</script>
 	</body>
 </html>
