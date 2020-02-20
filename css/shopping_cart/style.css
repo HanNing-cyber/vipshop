@@ -214,3 +214,40 @@
 .freight-tip,.limit-tip{
 	margin-top: 20px;
 }
+.pay-box{
+	padding: 20px;
+	margin-top: 50px;
+	border: 1px solid #ddd;
+	height: 60px;
+}
+.pay-box .coupon{
+	padding: 5px 10px;
+	border: 1px solid #F10180;
+	border-radius: 3px;
+	color: #F10180;
+}
+.pay-box .coupon span{
+	margin-right: 10px;
+}
+.pay-box .sum-box{
+	margin-right: 50px;
+}
+.pay-box .sum-box .total{
+	color: #F10180;
+	margin: 0 10px;
+}
+.pay-box .sum-box .sum{
+	margin-left: 50px;
+}
+.calculation{
+	width: 100%;
+}
+.calculation .tips{
+	width: 75%;
+}
+.calculation .calculation-btn{
+	width: 25%;
+	padding: 10px 20px;
+	color: white;
+	background-color: #F10180;
+}
