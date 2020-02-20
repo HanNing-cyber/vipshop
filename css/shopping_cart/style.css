@@ -18,6 +18,10 @@
 .middle {
 	vertical-align: middle;
 }
+.pointer{
+	pointer-events: none;
+}
+
 
 /* 内容 */
 .head-border{
