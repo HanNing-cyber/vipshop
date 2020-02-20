@@ -498,6 +498,16 @@
 	text-align: center;
 }
 
+.floor_nav.fixed{
+	position: fixed;
+	right: 50%;
+	left: auto;
+	margin-right: 520px;
+	top: 100px;
+	z-index: 99;
+}
+
+
 .floor_nav li {
 	padding: 5px 10px;
 	border: 1px solid rgba(214, 1, 128, 0);
