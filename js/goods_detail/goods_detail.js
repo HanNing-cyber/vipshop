@@ -165,7 +165,6 @@ $(document).ready(function () {
       $("html, body").stop(true).animate({ scrollTop: top });
     });
   });
-
   /* --------------------------分类查看评价-------------------------------- */
   $(".evaluate .evaluate_data .classify span")
     .eq(0)

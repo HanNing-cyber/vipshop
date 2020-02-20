@@ -17,7 +17,6 @@ $(document).ready(function() {
 		rotate();
 	}, 3000);
 	// /* --------------------倒计时---------------------*/
-	var result = "";
 	//获取当前时间
 	var now = new Date();
 	//设置结束时间
