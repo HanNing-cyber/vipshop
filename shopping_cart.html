@@ -113,7 +113,7 @@
 								</div>
 							</td>
 							<td>
-								<div class="goods-sum">069</div>
+								<div class="goods-sum">￥<span class="sum-num">69</span></div>
 							</td>
 							<td>
 								<div class="goods-del">删除</div>
@@ -144,7 +144,7 @@
 								</div>
 							</td>
 							<td>
-								<div class="goods-sum">69</div>
+								<div class="goods-sum">￥<span class="sum-num">69</span></div>
 							</td>
 							<td>
 								<div class="goods-del">删除</div>
@@ -175,7 +175,7 @@
 								</div>
 							</td>
 							<td>
-								<div class="goods-sum">69</div>
+								<div class="goods-sum">￥<span class="sum-num">69</span></div>
 							</td>
 							<td>
 								<div class="goods-del">删除</div>
@@ -195,33 +195,30 @@
 				</div>
 			</div>
 			
-			<div class="pay-box">
-				<div class="coupon float-left">优惠券</div>
-				<div class="sum-box">
-					共<span class="total">0</span>件商品 共计花费<span class="sum">0</span>元
+			<div class="pay-box clearfix">
+				<div class="coupon float-left"><span class="middle">使用优惠券</span> <img src="img/shopping_cart/pink-down.jpg" class="middle" ></div>
+				<div class="sum-box float-right">
+					共<span class="total">0</span>件商品 商品金额<span class="sum">0</span>元
 				</div>
 			</div>
-			<div class="calculation">
-				
+			<div class="calculation clearfix">
+				<div class="tips float-left">请在倒计时结束前结算</div>
+				<div class="calculation-btn float-right">立即结算<span class=""></span></div>
 			</div>
 		</div>
-
-
-
-
-
 		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			// 特价售卖倒计时
 			window.onload = function() {
 				var oResult = document.querySelector(".result");
+				var oCalculation = document.querySelector(".calculation-btn");
 				var time = 1200;
 				setInterval(function() {
 					time = time - 1;
 					var minute = parseInt(time / 60);
 					var second = parseInt(time % 60);
 					oResult.innerHTML = '特卖商品 ' + minute + ' : ' + second;
-                
+                    oCalculation.innerHTML = '立即结算 ' + minute + ' : ' + second;
 				}, 1000);
 			}
             
@@ -263,7 +260,7 @@
 				//数量显示
 				$(this).parent().siblings('.adjust').children('.num').text('0');
 				//小计显示
-				$(this).parent().siblings('.goods-sum').text('0');
+				$(this).parent().siblings('.goods-sum .sum-num').text('0');
 				//调用计算总数量函数
 				calNum();
 				calSum();
@@ -280,7 +277,7 @@
 			//计算总价格
 			function calSum(){
 				var sum = 0;
-				$('.goods-sum').each(function (index) {
+				$('.goods-sum .sum-num').each(function (index) {
 					var n = parseFloat($(this).text());
 					sum += n;
 				});
