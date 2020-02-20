@@ -103,7 +103,7 @@
 								</div>
 							</td>
 							<td>
-								<div class="now-price"><span>¥69</span></div>
+								<div class="now-price">¥<span class="price-num">69</span></div>
 								<div class="before-price"><s>¥354</s></div>
 							</td>
 							<td class="adjust-td">
@@ -134,7 +134,7 @@
 								</div>
 							</td>
 							<td>
-								<div class="now-price"><span>¥69</span></div>
+								<div class="now-price">¥<span class="price-num">69</span></div>
 								<div class="before-price"><s>¥354</s></div>
 							</td>
 							<td class="adjust-td">
@@ -164,8 +164,8 @@
 									<div class="sign">折后价</div>
 								</div>
 							</td>
-							<td>
-								<div class="now-price"><span>¥69</span></div>
+							<td class="now-price">
+								<div>¥<span class="price-num">69</span></div>
 								<div class="before-price"><s>¥354</s></div>
 							</td>
 							<td class="adjust-td">
@@ -174,8 +174,8 @@
 									<div class="num float-left">1</div><button class="add float-left" type="button">+</button>
 								</div>
 							</td>
-							<td>
-								<div class="goods-sum">￥<span class="sum-num">69</span></div>
+							<td class="goods-sum">
+								<div>￥<span class="sum-num">69</span></div>
 							</td>
 							<td>
 								<div class="goods-del">删除</div>
@@ -237,11 +237,13 @@
 				num++;
 				$num.text(num);
 				//小计显示
-				var price = $(this).parent().siblings('.now-price').text();
-				$(this).parent().siblings('.goods-sum').text(num * price);
+				var price = $(this).parents('.adjust-td').siblings('.now-price').find('.price-num').text();
+				$(this).parents('.adjust-td').siblings('.goods-sum').find('.sum-num').text(num * price);
 				//调用计算总数量函数
 				calNum();
 				calSum();
+				console.log(price)
+				console.log(num)
 			});
 			$('.minus').click(function () {
 				//数量显示
@@ -251,7 +253,7 @@
 				$num.text(num);
 				//小计显示
 				var price = $(this).parent().siblings('.now-price').text();
-				$(this).parent().siblings('.goods-sum').text(num * price);
+				$(this).parent().siblings().find('.sum-num').text(num * price);
 				//调用计算总数量函数
 				calNum();
 				calSum();
@@ -260,7 +262,7 @@
 				//数量显示
 				$(this).parent('td').siblings('.adjust-td').find('.num').text('0');
 				//小计显示
-				$(this).parent().siblings('.goods-sum .sum-num').text('0');
+				$(this).parent('td').siblings().find('.sum-num').text('0');
 				//调用计算总数量函数
 				calNum();
 				calSum();
