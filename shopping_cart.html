@@ -102,49 +102,19 @@
 									<div class="sign">折后价</div>
 								</div>
 							</td>
-							<td>
-								<div class="now-price">¥<span class="price-num">69</span></div>
+							<td class="now-price">
+								<div>¥<span class="price-num">69</span></div>
 								<div class="before-price"><s>¥354</s></div>
 							</td>
 							<td class="adjust-td">
 								<div class="adjust">
 									<button class="minus float-left" type="button">-</button>
-									<div class="num float-left">1</div><button class="add float-left" type="button">+</button>
+									<div class="num float-left">1</div>
+									<button class="add float-left" type="button">+</button>
 								</div>
 							</td>
-							<td>
-								<div class="goods-sum">￥<span class="sum-num">69</span></div>
-							</td>
-							<td>
-								<div class="goods-del">删除</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="goods-td clearfix">
-								<div class="goods-img float-left">
-									<img src="img/shopping_cart/good1.jpg" width="60px">
-								</div>
-								<div class="goods-font float-left clearfix">
-									<div class="font">
-										<span class="self-support">自营</span>
-										<span class="content">【1盒6色】粉悦木马轻雾感口红小样套盒 哑光雾面唇膏非</span>
-									</div>
-									<div class="size">尺码：1.4g*6</div>
-									<div class="sign">折后价</div>
-								</div>
-							</td>
-							<td>
-								<div class="now-price">¥<span class="price-num">69</span></div>
-								<div class="before-price"><s>¥354</s></div>
-							</td>
-							<td class="adjust-td">
-								<div class="adjust">
-									<button class="minus float-left" type="button">-</button>
-									<div class="num float-left">1</div><button class="add float-left" type="button">+</button>
-								</div>
-							</td>
-							<td>
-								<div class="goods-sum">￥<span class="sum-num">69</span></div>
+							<td class="goods-sum">
+								<div>￥<span class="sum-num">69</span></div>
 							</td>
 							<td>
 								<div class="goods-del">删除</div>
@@ -171,7 +141,40 @@
 							<td class="adjust-td">
 								<div class="adjust">
 									<button class="minus float-left" type="button">-</button>
-									<div class="num float-left">1</div><button class="add float-left" type="button">+</button>
+									<div class="num float-left">1</div>
+									<button class="add float-left" type="button">+</button>
+								</div>
+							</td>
+							<td class="goods-sum">
+								<div>￥<span class="sum-num">69</span></div>
+							</td>
+							<td>
+								<div class="goods-del">删除</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="goods-td clearfix">
+								<div class="goods-img float-left">
+									<img src="img/shopping_cart/good1.jpg" width="60px">
+								</div>
+								<div class="goods-font float-left clearfix">
+									<div class="font">
+										<span class="self-support">自营</span>
+										<span class="content">【1盒6色】粉悦木马轻雾感口红小样套盒 哑光雾面唇膏非</span>
+									</div>
+									<div class="size">尺码：1.4g*6</div>
+									<div class="sign">折后价</div>
+								</div>
+							</td>
+							<td class="now-price">
+								<div>¥<span class="price-num">69</span></div>
+								<div class="before-price"><s>¥354</s></div>
+							</td>
+							<td class="adjust-td">
+								<div class="adjust">
+									<button class="minus float-left" type="button">-</button>
+									<div class="num float-left">1</div>
+									<button class="add float-left" type="button">+</button>
 								</div>
 							</td>
 							<td class="goods-sum">
@@ -229,7 +232,6 @@
 				$('.order-tip').css('opacity', '0');
 			})
 			
-			
 			$('.add').click(function () {
 				//数量显示
 				var $num = $(this).siblings('.num');
@@ -252,8 +254,8 @@
 				num--;
 				$num.text(num);
 				//小计显示
-				var price = $(this).parent().siblings('.now-price').text();
-				$(this).parent().siblings().find('.sum-num').text(num * price);
+				var price = $(this).parents('.adjust-td').siblings('.now-price').find('.price-num').text();
+				$(this).parents('.adjust-td').siblings('.goods-sum').find('.sum-num').text(num * price);
 				//调用计算总数量函数
 				calNum();
 				calSum();
