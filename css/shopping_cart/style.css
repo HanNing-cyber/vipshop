@@ -173,7 +173,7 @@
 	padding: 3px 5px;
 	border-radius: 20px;
 }
-.now-price{
+.now-price .price-num{
 	font-size: 13px;
 	font-weight: bold;
 	color: #000000;
@@ -238,6 +238,15 @@
 }
 .pay-box .sum-box .sum{
 	margin-left: 50px;
+}
+.sum-box .no-freight{
+	margin-top: 10px;
+	text-align: right;
+}
+.pay-box .sum-box .no-freight .sum{
+	margin-left: 40px;
+	font-size: 15px;
+	color: #F10180;
 }
 .calculation{
 	width: 100%;
