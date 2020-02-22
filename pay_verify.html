@@ -3,7 +3,342 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+		<!-- 重置样式表 -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<!-- valid插件 -->
+		<link rel="stylesheet" type="text/css" href="lib/Validform_v5.3.2/css/style.css" />
+		<!-- 全局 header/footer -->
+		<link rel="stylesheet" type="text/css" href="css/goods_search/header&footer.css" />
+		<!-- 订单验证の样式 -->
+		<link rel="stylesheet" type="text/css" href="css/pay_verify/style.css" />
 	</head>
 	<body>
+		<div class="head-border">
+			<div class="container">
+				<table class="table">
+					<tr>
+						<td rowspan="2">
+							<div class="logo">
+								<img src="img/pay_verify/logo.png" width="220px">
+							</div>
+						</td>
+						<td class="clearfix head">
+							<div class="number float-right">
+								<img src="img/pay_verify/number.png" class="middle">
+								<span class="middle">会员服务</span>
+							</div>
+							<div class="customer float-right">
+								<img src="img/pay_verify/customer.png" class="middle">
+								<span class="middle">在线客服</span>
+							</div>
+							<div class="tel float-right">
+								<img src="img/pay_verify/tel.png" class="middle">
+								<span class="middle">400-6789-888</span>
+							</div>
+							<div class="order-ctrl float-right">
+								<span class="middle ">订单管理</span>
+							</div>
+							<div class="user float-right">
+								<span class="middle">您好，********！</span>
+								<img src="img/pay_verify/user.png" class="middle">
+								<span>[退出]</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="serve-img float-right">
+								<img src="img/pay_verify/serve.png" width="400px">
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="container">
+			<div class="procedure">
+				<img src="img/pay_verify/verify.png" width="690px">
+			</div>
+
+			<div class="date">
+				<div class="result">
+				</div>
+			</div>
+			<div class="tips relative clearfix">
+				<div class="delivery float-left">配送至<span>青岛市</span></div>
+				<div class="tip float-left"><span class="middle">请在倒计时结束前提交订单，下单后你另有 30 分钟的支付时间。</span>
+					<img src="img/shopping_cart/tip.png" class="middle">
+				</div>
+				<div class="order-tip">
+					<ul style="list-style-type: circle;">
+						<li>
+							好商品需要精挑细选，特意为你留足20分钟考虑时间；
+						</li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div class="cart-box">
+				<table class="cart">
+					<thead class="cart-head">
+						<tr>
+							<td class="goods">收货信息</td>
+						</tr>
+					</thead>
+					<tbody class="cart-body form">
+						<table class="pay-person">
+						<tr class="person">
+							<td>
+								<span class="must-write">*</span><span>收货人</span>
+							</td>
+							<td>
+								<input type="text" name="" id="" placeholder="收货人姓名" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="must-write">*</span><span>手机号</span>
+							</td>
+							<td>
+								<input type="text" name="" id="" placeholder="" />
+							</td>
+							<td>
+								<span class="must-write">*</span><span>备用号码</span>
+							</td>
+							<td>
+								<input type="text" name="" id="" placeholder="收货人姓名" />
+							</td>
+						</tr>
+						<tr class="time">
+							<td>
+								<span class="must-write">*</span><span>收货时间</span>
+							</td>
+							<td class="time-select">
+								<select>
+									<option value="" selected="selected">周一至周日均可收货</option>
+									<option value="">周六日、节假日收货</option>
+									<option value="">周一至周五收货</option>
+								</select>
+							</td>
+						</tr>
+						<tr class="area">
+							<td>
+								<span class="must-write">*</span><span>所在地区</span>
+							</td>
+							<td>
+								<select>
+									<option value="" selected="selected">省/直辖市</option>
+									<option value="">山东省</option>
+									<option value="">北京</option>
+									<option value="">上海</option>
+									<option value="">天津</option>
+									<option value="">深圳</option>
+								</select>
+								<select>
+									<option value="" selected="selected">城市</option>
+									<option value="">济南</option>
+									<option value="">青岛</option>
+									<option value="">烟台</option>
+									<option value="">潍坊</option>
+									<option value="">德州</option>
+									<option value="">济宁</option>
+									<option value="">威海</option>
+									<option value="">莱芜</option>
+									<option value="">枣庄</option>
+									<option value="">聊城</option>
+									<option value="">日照</option>
+									<option value="">蓬莱</option>
+									<option value="">淄博</option>
+									<option value="">曲阜</option>
+								</select>
+								<select>
+									<option value="" selected="selected">区/县</option>
+									<option value="">山东省</option>
+									<option value="">北京</option>
+								</select>
+								<select>
+									<option value="" selected="selected">乡镇/街道</option>
+									<option value="">山东省/option>
+									<option value="">北京</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="must-write">*</span><span>详细地址</span>
+							</td>
+							<td>
+								<input type="text" name="" id="" placeholder="收货人姓名" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="must-write">*</span><span class="address-type">地址类型</span>
+							</td>
+							<td class="type-btn">
+								<input type="radio" name="address" id="" value="" />家庭
+								<input type="radio" name="address" id="" value="" />公司
+								<input type="radio" name="address" id="" value="" />其他
+							</td>
+						</tr>
+						<tr class="default-address">
+							<td></td>
+							<td><input type="checkbox" name="" id="" value="" />设为默认地址</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><button type="button">保存</button></td>
+							<td><button type="button">取消</button></td>
+						</tr>
+						</table>
+					</tbody>
+				</table>
+				<div class="cart-foot">
+					<div class="clearfix">
+						<div class="freight float-left">运费</div>
+						<div class="freight-tip float-left float-left">唯品自营: 唯品自营商品已满足新会员专享首单满38元免邮（限唯品自营商品，部分商品不可用）</div>
+					</div>
+					<div class="clearfix">
+						<div class="limit float-left">限制</div>
+						<div class="limit-tip float-left float-left">唯品快抢商品仅支持叠加参与买赠、返券、免邮活动，不支持使用优惠券及满减、折扣、任选活动</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="pay-box clearfix">
+				<div class="coupon float-left"><span class="middle">使用优惠券</span> <img src="img/shopping_cart/pink-down.jpg" class="middle"></div>
+				<div class="sum-box float-right">
+					共<span class="total">0</span>件商品 商品金额<span class="sum">0</span>元
+					<div class="no-freight">总金额（未含运费）<span class="sum">0</span>元</div>
+				</div>
+			</div>
+			<div class="calculation clearfix">
+				<div class="tips float-left"><span class="middle">请在倒计时结束前结算</span><img src="img/shopping_cart/tip.png" class="middle"></div>
+				<div class="calculation-btn float-right">立即结算<span class=""></span></div>
+			</div>
+			<div class="serve-box">
+				<img src="img/shopping_cart/serve-content.png" width="1000px">
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="container">
+				<div class="about">
+					<ul>
+						<li><a href="#">关于我们</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Investor Relations</a></li>
+						<li><a href="#">媒体报道</a></li>
+						<li><a href="#">品牌招商</a></li>
+						<li><a href="#">隐私条款</a></li>
+						<li><a href="#">唯品诚聘</a></li>
+						<li><a href="#">唯品卡</a></li>
+						<li><a href="#">联系我们</a></li>
+					</ul>
+				</div>
+				<div class="Copyright">Copyright © 2008-2020 vip.com，All Rights Reserved 使用本网站即表示接受 <a href="#">唯品会用户协议</a>。版权所有
+					<a href="#">广州唯品会电子商务有限公司</a> </div>
+				<div class="put_on_records">
+					<span><a href="#" class="vertical-mid"><img src="./img/index/police_icon.png" class="vertical-mid">粤公网安备
+							44010302111111号</a> <a href="#">粤ICP备08114786号</a> <a href="#">增值业务经营许可证：粤B2-20170777</a> <a href="#">网络文化经营许可证：粤网文〔2018〕5030-1743号</a>
+					</span>
+					<span><a href="#">自营主体经营证照</a> <a href="#">风险监测信息</a> <a href="#">互联网药品信息服务资格证书：（粤）-经营性-2018-0271</a> <a href="#">网络食品交易第三方平台备案凭证：粤B2-20170777</a>
+						<a href="#">医疗器械网络交易服务第三方平台</a></span>
+					<span><a href="#">备案凭证：（粤）网械平台备字[2019]第00001号</a></span>
+				</div>
+				<div class="identification">
+					<a href="#"><i class="icon_identification icon_identification_Unionpay"></i></a>
+					<!-- <a href="#"><i class="icon_identification icon_identification_Alipay"></i></a>
+			<a href="#"><i class="icon_identification icon_identification_CreditEnterprise"></i></a> -->
+					<a href="#"><i class="icon_identification icon_identification_LegalRights"></i></a>
+					<a href="#"><i class="icon_identification icon_identification_RedLink"></i></a>
+					<a href="#"><i class="icon_identification icon_identification_callPolice"></i></a>
+					<a href="#"><i class="icon_identification icon_identification_netPolice"></i></a>
+					<!-- <a href="#"><i class="icon_identification icon_identification_ccredit"></i></a> -->
+					<a href="#"><i class="icon_identification icon_identification_integrityWeb"></i></a>
+					<a href="#"><i class="icon_identification icon_identification_credibleWeb"></i></a>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// 特价售卖倒计时
+			window.onload = function() {
+				var oResult = document.querySelector(".result");
+				var oCalculation = document.querySelector(".calculation-btn");
+				var time = 1200;
+				setInterval(function() {
+					time = time - 1;
+					var minute = parseInt(time / 60);
+					var second = parseInt(time % 60);
+					oResult.innerHTML = '特卖商品 ' + minute + ' : ' + second;
+					oCalculation.innerHTML = '立即结算 ' + minute + ' : ' + second;
+				}, 1000);
+			}
+
+			$('.tips .tip img').hover(function() {
+				$('.order-tip').css('opacity', '1');
+				$('.order-tip').css('transition', 'all 0.5s');
+			}, function() {
+				$('.order-tip').css('opacity', '0');
+			})
+
+			$('.add').click(function() {
+				//数量显示
+				var $num = $(this).siblings('.num');
+				var num = parseFloat($num.text());
+				num++;
+				$num.text(num);
+				//小计显示
+				var price = $(this).parents('.adjust-td').siblings('.now-price').find('.price-num').text();
+				$(this).parents('.adjust-td').siblings('.goods-sum').find('.sum-num').text(num * price);
+				//调用计算总数量函数
+				calNum();
+				calSum();
+				console.log(price)
+				console.log(num)
+			});
+			$('.minus').click(function() {
+				//数量显示
+				var $num = $(this).siblings('.num');
+				var num = parseFloat($num.text());
+				num--;
+				$num.text(num);
+				//小计显示
+				var price = $(this).parents('.adjust-td').siblings('.now-price').find('.price-num').text();
+				$(this).parents('.adjust-td').siblings('.goods-sum').find('.sum-num').text(num * price);
+				//调用计算总数量函数
+				calNum();
+				calSum();
+			});
+			$('.goods-del').click(function() {
+				//数量显示
+				$(this).parent('td').siblings('.adjust-td').find('.num').text('0');
+				//小计显示
+				$(this).parent('td').siblings().find('.sum-num').text('0');
+				//调用计算总数量函数
+				calNum();
+				calSum();
+			});
+			//计算总数量
+			function calNum() {
+				var total = 0;
+				$('.num').each(function(index) {
+					var n = parseFloat($(this).text()); //每一个元素里的数字   this指每一个元素
+					total += n;
+				});
+				$('.total').text(total);
+			};
+			//计算总价格
+			function calSum() {
+				var sum = 0;
+				$('.goods-sum .sum-num').each(function(index) {
+					var n = parseFloat($(this).text());
+					sum += n;
+				});
+				$('.sum-box .sum').text(sum);
+			};
+		</script>
 	</body>
 </html>
