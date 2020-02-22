@@ -157,11 +157,6 @@ $(window).ready(function () {
     var province = $('.edit_box #province').val().trim();
     var city = $('.edit_box #city').val().trim();
     var district = $('.edit_box #district').val().trim();
-    //地址代码
-    var provinceID = $('.edit_box #province').find('option:selected').attr('data-code');
-    var cityID = $('.edit_box #city').find('option:selected').attr('data-code');
-    var districtID = $('.edit_box #district').find('option:selected').attr('data-code');
-    console.log(provinceID, cityID, districtID);
     var detail_address = $('.edit_box .detail_address input').val().trim();
     var type = $('.edit_box .type input:checked').next().text().trim();
     var setDefault = $('.edit_box .setDefault input:checked');
@@ -175,7 +170,7 @@ $(window).ready(function () {
       //取消禁用
       $('#save').prop('disabled', false);
     }
-    var arr = [name, tel, time, province, city, district, detail_address, type, setDefault, provinceID, cityID, districtID]
+    var arr = [name, tel, time, province, city, district, detail_address, type, setDefault]
     console.log(arr);
     //判断是修改还是新增
     var isShow = $('#cancel').is(':visible');
@@ -205,9 +200,6 @@ $(window).ready(function () {
       detail_address: arr[6],
       time: arr[2],
       type: arr[7],
-      provinceID: arr[9],
-      cityID: arr[10],
-      districtID: arr[11],
     }
     $Li.data('msg', obj);
     //判断是否是默认地址
