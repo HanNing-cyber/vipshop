@@ -13,7 +13,7 @@ $(window).ready(function () {
     city: '青岛市',
     district: '市南区',
     detail_address: '香港中路',
-    time: '周一至周日均可收货',
+    time: 'allday',
     type: '家庭'
   }
   var obj_02 = {
@@ -23,7 +23,7 @@ $(window).ready(function () {
     city: '烟台市',
     district: '芝罘区',
     detail_address: '南大街',
-    time: '周一至周日均可收货',
+    time: 'weekday',
     type: '公司'
   }
   $('.address_box li').eq(0).data('msg', obj_01);
@@ -153,7 +153,7 @@ $(window).ready(function () {
     //获取表单val
     var name = $('.edit_box .name input').val().trim();
     var tel = $('.edit_box .tel input').val().trim();
-    var time = $('.edit_box .time option:selected').text().trim();
+    var time = $('.edit_box .time .time_sel').val().trim();
     var province = $('.edit_box #province').val().trim();
     var city = $('.edit_box #city').val().trim();
     var district = $('.edit_box #district').val().trim();
@@ -280,7 +280,7 @@ $(window).ready(function () {
     //传参
     $('.edit_box .name input').val(obj.name);
     $('.edit_box .tel input').val(obj.tel);
-    $('.edit_box .time option:selected').text(obj.time);
+    $('.edit_box .time .time_sel').val(obj.time);
     $("#distpicker").distpicker('destroy');
     $("#distpicker").distpicker({
       autoSelect: false,
