@@ -101,6 +101,15 @@ $(window).ready(function () {
   });
   /*  ---------------------点击新增地址------------------  */
   $('#add_new').on('click', function () {
+    //清空val
+    $('.edit_box .name input').val('');
+    $('.edit_box .tel input').val('');
+    $('.edit_box .time option:selected').val(null).trigger("change")
+    $('.edit_box .detail_address input').val('');
+    $('.edit_box .type input').prop('checked', false);
+    $('.edit_box .setDefault input').prop('checked', false);
+    //重置城市选择
+    $('#target').distpicker('reset', true);
     $('html, body').stop(true).animate({
       scrollTop: inputTop
     });
@@ -225,8 +234,8 @@ $(window).ready(function () {
     $('.edit_box .tel input').val('');
     $('.edit_box .time option:selected').val(null).trigger("change")
     $('.edit_box .detail_address input').val('');
-    $('.edit_box .type input:checked').removeAttr('checked');
-    $('.edit_box .setDefault input').removeAttr('checked');
+    $('.edit_box .type input').prop('checked', false);
+    $('.edit_box .setDefault input').prop('checked', false);
     //重置城市选择
     $('#target').distpicker('reset', true);
     //判断已保存的数量
@@ -238,6 +247,15 @@ $(window).ready(function () {
   })
   /* ----------------------修改信息----------------------- */
   $('.address_box li #edit').on('click', function () {
+    //清空val
+    $('.edit_box .name input').val('');
+    $('.edit_box .tel input').val('');
+    $('.edit_box .time option:selected').val(null).trigger("change")
+    $('.edit_box .detail_address input').val('');
+    $('.edit_box .type input').prop('checked', false);
+    $('.edit_box .setDefault input').prop('checked', false);
+    //重置城市选择
+    $('#target').distpicker('reset', true);
     //定义一个全局变量
     index = $(this).parents('li').index();
     console.log(index);
@@ -286,5 +304,9 @@ $(window).ready(function () {
       //不是
       return;
     }
+  })
+  /* ----------------------返回按钮----------------------- */
+  $('#cancel').on('click', function () {
+
   })
 });
