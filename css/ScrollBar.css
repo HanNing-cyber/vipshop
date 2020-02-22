@@ -1,4 +1,5 @@
 /* -----右侧固定栏------ */
+
 .scrollBar {
 	position: fixed;
 	z-index: 100;
@@ -15,6 +16,7 @@
 }
 
 /* 用户中心 */
+
 .scrollBar .user_icon {
 	text-align: center;
 	margin-top: 50px;
@@ -37,6 +39,7 @@
 }
 
 /* 用户弹出框 */
+
 .scrollBar .user_box {
 	width: 246px;
 	background-color: #FFFFFF;
@@ -51,6 +54,7 @@
 }
 
 /* 关闭按钮 */
+
 .scrollBar .user_box b {
 	color: gray;
 	font-size: 22px;
@@ -64,6 +68,7 @@
 }
 
 /* 头像 */
+
 .scrollBar .user_box .head_img img {
 	display: block;
 	margin: 30px auto 20px;
@@ -76,6 +81,7 @@
 }
 
 /* 请登录注册 */
+
 .scrollBar .user_box .tips a {
 	color: #df147f;
 }
@@ -87,6 +93,7 @@
 }
 
 /* 我的订单 我的货币 */
+
 .scrollBar .user_box .link_box {
 	background-color: rgb(248, 248, 248);
 	height: 86px;
@@ -94,7 +101,6 @@
 	border-bottom: 1px solid #ccc;
 	margin-bottom: 15px;
 	padding: 10px;
-
 }
 
 .scrollBar .user_box .link_item img {
@@ -119,6 +125,7 @@
 }
 
 /* 会员俱乐部 */
+
 .scrollBar .user_box .member_box {
 	text-align: right;
 	padding-bottom: 10px;
@@ -130,12 +137,14 @@
 }
 
 /* 购物袋 */
+
 .scrollBar .shoppingCart .shoppingCart_icon {
 	text-align: center;
 	cursor: pointer;
 	background-color: #df147f;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	margin-bottom: 5px;
 }
 
 .scrollBar .shoppingCart .shoppingCart_icon img {
@@ -164,6 +173,7 @@
 }
 
 /* 购物袋弹出框 */
+
 .scrollBar .shoppingCart_box {
 	width: 246px;
 	background-color: #FFFFFF;
@@ -182,6 +192,7 @@
 }
 
 /* 关闭按钮 */
+
 .scrollBar .shoppingCart_box b {
 	color: gray;
 	font-size: 22px;
@@ -195,6 +206,7 @@
 }
 
 /* 头像 */
+
 .scrollBar .shoppingCart_box .head_img img {
 	display: block;
 	margin: 30px auto 20px;
@@ -207,6 +219,7 @@
 }
 
 /* 请登录注册 */
+
 .scrollBar .shoppingCart_box .tips a {
 	color: #df147f;
 }
@@ -218,11 +231,11 @@
 }
 
 /* 优惠券 */
+
 .scrollBar .discountCoupon .discountCoupon_icon {
 	text-align: center;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	margin-top: 5px;
 	cursor: pointer;
 }
 
@@ -230,9 +243,8 @@
 	width: 24px;
 }
 
-
-
 /* 品牌收藏 */
+
 .scrollBar .brandCollection .brandCollection_icon {
 	text-align: center;
 	padding-top: 5px;
@@ -244,9 +256,8 @@
 	width: 24px;
 }
 
-
-
 /* 商品收藏 */
+
 .scrollBar .shoppingCollection .shoppingCollection_icon {
 	text-align: center;
 	padding-top: 5px;
@@ -258,8 +269,8 @@
 	width: 24px;
 }
 
-
 /* 我的足迹 */
+
 .scrollBar .history .history_icon {
 	text-align: center;
 	padding-top: 5px;
@@ -271,8 +282,8 @@
 	width: 24px;
 }
 
-
 /* 反馈 */
+
 .scrollBar .feedBack .feedBack_icon {
 	text-align: center;
 	margin-top: 90px;
@@ -285,8 +296,8 @@
 	width: 24px;
 }
 
-
 /* 返回顶部 */
+
 .scrollBar .backTop .backTop_icon {
 	text-align: center;
 	padding-top: 5px;
@@ -298,8 +309,8 @@
 	width: 24px;
 }
 
-
 /* 其他菜单触摸 统一CSS */
+
 .scrollBar .unify_item .unify_icon.active {
 	background-color: #df147f;
 }
@@ -319,4 +330,3 @@
 	/* 	left: -122px; */
 	z-index: -1;
 }
-

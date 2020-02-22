@@ -9,11 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="./css/header&footer.css" />
 	<!-- 右侧边栏 -->
 	<link rel="stylesheet" type="text/css" href="./css/ScrollBar.css" />
-	<!--  轮播图插件CSS -->
-	<link rel="stylesheet" type="text/css" href="./lib/swiper-5.3.0/css/swiper.min.css" />
-	<!-- index主要内容 -->
-	<link rel="stylesheet" type="text/css" href="./css/goods_detail/good_detail.css" />
-	<title>唯品会好货精选【12支】丝绒慕斯唇釉套装哑光水润持久保湿不易脱色_唯品会</title>
+	<!-- 收藏页面CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/collection/collection_style.css">
+	<title>我收藏的商品</title>
 </head>
 
 <body>
@@ -2425,1453 +2423,379 @@
 			</div>
 		</div>
 	</div>
-	<!-- 右侧栏 -->
-	<div class="scrollBar">
-		<div class="scrollBar_bg">
-			<div class="user relative">
-				<div class="user_icon">
-					<img src="./img/index/user.png">
-					<span>账号</span>
-				</div>
-				<div class="user_box clearfix">
-					<a class="fr" href="javascript:;">
-						<b>×</b>
-					</a>
-					<div class="head_img">
-						<img src="./img/index/user_img.jpg">
+
+		<!-- 右侧栏 -->
+		<div class="scrollBar">
+			<div class="scrollBar_bg">
+				<div class="user relative">
+					<div class="user_icon">
+						<img src="./img/index/user.png">
+						<span>账号</span>
 					</div>
-					<div class="tips">
-						<span>你好！请<a href="login.html"> 登录 </a>|<a href="register.html"> 注册 </a></span>
-					</div>
-					<div class="link_box">
-						<a href="user_order.html" class="link_item">
-							<img src="./img/index/order_%23d9d9d9.png">
-							<span>我的订单</span>
+					<div class="user_box clearfix">
+						<a class="fr" href="javascript:;">
+							<b>×</b>
 						</a>
-						<a href="user.html" class="link_item">
-							<img src="./img/index/rmb_%23d9d9d9.png">
-							<span>我的唯品币</span>
+						<div class="head_img">
+							<img src="./img/index/user_img.jpg">
+						</div>
+						<div class="tips">
+							<span>你好！请<a href="login.html"> 登录 </a>|<a href="register.html"> 注册 </a></span>
+						</div>
+						<div class="link_box">
+							<a href="user_order.html" class="link_item">
+								<img src="./img/index/order_%23d9d9d9.png">
+								<span>我的订单</span>
+							</a>
+							<a href="user.html" class="link_item">
+								<img src="./img/index/rmb_%23d9d9d9.png">
+								<span>我的唯品币</span>
+							</a>
+						</div>
+						<div class="member_box">
+							<a href="user.html">会员俱乐部</a>
+						</div>
+					</div>
+				</div>
+				<div class="shoppingCart relative">
+					<div class="shoppingCart_icon">
+						<img src="./img/index/shoppingCart.png">
+						<span>购物袋</span>
+						<i>0</i>
+					</div>
+					<div class="shoppingCart_box clearfix">
+						<a class="fr" href="javascript:;">
+							<b>×</b>
 						</a>
+						<div class="head_img">
+							<img src="./img/index/user_img.jpg">
+						</div>
+						<div class="tips">
+							<span>你好！请<a href="login.html"> 登录 </a>|<a href="register.html"> 注册 </a></span>
+						</div>
 					</div>
-					<div class="member_box">
-						<a href="user.html">会员俱乐部</a>
+				</div>
+				<a href="user.html" class="discountCoupon unify_item relative ">
+					<div class="discountCoupon_icon unify_icon">
+						<img src="./img/index/discount_coupon_icon.png">
+					</div>
+					<div class="discountCoupon_box unify_box first_unify">
+						<span>我的优惠券</span>
+					</div>
+				</a>
+				<a href="collection.html" class="brandCollection unify_item relative">
+					<div class="brandCollection_icon unify_icon">
+						<img src="./img/index/favorites.png">
+					</div>
+					<div class="brandCollection_box unify_box">
+						<span>品牌收藏</span>
+					</div>
+				</a>
+				<a href="collection.html" class="shoppingCollection unify_item relative">
+					<div class="shoppingCollection_icon unify_icon">
+						<img src="./img/index/collection_icon.png">
+					</div>
+					<div class="shoppingCollection_box unify_box">
+						<span>商品收藏</span>
+					</div>
+				</a>
+				<a href="collection.html" class="history unify_item relative">
+					<div class="history_icon unify_icon">
+						<img src="./img/index/history.png">
+					</div>
+					<div class="history_box unify_box">
+						<span>我的足迹</span>
+					</div>
+				</a>
+				<div class="feedBack unify_item relative">
+					<div class="feedBack_icon unify_icon">
+						<img src="./img/index/feedback.png">
+					</div>
+					<div class="feedBack_box unify_box">
+						<span>会员反馈</span>
+					</div>
+				</div>
+				<div class="backTop unify_item relative">
+					<div class="backTop_icon unify_icon">
+						<img src="./img/index/back_top.png">
+					</div>
+					<div class="backTop_box unify_box">
+						<span>返回顶部</span>
 					</div>
 				</div>
 			</div>
-			<div class="shoppingCart relative">
-				<div class="shoppingCart_icon">
-					<img src="./img/index/shoppingCart.png">
-					<span>购物袋</span>
-					<i>0</i>
-				</div>
-				<div class="shoppingCart_box clearfix">
-					<a class="fr" href="javascript:;">
-						<b>×</b>
-					</a>
-					<div class="head_img">
-						<img src="./img/index/user_img.jpg">
-					</div>
-					<div class="tips">
-						<span>你好！请<a href="login.html"> 登录 </a>|<a href="register.html"> 注册 </a></span>
-					</div>
-				</div>
-			</div>
-			<a href="user.html" class="discountCoupon unify_item relative ">
-				<div class="discountCoupon_icon unify_icon">
-					<img src="./img/index/discount_coupon_icon.png">
-				</div>
-				<div class="discountCoupon_box unify_box first_unify">
-					<span>我的优惠券</span>
-				</div>
-			</a>
-			<a href="collection.html" class="brandCollection unify_item relative">
-				<div class="brandCollection_icon unify_icon">
-					<img src="./img/index/favorites.png">
-				</div>
-				<div class="brandCollection_box unify_box">
-					<span>品牌收藏</span>
-				</div>
-			</a>
-			<a href="collection.html" class="shoppingCollection unify_item relative">
-				<div class="shoppingCollection_icon unify_icon">
-					<img src="./img/index/collection_icon.png">
-				</div>
-				<div class="shoppingCollection_box unify_box">
-					<span>商品收藏</span>
-				</div>
-			</a>
-			<a href="collection.html" class="history unify_item relative">
-				<div class="history_icon unify_icon">
-					<img src="./img/index/history.png">
-				</div>
-				<div class="history_box unify_box">
-					<span>我的足迹</span>
-				</div>
-			</a>
-			<div class="feedBack unify_item relative">
-				<div class="feedBack_icon unify_icon">
-					<img src="./img/index/feedback.png">
-				</div>
-				<div class="feedBack_box unify_box">
-					<span>会员反馈</span>
-				</div>
-			</div>
-			<div class="backTop unify_item relative">
-				<div class="backTop_icon unify_icon">
-					<img src="./img/index/back_top.png">
-				</div>
-				<div class="backTop_box unify_box">
-					<span>返回顶部</span>
-				</div>
+		</div>
+
+	<!-- 背景 -->
+	<div class="banner">
+		<div class="container_col">
+			<div class="title">
+				<span>我的特卖</span>
+				<span>DISCOUNT</span>
 			</div>
 		</div>
 	</div>
 
-
-	<!-- 商品选项卡 -->
-	<div class="exhibition clearfix">
-		<div class="container">
-			<div class="show fl relative">
-				<div class="bigImg">
-					<div class="pic">
-						<img id="showImg" src="./img/goods_detail/show_big_01.jpg">
-					</div>
-					<div class="pic">
-						<img id="showImg" src="./img/goods_detail/show_big_02.jpg">
-					</div>
-					<div class="pic">
-						<img id="showImg" src="./img/goods_detail/show_big_03.jpg">
-					</div>
-					<div class="pic">
-						<img id="showImg" src="./img/goods_detail/show_big_04.jpg">
-					</div>
-					<div class="pic">
-						<img id="showImg" src="./img/goods_detail/show_big_05.jpg">
-					</div>
-					<div class="pic">
-						<img id="showImg" src="./img/goods_detail/show_big_06.jpg">
-					</div>
-					<!-- 放大镜 -->
-					<div class="mask"></div>
-				</div>
-				<!-- 放大后的 -->
-				<div class="loupe relative">
-					<img src="./img/goods_detail//show_big_01.jpg" class="loupe_pic">
-				</div>
-				<!-- 图片选项卡 -->
-				<div class="choiceImg">
-					<div class="choice">
-						<img class="vertical-top" src="./img/goods_detail/show_small_01.jpg">
-					</div>
-					<div class="choice">
-						<img class="vertical-top" src="./img/goods_detail/show_small_02.jpg">
-					</div>
-					<div class="choice">
-						<img class="vertical-top" src="./img/goods_detail/show_small_03.jpg">
-					</div>
-					<div class="choice">
-						<img class="vertical-top" src="./img/goods_detail/show_small_04.jpg">
-					</div>
-					<div class="choice">
-						<img class="vertical-top" src="./img/goods_detail/show_small_05.jpg">
-					</div>
-					<div class="choice">
-						<img class="vertical-top" src="./img/goods_detail/show_small_06.jpg">
-					</div>
-				</div>
-				<div class="inf clearfix">
-					<span class="commodity_num vertical-mid">商品编码：20190111K01-2 </span>
-					<span class="commodity_collection vertical-mid">
-						<i class="icon_detail icon_detail_collection vertical-mid"></i>
-						<span class="text vertical-mid">收藏商品</span>
-					</span>
-					<span class="commodity_share fr relative vertical-mid">
-						<div class="share_box">
-							<img class="vertical-mid" src="./img/goods_detail/share.png">
-							<span class="vertical-mid">分享到：</span>
-							<i class="vertical-mid"></i>
-						</div>
-						<div class="share_pull">
-							<a href="#"><img class="vertical-top" src="img/goods_detail/QQspace.png"></a>
-							<a href="#"><img class="vertical-top" src="./img/goods_detail/icon_QQ.png"></a>
-							<a href="#"><img class="vertical-top" src="img/goods_detail/icon_weichat.png"></a>
-							<a href="#"><img class="vertical-top" src="img/goods_detail/sina.png"></a>
-						</div>
-					</span>
-				</div>
-				<div class="inf_slogan">
-					<img class="vertical-top" src="img/goods_detail/inf_slogan.png">
-				</div>
+	<!-- 收藏导航 -->
+	<div class="col_nav">
+		<div class="container_col">
+			<div class="col_nav_wrapper">
+				<ul>
+					<li class="relative">
+						<a href="collection.html">商品收藏</a>
+					</li>
+					<li class="relative">
+						<a href="collection.html">品牌收藏</a>
+					</li>
+					<li class="relative">
+						<a href="collection.html">店铺收藏</a>
+					</li>
+					<li class="relative">
+						<a href="collection.html">我的足迹</a>
+					</li>
+				</ul>
 			</div>
-			<div class="operation fl">
-				<div class="brand_link">
-					<a href="#">佩佩</a>
-				</div>
-				<div class="title">
-					<span>【12支】丝绒慕斯唇釉套装哑光水润持久保湿不易脱色</span>
-				</div>
-				<div class="des">
-					<span>唇釉</span>
-					<span> 水润唇釉 柔滑触感，水润妆效，哑而不干，打造保湿滋润唇纹</span>
-				</div>
-				<div class="Price_box clearfix">
-					<div class="specialPrice clearfix">
-						<span class="fl sp_title">折后价</span>
-						<span class="fl sp_RMB">￥</span>
-						<span class="fl sp_price">29</span>
-						<span class="fl original">￥228</span>
-						<span class="fl discount">1.3折</span>
-						<span class="fl shopping_count_down">
-							<span class="hours vertical-mid"></span>
-							<span class="vertical-mid">小时</span>
-							<span class="mins vertical-mid"></span>
-							<span class="vertical-mid">分钟</span>
-							<span class="sec vertical-mid"></span>
-							<span class="vertical-mid">秒</span>
-							<span class="vertical-mid">后结束</span>
-						</span>
-					</div>
-					<div class="ourPrice">
-						<span class="op_title">唯品价</span>
-						<span class="op_RMB">￥</span>
-						<span class="op_price">35</span>
-					</div>
-				</div>
-				<div class="address">
-					<span class="tip">配送</span>
-					<div class="selecte relative">
-						<span class="province">山东省</span>
-						<span class="city">青岛市</span>
-						<span class="district">城阳区</span>
-						<span class="street">城阳街道</span>
-						<i>^</i>
-					</div>
-				</div>
-				<div class="address_des">
-					<span>现在付款，预计2月23日（周日）送达</span>
-				</div>
-				<div class="freight_des">
-					<span class="tip">运费</span>
-					<span>新会员专享首单满38元免邮（限唯品自营商品，部分商品不可用）</span>
-				</div>
-				<div class="num_choice">
-					<span class="tip vertical-mid">数量</span>
-					<span class="show vertical-mid">
-						<span class="num_minus vertical-top">-</span>
-						<span class="num_show vertical-top">1</span>
-						<span class="num_add vertical-top">+</span>
-					</span>
-				</div>
-				<div class="add_cart_box">
-					<button type="button" class="add_cart" id="add_cart">
-						<a href="shopping_cart.html">
-							<img class="vertical-mid" src="./img/goods_detail/shoppingCart_icon.png">
+		</div>
+	</div>
+
+	<!-- 筛选操作 -->
+	<div class="filtrate">
+		<div class="container_col">
+			<ul>
+				<li>全部</li>
+				<li>有货</li>
+				<li>优惠中</li>
+				<li>即将促销</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 收藏列表 -->
+	<div class="col_list">
+		<div class="container_col">
+			<div class="list_wrapper">
+				<ul>
+					<li class="relative">
+						<div class="del" id="del">
+							<i class=" icon_collection icon_collection_del"></i>
+						</div>
+						<a href="goods_detail.html">
+							<div class="img">
+								<img src="./img/collection/col_goods_01.jpg" alt="">
+							</div>
+							<div class="text">
+								<div class="price">
+									<div class="now_price">
+										<span>疯抢价</span>
+										<span>￥</span>
+										<span>38</span>
+									</div>
+									<div class="prev_price">
+										<span>128</span>
+										<span>3.0折</span>
+									</div>
+								</div>
+								<div class="title">
+									<span>佩佩经典多功能化妆刷6支（白色恋人）</span>
+									<span>均码</span>
+								</div>
+							</div>
+						</a>
+						<a href="shopping_cart.html" class="add_cart">
+							<i class=" vertical-mid icon_collection icon_collection_add"></i>
 							<span class="vertical-mid">加入购物袋</span>
 						</a>
-					</button>
-				</div>
-				<div class="service_tel">
-					<span class="tip vertical-mid">客服</span>
-					<img class="vertical-mid" src="./img/goods_detail/service_icon.png">
-					<span class="vertical-mid"> 在线客服 (09:00-18:00)</span>
-				</div>
-				<div class="service_des clearfix">
-					<span class="tip vertical-top fl">服务</span>
-					<div class="service_des_box vertical-top fl">
-						<div class="service_des_item">
-							<i class="vertical-mid icon_detail icon_detail_redIcon"></i>
-							<span class="vertical-mid">唯品会自营</span>
-						</div>
-						<div class="service_des_item">
-							<i class="vertical-mid icon_detail icon_detail_redIcon"></i>
-							<span class="vertical-mid">顺丰配送</span>
-						</div>
-						<div class="service_des_item">
-							<i class="vertical-mid icon_detail icon_detail_redIcon"></i>
-							<span class="vertical-mid">7天可退（拆封后不可退）</span>
-						</div>
-						<div class="service_des_item">
-							<i class="vertical-mid icon_detail icon_detail_redIcon"></i>
-							<span class="vertical-mid">退货无忧</span>
-						</div>
-						<div class="service_des_item">
-							<i class="vertical-mid icon_detail icon_detail_redIcon"></i>
-							<span class="vertical-mid">7天可换（拆封后不可换）</span>
-						</div>
-					</div>
-					<div class="service_des_arrow relative fl">
-						<span>^</span>
-					</div>
-				</div>
-				<div class="service_hint clearfix">
-					<span class="tip vertical-mid fl">提示</span>
-					<i class="vertical-mid icon_detail icon_detail_grayIcon fl"></i>
-					<span class="vertical-mid fl">国家药监局提示您：请正确认识化妆品功效，化妆品不能替代药品，不能治疗皮肤病等疾病。</span>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- 商品介绍 -->
-	<div class="information relative">
-		<div class="container">
-			<ul class="level_floor_nav clearfix relative">
-				<li class="fl">规格参数</li>
-				<li class="fl">商品展示</li>
-				<li class="fl">全部口碑<span>(999+)</span></span>
-				<li class="fl">商品咨询</li>
-				<li class="fl">关于我们</li>
-				<li class="fl"></li>
-			</ul>
-			<div class="title floor_index">
-				<i class="icon_detail icon_detail_rhombus vertical-mid"></i>
-				<span class="vertical-mid">商品参数</span>
-				<span class="vertical-mid">DETAIL</span>
-				<img src="img/goods_detail/icon_repeat.png">
-			</div>
-
-			<table>
-				<tbody>
-					<tr>
-						<th>是否套装：</th>
-						<td>是</td>
-						<th>功效：</th>
-						<td>滋润</td>
-					</tr>
-					<tr>
-						<th>色系：</th>
-						<td>多彩色系</td>
-						<th>品牌名称：</th>
-						<td>佩佩</td>
-					</tr>
-					<tr>
-						<th>商品名称：</th>
-						<td>【12支】丝绒慕斯唇釉套装哑光水润持久保湿不易脱色</td>
-						<th>产地：</th>
-						<td>中国</td>
-					</tr>
-					<tr>
-						<th>有效期： </th>
-						<td>三年</td>
-						<th>消费提醒：</th>
-						<td>国家药监局提示您：请正确认识化妆品功效，化妆品不能替代药品，不能治疗皮肤病等疾病</td>
-					</tr>
-					<tr class="tr_hidden">
-						<th>规格：</th>
-						<td>12支</td>
-						<th>洗涤说明：</th>
-						<td>无</td>
-					</tr>
-					<tr class="tr_hidden">
-						<th>配件/备注：</th>
-						<td>有外盒有塑封</td>
-						<th>商品编号：</th>
-						<td>20190111K01-2</td>
-					</tr>
-				</tbody>
-			</table>
-			<div class="table_view_more relative">查看更多<span>^</span></div>
-			<div class="title">
-				<i class="icon_detail icon_detail_rhombus vertical-mid"></i>
-				<span class="vertical-mid">价格走势</span>
-				<span class="vertical-mid">PRICE</span>
-				<img src="img/goods_detail/icon_repeat.png">
-			</div>
-			<img src="./img/goods_detail/curve_price.png">
-			<img src="img/goods_detail/icon_repeat.png">
-			<div class="authorization">
-				<img class="authorization" src="img/index/authorization.jpg">
-			</div>
-			<div class="title  floor_index">
-				<i class="icon_detail icon_detail_rhombus vertical-mid"></i>
-				<span class="vertical-mid">商品展示</span>
-				<span class="vertical-mid">IMAGE</span>
-				<img src="img/goods_detail/icon_repeat.png">
-			</div>
-			<div class="product_exhibition_box">
-				<img src="./img/goods_detail/product_exhibition_01.jpg">
-				<img src="./img/goods_detail/product_exhibition_02.jpg">
-				<img src="./img/goods_detail/product_exhibition_03.jpg">
-				<img src="./img/goods_detail/product_exhibition_04.jpg">
-				<img src="./img/goods_detail/product_exhibition_05.jpg">
-				<img src="./img/goods_detail/product_exhibition_07.jpg">
-				<img src="./img/goods_detail/product_exhibition_08.jpg">
-				<img src="./img/goods_detail/product_exhibition_09.jpg">
-				<img src="./img/goods_detail/product_exhibition_10.jpg">
-				<img src="./img/goods_detail/product_exhibition_11.jpg">
-				<img src="./img/goods_detail/product_exhibition_12.jpg">
-				<img src="./img/goods_detail/product_exhibition_13.jpg">
-				<img src="./img/goods_detail/product_exhibition_14.jpg">
-				<img src="./img/goods_detail/product_exhibition_15.jpg">
-				<img src="./img/goods_detail/product_exhibition_16.jpg">
-			</div>
-		</div>
-	</div>
-
-	<!-- 用户评价 -->
-	<div class="evaluate floor_index">
-		<div class="container">
-			<div class="evaluate_top">
-				<div class="title">
-					<span>全部口碑</span>
-				</div>
-				<div class="evaluate_data clearfix">
-					<div class="percent fl">
-						<span>98.50%</span>
-						<span>的用户对商品满意</span>
-					</div>
-					<div class="classify fl clearfix">
-						<span>好评</span>
-						<span>最新</span>
-						<span>有图(321)</span>
-						<span>滋润(152)</span>
-						<span>可以(184)</span>
-						<span>不错(218)</span>
-						<span>好看(258)</span>
-						<span>待改进</span>
-						<span>便宜(355)</span>
-						<span>很喜欢(488)</span>
-						<span>挺好的(498)</span>
-					</div>
-				</div>
-				<ul class="evaluate_item">
-					<li class="clearfix">
-						<div class="users fl clearfix">
-							<div class="users_img fl">
-								<img src="./img/goods_detail/ia_100000075.jpg">
-							</div>
-							<div class="users_name fl">
-								<span class="name">可乐</span>
-								<i class="icon_detail icon_detail_gold  vertical-mid"></i>
-								<span class="grade vertical-mid">金卡会员</span>
-							</div>
-						</div>
-						<div class="msg fl">
-							<div class="msg_text">一直很信赖唯品会，唯品会上的东西很满意，买了两盒，一盒自己用，一盒送给朋友，包装特别好看，而且个头小不担心用不完，颜色又多特别好看，特别喜欢，也希望唯品会越做越好
-							</div>
-							<div class="msg_time">2020-02-14 18:59:36</div>
-						</div>
 					</li>
-					<li class="clearfix">
-						<div class="users fl clearfix">
-							<div class="users_img fl">
-								<img src="./img/goods_detail/ia_100000075.jpg">
-							</div>
-							<div class="users_name fl">
-								<span class="name">可乐</span>
-								<i class="icon_detail icon_detail_gold  vertical-mid"></i>
-								<span class="grade vertical-mid">金卡会员</span>
-							</div>
+					<li class="relative">
+						<div class="del" id="del">
+							<i class=" icon_collection icon_collection_del"></i>
 						</div>
-						<div class="msg fl">
-							<div class="msg_text">东西很好，每一支颜色都不一样，涂上去很水润，已经第二次买了，朋友都很喜欢，涂上去，一直不敢在别的地方买唇釉，但一直信赖唯品会，希望唯品会越来越好</div>
-							<div class="msg_time">2020-02-14 18:59:36</div>
-						</div>
+						<a href="goods_detail.html">
+							<div class="img">
+								<img src="./img/collection/col_goods_02.jpg" alt="">
+							</div>
+							<div class="text">
+								<div class="price">
+									<div class="now_price">
+										<span>疯抢价</span>
+										<span>￥</span>
+										<span>19</span>
+									</div>
+									<div class="prev_price">
+										<span>￥168</span>
+										<span>1.2折</span>
+									</div>
+								</div>
+								<div class="title">
+									<span>【12支】丝绒慕斯唇釉套装哑光水润持久保湿不易脱色</span>
+									<span>高光1.2g/遮瑕1.2g</span>
+								</div>
+							</div>
+						</a>
+						<a href="shopping_cart.html" class="add_cart">
+							<i class=" vertical-mid icon_collection icon_collection_add"></i>
+							<span class="vertical-mid">加入购物袋</span>
+						</a>
 					</li>
-					<li class="clearfix">
-						<div class="users fl clearfix">
-							<div class="users_img fl">
-								<img src="./img/goods_detail/ia_100000076.png">
-							</div>
-							<div class="users_name fl">
-								<span class="name">185*****291</span>
-								<i class="icon_detail icon_detail_gold  vertical-mid"></i>
-								<span class="grade vertical-mid">金卡会员</span>
-							</div>
+					<li class="relative">
+						<div class="del" id="del">
+							<i class=" icon_collection icon_collection_del"></i>
 						</div>
-						<div class="msg fl">
-							<div class="tag">
-								<span>不易脱色</span>
-								<span>显气色</span>
+						<a href="goods_detail.html">
+							<div class="img">
+								<img src="./img/collection/col_goods_03.jpg" alt="">
 							</div>
-							<div class="msg_text">首先，收货速度特别的快！是发的顺丰快递！
-								口红很实惠，总共有12支颜色！很喜欢！一天一色不带重样的，想到就心花路放🌸！然后这个口红只需要涂一点点然后涂抹均匀就可以了！不要抹太多！不然太夸张了！抱着试一试的心态买的，还行。我估计可以用一年了，一只都可以用超久的！
-							</div>
-							<div class="msg_img">
-								<div class="msg_img_small">
-									<img src="./img/goods_detail/ia_100000251.jpg">
+							<div class="text">
+								<div class="price">
+									<div class="now_price">
+										<span>疯抢价</span>
+										<span>￥</span>
+										<span>499</span>
+									</div>
+									<div class="prev_price">
+										<span>￥2799</span>
+										<span>1.8折</span>
+									</div>
 								</div>
-								<div class="msg_img_big">
-									<img src="./img/goods_detail/ia_100000251.jpg">
+								<div class="title">
+									<span>【顺丰包邮 触控大屏】破壁料理机家用豆浆机九阳破壁机JYL-Y921</span>
+									<span>均码</span>
 								</div>
 							</div>
-							<div class="msg_time">2020-02-13 17:26:44</div>
-						</div>
+						</a>
+						<a href="shopping_cart.html" class="add_cart">
+							<i class=" vertical-mid icon_collection icon_collection_add"></i>
+							<span class="vertical-mid">加入购物袋</span>
+						</a>
 					</li>
-					<li class="clearfix">
-						<div class="users fl clearfix">
-							<div class="users_img fl">
-								<img src="./img/goods_detail/ia_100000077.jpg">
-							</div>
-							<div class="users_name fl">
-								<span class="name">Lily</span>
-								<i class="icon_detail icon_detail_gold  vertical-mid"></i>
-								<span class="grade vertical-mid">金卡会员</span>
-							</div>
+					<li class="relative">
+						<div class="del" id="del">
+							<i class=" icon_collection icon_collection_del"></i>
 						</div>
-						<div class="msg fl">
-							<div class="tag">
-								<span>不易脱色</span>
-								<span>显气色</span>
-								<span>滋润</span>
+						<a href="goods_detail.html">
+							<div class="img">
+								<img src="./img/collection/col_goods_04.jpg" alt="">
 							</div>
-							<div class="msg_text">
-								第二次回购了，特别令我惊艳！真的好好看！这款唇釉如果妆前涂唇膏的话，我的天，颜色可以显色一天，就算吃饭掉了，颜色也是淡淡的！而且真的好好卸哦！不拔干哦(´-ω-`)（我涂了番茄色体验一天的真实感受）
+							<div class="text">
+								<div class="price">
+									<div class="now_price">
+										<span>疯抢价</span>
+										<span>￥</span>
+										<span>12</span>
+									</div>
+									<div class="prev_price">
+										<span>￥98</span>
+										<span>1.3折</span>
+									</div>
+								</div>
+								<div class="title">
+									<span>【超防水百米不断水】防晕染眼线液笔0.7g持久浓黑速干不易晕</span>
+									<span>0.7g</span>
+								</div>
 							</div>
-							<div class="msg_choice">
-								<span>颜色：其他颜色</span>
-								<span>尺码：均码</span>
-							</div>
-							<div class="msg_time">2020-01-28 20:51:04</div>
-						</div>
+						</a>
+						<a href="shopping_cart.html" class="add_cart">
+							<i class=" vertical-mid icon_collection icon_collection_add"></i>
+							<span class="vertical-mid">加入购物袋</span>
+						</a>
 					</li>
-					<li class="clearfix">
-						<div class="users fl clearfix">
-							<div class="users_img fl">
-								<img src="./img/goods_detail/ia_100000078.jpg">
-							</div>
-							<div class="users_name fl">
-								<span class="name">毋忘我</span>
-								<i class="icon_detail icon_detail_platina  vertical-mid"></i>
-								<span class="grade vertical-mid">白金卡会员</span>
-							</div>
+					<li class="relative">
+						<div class="del" id="del">
+							<i class=" icon_collection icon_collection_del"></i>
 						</div>
-						<div class="msg fl">
-							<div class="msg_text">收到后立马试了试，很满意，这个价钱能买到这么如意的口红，值得大家够买，很保湿，不易脱色，比我买的几百的口红还要好，而且这么多种颜色，每天换着来用，心情都美美哒
+						<a href="goods_detail.html">
+							<div class="img">
+								<img src="./img/collection/col_goods_05.jpg" alt="">
 							</div>
-							<div class="msg_choice">
-								<span>颜色：其他颜色</span>
-								<span>尺码：均码</span>
+							<div class="text">
+								<div class="price">
+									<div class="now_price">
+										<span>疯抢价</span>
+										<span>￥</span>
+										<span>29</span>
+									</div>
+									<div class="prev_price">
+										<span>￥228</span>
+										<span>1.3折</span>
+									</div>
+								</div>
+								<div class="title">
+									<span>佩佩纷泽滋润口红滋润不易脱色3.5g</span>
+									<span>3.5g</span>
+								</div>
 							</div>
-							<div class="msg_time">2020-01-06 08:04:23</div>
-						</div>
+						</a>
+						<a href="shopping_cart.html" class="add_cart">
+							<i class=" vertical-mid icon_collection icon_collection_add"></i>
+							<span class="vertical-mid">加入购物袋</span>
+						</a>
 					</li>
-					<li class="clearfix">
-						<div class="users fl clearfix">
-							<div class="users_img fl">
-								<img src="./img/goods_detail/ia_100000080.png">
-							</div>
-							<div class="users_name fl">
-								<span class="name">159*****474</span>
-								<i class="icon_detail icon_detail_gold  vertical-mid"></i>
-								<span class="grade vertical-mid">金卡会员</span>
-							</div>
+					<li class="relative">
+						<div class="del" id="del">
+							<i class=" icon_collection icon_collection_del"></i>
 						</div>
-						<div class="msg fl">
-							<div class="msg_text">挺好的。这么便宜买这么多只，虽然挺小的一瓶，但是能用很久，携带也方便。颜色都挺好看的。非常值。这种哑光雾面的口红，特别润的那种，我觉得还不错哦</div>
-							<div class="msg_choice">
-								<span>颜色：其他颜色</span>
-								<span>尺码：均码</span>
+						<a href="goods_detail.html">
+							<div class="img">
+								<img src="./img/collection/col_goods_07.jpg" alt="">
 							</div>
-							<div class="msg_time">2020-01-04 18:33:01</div>
-						</div>
+							<div class="text">
+								<div class="price">
+									<div class="now_price">
+										<span>疯抢价</span>
+										<span>￥</span>
+										<span>1540</span>
+									</div>
+									<div class="prev_price">
+										<span>￥1722</span>
+										<span>9.0折</span>
+									</div>
+								</div>
+								<div class="title">
+									<span>SK-II神仙水230ml 护肤品 护肤品套装 补水控油提亮</span>
+									<span>230ml</span>
+								</div>
+							</div>
+						</a>
+						<a href="shopping_cart.html" class="add_cart">
+							<i class=" vertical-mid icon_collection icon_collection_add"></i>
+							<span class="vertical-mid">加入购物袋</span>
+						</a>
 					</li>
-					<li class="clearfix">
-						<div class="users fl clearfix">
-							<div class="users_img fl">
-								<img src="./img/goods_detail/ia_100000076.png">
-							</div>
-							<div class="users_name fl">
-								<span class="name">159*****662</span>
-								<i class="icon_detail icon_detail_silver  vertical-mid"></i>
-								<span class="grade vertical-mid">银卡会员</span>
-							</div>
+					<li class="relative">
+						<div class="del" id="del">
+							<i class=" icon_collection icon_collection_del"></i>
 						</div>
-						<div class="msg fl">
-							<div class="tag">
-								<span>不易脱色</span>
-								<span>显气色</span>
-								<span>遮盖力度好</span>
+						<a href="goods_detail.html">
+							<div class="img">
+								<img src="./img/collection/ia_400000001.jpg" alt="">
 							</div>
-							<div class="msg_text">
-								挺好的。这么便宜买这么多只，虽然挺小的一瓶，但是能用很久，携带也方便。颜色都挺好看的。非常值。之前有人说干。我想说，这种哑光雾面的口红。都会稍微偏干。特别润的那种，不会有亚光的效果！我觉得还不错哦</div>
-							<div class="msg_img">
-								<div class="msg_img_small">
-									<img src="./img/goods_detail/ia_100000258.jpg">
+							<div class="text">
+								<div class="price">
+									<div class="now_price">
+										<span>疯抢价</span>
+										<span>￥</span>
+										<span>29</span>
+									</div>
+									<div class="prev_price">
+										<span>￥228</span>
+										<span>1.3折</span>
+									</div>
 								</div>
-								<div class="msg_img_big">
-									<img src="./img/goods_detail/ia_100000258.jpg">
-								</div>
-							</div>
-							<div class="msg_time">2020-02-13 17:26:44</div>
-						</div>
-					</li>
-					<li class="clearfix">
-						<div class="users fl clearfix">
-							<div class="users_img fl">
-								<img src="./img/goods_detail/ia_100000081.jpg">
-							</div>
-							<div class="users_name fl">
-								<span class="name">等待</span>
-								<i class="icon_detail icon_detail_gold  vertical-mid"></i>
-								<span class="grade vertical-mid">金卡会员</span>
-							</div>
-						</div>
-						<div class="msg fl">
-							<div class="tag">
-								<span>保湿</span>
-								<span>滋润</span>
-								<span>显气色</span>
-								<span>遮盖力度好</span>
-							</div>
-							<div class="msg_text">
-								非常好上色，一抹成型，而且不干不起皮，就是瓶子太小只了，希望可以出个大瓶系列，轻微掉色，喝水，吃饭什么的，但掉得不严重，总体还不错，毕竟价格在这里，之前买了露华泷，还有爱丽小屋的染唇液，不好上色，还比这个贵，试了几种喜欢的颜色，你们自己参考吧，确实挺好的
-							</div>
-							<div class="msg_img">
-								<div class="msg_img_small">
-									<img src="./img/goods_detail/ia_100000262.jpg">
-								</div>
-								<div class="msg_img_small">
-									<img src="./img/goods_detail/ia_100000263.jpg">
-								</div>
-								<div class="msg_img_small">
-									<img src="./img/goods_detail/ia_100000264.jpg">
-								</div>
-								<div class="msg_img_small">
-									<img src="./img/goods_detail/ia_100000265.jpg">
-								</div>
-								<div class="msg_img_small">
-									<img src="./img/goods_detail/ia_100000266.jpg">
-								</div>
-								<div class="msg_img_big">
-									<img src="./img/goods_detail/ia_100000262.jpg">
-								</div>
-								<div class="msg_img_big">
-									<img src="./img/goods_detail/ia_100000263.jpg">
-								</div>
-								<div class="msg_img_big">
-									<img src="./img/goods_detail/ia_100000264.jpg">
-								</div>
-								<div class="msg_img_big">
-									<img src="./img/goods_detail/ia_100000265.jpg">
-								</div>
-								<div class="msg_img_big">
-									<img src="./img/goods_detail/ia_100000266.jpg">
+								<div class="title">
+									<span>【12支】丝绒慕斯唇釉套装哑光水润持久保湿不易脱色</span>
+									<span>均码</span>
 								</div>
 							</div>
-							<div class="msg_time">2020-02-13 17:26:44</div>
-						</div>
+						</a>
+						<a href="shopping_cart.html" class="add_cart">
+							<i class=" vertical-mid icon_collection icon_collection_add"></i>
+							<span class="vertical-mid">加入购物袋</span>
+						</a>
 					</li>
 				</ul>
-				<div class="evaluate_page">
-					<span class="page_prev">&lt;</span>
-					<span class="page_num">1</span>
-					<span class="page_next">&gt;</span>
-					<span class="page_show">第1页</span>
-				</div>
 			</div>
 		</div>
 	</div>
-
-	<!-- 猜你喜欢 -->
-	<div class="guess">
-		<div class="container">
-			<div class="guess_content">
-				<div class="swiper-container">
-					<div class="guess_top relative">
-						<span>猜你喜欢</span>
-						<span>关注了该商品的用户还在关注</span>
-					</div>
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<ul class="guess_show clearfix">
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000084.jpg">
-										</div>
-										<div class="title">【1盒6色】粉悦木马轻雾感口红小样套盒 哑光雾面唇膏非唇釉</div>
-										<div class="price">
-											<span class="now_price">￥109</span>
-											<span class="pre_price">￥354</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000086.jpg">
-										</div>
-										<div class="title">【新年好礼 璀璨星耀小黑管】红唇焰舞口红滋润烂番茄锦鲤色3.8g</div>
-										<div class="price">
-											<span class="now_price">￥39</span>
-											<span class="pre_price">￥119</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000087.jpg">
-										</div>
-										<div class="title">【鲜亮唇色 水润气色】粉色之恋口红 持久保湿丝滑唇樱桃豆沙色</div>
-										<div class="price">
-											<span class="now_price">￥45</span>
-											<span class="pre_price">￥179</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000088.jpg">
-										</div>
-										<div class="title">【一套集齐4色】星云探色口红套组 哑光丝绒 滋润不显唇纹</div>
-										<div class="price">
-											<span class="now_price">￥49</span>
-											<span class="pre_price">￥169</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000089.jpg">
-										</div>
-										<div class="title">【显白热卖色】醉美东方唇膏红管国风口红姨妈烂番茄豆沙色</div>
-										<div class="price">
-											<span class="now_price">￥28</span>
-											<span class="pre_price">￥78</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000090.jpg">
-										</div>
-										<div class="title">【1盒6色】粉悦木马轻雾感口红小样套盒 哑光雾面唇膏非唇釉</div>
-										<div class="price">
-											<span class="now_price">￥109</span>
-											<span class="pre_price">￥354</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000091.jpg">
-										</div>
-										<div class="title">美诺MENOW【口红】晶粹釉色唇笔</div>
-										<div class="price">
-											<span class="now_price">￥15</span>
-											<span class="pre_price">￥59</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000092.jpg">
-										</div>
-										<div class="title">【顺丰包邮】电光唇唇欲动小美盒唇膏口红5支装</div>
-										<div class="price">
-											<span class="now_price">￥105</span>
-											<span class="pre_price">￥135</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100003584.jpg">
-										</div>
-										<div class="title">【浪漫妆备 超值6支】倾色慕光唇膏迷你套盒小黑钻口红显白持久</div>
-										<div class="price">
-											<span class="now_price">￥79</span>
-											<span class="pre_price">￥169</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100003600.jpg">
-										</div>
-										<div class="title">【丝绒雾面】瓷妆丝绒唇膏 持久保湿滋润不易掉色沾杯口红</div>
-										<div class="price">
-											<span class="now_price">￥105</span>
-											<span class="pre_price">￥135</span>
-										</div>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="swiper-slide">
-							<ul class="guess_show clearfix">
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000084.jpg">
-										</div>
-										<div class="title">【1盒6色】粉悦木马轻雾感口红小样套盒 哑光雾面唇膏非唇釉</div>
-										<div class="price">
-											<span class="now_price">￥109</span>
-											<span class="pre_price">￥354</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000086.jpg">
-										</div>
-										<div class="title">【新年好礼 璀璨星耀小黑管】红唇焰舞口红滋润烂番茄锦鲤色3.8g</div>
-										<div class="price">
-											<span class="now_price">￥39</span>
-											<span class="pre_price">￥119</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000087.jpg">
-										</div>
-										<div class="title">【鲜亮唇色 水润气色】粉色之恋口红 持久保湿丝滑唇樱桃豆沙色</div>
-										<div class="price">
-											<span class="now_price">￥45</span>
-											<span class="pre_price">￥179</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000088.jpg">
-										</div>
-										<div class="title">【一套集齐4色】星云探色口红套组 哑光丝绒 滋润不显唇纹</div>
-										<div class="price">
-											<span class="now_price">￥49</span>
-											<span class="pre_price">￥169</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000089.jpg">
-										</div>
-										<div class="title">【显白热卖色】醉美东方唇膏红管国风口红姨妈烂番茄豆沙色</div>
-										<div class="price">
-											<span class="now_price">￥28</span>
-											<span class="pre_price">￥78</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000090.jpg">
-										</div>
-										<div class="title">【1盒6色】粉悦木马轻雾感口红小样套盒 哑光雾面唇膏非唇釉</div>
-										<div class="price">
-											<span class="now_price">￥109</span>
-											<span class="pre_price">￥354</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000091.jpg">
-										</div>
-										<div class="title">美诺MENOW【口红】晶粹釉色唇笔</div>
-										<div class="price">
-											<span class="now_price">￥15</span>
-											<span class="pre_price">￥59</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000092.jpg">
-										</div>
-										<div class="title">【顺丰包邮】电光唇唇欲动小美盒唇膏口红5支装</div>
-										<div class="price">
-											<span class="now_price">￥105</span>
-											<span class="pre_price">￥135</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100003584.jpg">
-										</div>
-										<div class="title">【浪漫妆备 超值6支】倾色慕光唇膏迷你套盒小黑钻口红显白持久</div>
-										<div class="price">
-											<span class="now_price">￥79</span>
-											<span class="pre_price">￥169</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100003600.jpg">
-										</div>
-										<div class="title">【丝绒雾面】瓷妆丝绒唇膏 持久保湿滋润不易掉色沾杯口红</div>
-										<div class="price">
-											<span class="now_price">￥105</span>
-											<span class="pre_price">￥135</span>
-										</div>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="swiper-slide">
-							<ul class="guess_show clearfix">
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000084.jpg">
-										</div>
-										<div class="title">【1盒6色】粉悦木马轻雾感口红小样套盒 哑光雾面唇膏非唇釉</div>
-										<div class="price">
-											<span class="now_price">￥109</span>
-											<span class="pre_price">￥354</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000086.jpg">
-										</div>
-										<div class="title">【新年好礼 璀璨星耀小黑管】红唇焰舞口红滋润烂番茄锦鲤色3.8g</div>
-										<div class="price">
-											<span class="now_price">￥39</span>
-											<span class="pre_price">￥119</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000087.jpg">
-										</div>
-										<div class="title">【鲜亮唇色 水润气色】粉色之恋口红 持久保湿丝滑唇樱桃豆沙色</div>
-										<div class="price">
-											<span class="now_price">￥45</span>
-											<span class="pre_price">￥179</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000088.jpg">
-										</div>
-										<div class="title">【一套集齐4色】星云探色口红套组 哑光丝绒 滋润不显唇纹</div>
-										<div class="price">
-											<span class="now_price">￥49</span>
-											<span class="pre_price">￥169</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000089.jpg">
-										</div>
-										<div class="title">【显白热卖色】醉美东方唇膏红管国风口红姨妈烂番茄豆沙色</div>
-										<div class="price">
-											<span class="now_price">￥28</span>
-											<span class="pre_price">￥78</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000090.jpg">
-										</div>
-										<div class="title">【1盒6色】粉悦木马轻雾感口红小样套盒 哑光雾面唇膏非唇釉</div>
-										<div class="price">
-											<span class="now_price">￥109</span>
-											<span class="pre_price">￥354</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000091.jpg">
-										</div>
-										<div class="title">美诺MENOW【口红】晶粹釉色唇笔</div>
-										<div class="price">
-											<span class="now_price">￥15</span>
-											<span class="pre_price">￥59</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000092.jpg">
-										</div>
-										<div class="title">【顺丰包邮】电光唇唇欲动小美盒唇膏口红5支装</div>
-										<div class="price">
-											<span class="now_price">￥105</span>
-											<span class="pre_price">￥135</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100003584.jpg">
-										</div>
-										<div class="title">【浪漫妆备 超值6支】倾色慕光唇膏迷你套盒小黑钻口红显白持久</div>
-										<div class="price">
-											<span class="now_price">￥79</span>
-											<span class="pre_price">￥169</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100003600.jpg">
-										</div>
-										<div class="title">【丝绒雾面】瓷妆丝绒唇膏 持久保湿滋润不易掉色沾杯口红</div>
-										<div class="price">
-											<span class="now_price">￥105</span>
-											<span class="pre_price">￥135</span>
-										</div>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="swiper-slide">
-							<ul class="guess_show clearfix">
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000084.jpg">
-										</div>
-										<div class="title">【1盒6色】粉悦木马轻雾感口红小样套盒 哑光雾面唇膏非唇釉</div>
-										<div class="price">
-											<span class="now_price">￥109</span>
-											<span class="pre_price">￥354</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000086.jpg">
-										</div>
-										<div class="title">【新年好礼 璀璨星耀小黑管】红唇焰舞口红滋润烂番茄锦鲤色3.8g</div>
-										<div class="price">
-											<span class="now_price">￥39</span>
-											<span class="pre_price">￥119</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000087.jpg">
-										</div>
-										<div class="title">【鲜亮唇色 水润气色】粉色之恋口红 持久保湿丝滑唇樱桃豆沙色</div>
-										<div class="price">
-											<span class="now_price">￥45</span>
-											<span class="pre_price">￥179</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000088.jpg">
-										</div>
-										<div class="title">【一套集齐4色】星云探色口红套组 哑光丝绒 滋润不显唇纹</div>
-										<div class="price">
-											<span class="now_price">￥49</span>
-											<span class="pre_price">￥169</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000089.jpg">
-										</div>
-										<div class="title">【显白热卖色】醉美东方唇膏红管国风口红姨妈烂番茄豆沙色</div>
-										<div class="price">
-											<span class="now_price">￥28</span>
-											<span class="pre_price">￥78</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000090.jpg">
-										</div>
-										<div class="title">【1盒6色】粉悦木马轻雾感口红小样套盒 哑光雾面唇膏非唇釉</div>
-										<div class="price">
-											<span class="now_price">￥109</span>
-											<span class="pre_price">￥354</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000091.jpg">
-										</div>
-										<div class="title">美诺MENOW【口红】晶粹釉色唇笔</div>
-										<div class="price">
-											<span class="now_price">￥15</span>
-											<span class="pre_price">￥59</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000092.jpg">
-										</div>
-										<div class="title">【顺丰包邮】电光唇唇欲动小美盒唇膏口红5支装</div>
-										<div class="price">
-											<span class="now_price">￥105</span>
-											<span class="pre_price">￥135</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100003584.jpg">
-										</div>
-										<div class="title">【浪漫妆备 超值6支】倾色慕光唇膏迷你套盒小黑钻口红显白持久</div>
-										<div class="price">
-											<span class="now_price">￥79</span>
-											<span class="pre_price">￥169</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100003600.jpg">
-										</div>
-										<div class="title">【丝绒雾面】瓷妆丝绒唇膏 持久保湿滋润不易掉色沾杯口红</div>
-										<div class="price">
-											<span class="now_price">￥105</span>
-											<span class="pre_price">￥135</span>
-										</div>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="swiper-slide">
-							<ul class="guess_show clearfix">
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000084.jpg">
-										</div>
-										<div class="title">【1盒6色】粉悦木马轻雾感口红小样套盒 哑光雾面唇膏非唇釉</div>
-										<div class="price">
-											<span class="now_price">￥109</span>
-											<span class="pre_price">￥354</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000086.jpg">
-										</div>
-										<div class="title">【新年好礼 璀璨星耀小黑管】红唇焰舞口红滋润烂番茄锦鲤色3.8g</div>
-										<div class="price">
-											<span class="now_price">￥39</span>
-											<span class="pre_price">￥119</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000087.jpg">
-										</div>
-										<div class="title">【鲜亮唇色 水润气色】粉色之恋口红 持久保湿丝滑唇樱桃豆沙色</div>
-										<div class="price">
-											<span class="now_price">￥45</span>
-											<span class="pre_price">￥179</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000088.jpg">
-										</div>
-										<div class="title">【一套集齐4色】星云探色口红套组 哑光丝绒 滋润不显唇纹</div>
-										<div class="price">
-											<span class="now_price">￥49</span>
-											<span class="pre_price">￥169</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000089.jpg">
-										</div>
-										<div class="title">【显白热卖色】醉美东方唇膏红管国风口红姨妈烂番茄豆沙色</div>
-										<div class="price">
-											<span class="now_price">￥28</span>
-											<span class="pre_price">￥78</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000090.jpg">
-										</div>
-										<div class="title">【1盒6色】粉悦木马轻雾感口红小样套盒 哑光雾面唇膏非唇釉</div>
-										<div class="price">
-											<span class="now_price">￥109</span>
-											<span class="pre_price">￥354</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000091.jpg">
-										</div>
-										<div class="title">美诺MENOW【口红】晶粹釉色唇笔</div>
-										<div class="price">
-											<span class="now_price">￥15</span>
-											<span class="pre_price">￥59</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100000092.jpg">
-										</div>
-										<div class="title">【顺丰包邮】电光唇唇欲动小美盒唇膏口红5支装</div>
-										<div class="price">
-											<span class="now_price">￥105</span>
-											<span class="pre_price">￥135</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100003584.jpg">
-										</div>
-										<div class="title">【浪漫妆备 超值6支】倾色慕光唇膏迷你套盒小黑钻口红显白持久</div>
-										<div class="price">
-											<span class="now_price">￥79</span>
-											<span class="pre_price">￥169</span>
-										</div>
-									</a>
-								</li>
-								<li class="fl">
-									<a href="goods_detail.html">
-										<div class="img">
-											<img src="./img/goods_detail/ia_100003600.jpg">
-										</div>
-										<div class="title">【丝绒雾面】瓷妆丝绒唇膏 持久保湿滋润不易掉色沾杯口红</div>
-										<div class="price">
-											<span class="now_price">￥105</span>
-											<span class="pre_price">￥135</span>
-										</div>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<!-- 如果需要分页器 -->
-					<div class="swiper-pagination relative">
-					</div>
-
-					<!-- 如果需要导航按钮 -->
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
-
-					<!-- 如果需要滚动条 -->
-					<div class="swiper-scrollbar"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- 商品咨询 -->
-	<div class="consult floor_index">
-		<div class="container">
-			<div class="title">
-				<span>商品咨询</span>
-			</div>
-			<div class="question">
-				<div class="ques_title">
-					<span>购买前如有问题，请向唯品会咨询。</span>
-					<a href="#">
-						<img class="vertical-mid" src="img/goods_detail/service_detail.png">
-						<span class="vertical-mid">联系客服</span>
-					</a>
-				</div>
-				<ul class="ques_list">
-					<li>
-						<div>
-							<i class="icon_detail icon_detail_question"></i>
-							<span>商品都是正品吗？</span>
-						</div>
-						<div>
-							<i class="vertical-top icon_detail icon_detail_answer"></i>
-							<span class="vertical-top">请你放心，唯品会www.vip.com上所售卖的商品均确保正品，并由中国人民财产保险股份有限公司为你购买的每一件商品进行承保。</span>
-						</div>
-					</li>
-					<li>
-						<div>
-							<i class="icon_detail icon_detail_question"></i>
-							<span>衣服图片上搭配的腰带、项链等配件，会连商品一同送货吗？</span>
-						</div>
-						<div>
-							<i class="vertical-top icon_detail icon_detail_answer"></i>
-							<span class="vertical-top">这点请注意咯，如非特别说明，服装类商品图片中的腰带、饰品等配件均为拍摄搭配之用，是不包含在所售商品中的。</span>
-						</div>
-					</li>
-					<li>
-						<div>
-							<i class="icon_detail icon_detail_question"></i>
-							<span>尺码表上的尺码标准吗？</span>
-						</div>
-						<div>
-							<i class="vertical-top icon_detail icon_detail_answer"></i>
-							<span class="vertical-top">唯品会所售商品尺寸均为人工测量，可能会存在1-2cm的正常误差范围。</span>
-						</div>
-					</li>
-					<li>
-						<div>
-							<i class="icon_detail icon_detail_question"></i>
-							<span>图片颜色和实物颜色是否相同？</span>
-						</div>
-						<div>
-							<i class="vertical-top icon_detail icon_detail_answer"></i>
-							<span class="vertical-top">唯品会所有商品均采用专业拍摄，力求将最真实的信息传达至你的视线。但由于个人显示器不同，可能导致实物与图片存在色差，最终颜色以实物为准。</span>
-						</div>
-					</li>
-					<li>
-						<div>
-							<i class="icon_detail icon_detail_question"></i>
-							<span>为什么我收到的商品包装和图片显示的不一致？</span>
-						</div>
-						<div>
-							<i class="vertical-top icon_detail icon_detail_answer"></i>
-							<span class="vertical-top">由于部分商品生产批次不一，你收到货品的包装有可能与网站上图片不完全一致，但唯品会保证所售商品均为正品，商品包装请以实物为准。</span>
-						</div>
-					</li>
-					<li>
-						<div>
-							<i class="icon_detail icon_detail_question"></i>
-							<span>唯品会的对比价格：</span>
-						</div>
-						<div>
-							<i class="vertical-top icon_detail icon_detail_answer"></i>
-							<span class="vertical-top">唯品会展示的中间未划横线价格（显示如¥799）为唯品会销售价，该价格是交易成交价，是您最终决定是否购买商品的依据。唯品会展示的中间划横线价格（显示如
-								¥2899）为参考价，采集自品牌专柜标价、商品吊牌价、品牌官网价格或由供应商提供的正品零售价；由于地区、时间、货币汇率等的差异及存在品牌方调价、市场行情波动、产品批次等因素，品牌专柜标价、商品吊牌价等可能会与您购物时网页显示的划线价不一致。该价格仅供您参考。折扣比为唯品会销售价与参考价的对比（该值四舍五入后采小数点后1位，如¥799/¥2899=0.2756=2.8折），该对比值仅供您参考，不作为结算基数。</span>
-						</div>
-					</li>
-					<li>
-						<div>
-							<i class="icon_detail icon_detail_question"></i>
-							<span>商品都是正品吗？</span>
-						</div>
-						<div>
-							<i class="vertical-top icon_detail icon_detail_answer"></i>
-							<span
-								class="vertical-top">在你签收商品之日起的7天之内，唯品会为你提供七天无理由放心退服务，但以下情形将不能退货：1、非唯品会销售的商品，或有明显使用痕迹影响二次销售的商品；2、法律明确规定不适用七天无理由退货的商品；3、基于安全及健康的考虑，已拆封的食品、药品、保健品、化妆品、贴身用品等；4、已经激活的手机、电脑、数码产品等；5、已在线交付的充值类商品；6、未经授权的维修、误用、碰撞、疏忽、滥用、进液、事故、改动、不正确的安装所造成的商品质量问题，或撕毁、涂改标贴、机器序号、防伪标记；7、无法提供商品的发票（如已索要发票）、保修卡等三包凭证或者三包凭证信息与商品不符及被涂改的；8、礼包或套装中的商品不可以部分退换货。详见唯品会退货政策。上述退货规则，客户一经购买，视为认可。<a
-									href="#"> 查看详细退货政策»</a></span>
-						</div>
-					</li>
-				</ul>
-				<div class="sales_return">
-					<div class="sales_return_title">退货流程如下：</div>
-					<div class="sales_return_con">
-						<img src="./img/goods_detail/return_goods.png">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- 关于我们 -->
-	<div class="aboutUs floor_index">
-		<div class="container">
-			<div class="title">
-				<span>关于我们</span>
-			</div>
-			<div class="show">
-				<div class="show_title">
-					<i class="vertical-top icon_aboutUs icon_aboutUs_prev_1 active"></i>
-					<i class="vertical-top icon_aboutUs icon_aboutUs_prev_2"></i>
-					<i class="vertical-top icon_aboutUs icon_aboutUs_prev_3"></i>
-					<i class="vertical-top icon_aboutUs icon_aboutUs_prev_4"></i>
-					<i class="vertical-top icon_aboutUs icon_aboutUs_prev_5"></i>
-					<i class="vertical-top icon_aboutUs icon_aboutUs_prev_6"></i>
-					<i class="vertical-top icon_aboutUs icon_aboutUs_prev_7"></i>
-					<i class="vertical-top icon_aboutUs icon_aboutUs_prev_8"></i>
-				</div>
-				<div class="show_des">
-					<i class="icon_aboutUs icon_aboutUs_des_1"></i>
-					<i class="icon_aboutUs icon_aboutUs_des_2"></i>
-					<i class="icon_aboutUs icon_aboutUs_des_3"></i>
-					<i class="icon_aboutUs icon_aboutUs_des_4"></i>
-					<i class="icon_aboutUs icon_aboutUs_des_5"></i>
-					<i class="icon_aboutUs icon_aboutUs_des_6"></i>
-					<i class="icon_aboutUs icon_aboutUs_des_7"></i>
-					<i class="icon_aboutUs icon_aboutUs_des_8"></i>
-				</div>
-				<div class="show_img">
-					<div class="img_box">
-						<img src="./img/goods_detail/au_img01.jpg">
-					</div>
-					<div class="img_box">
-						<img src="./img/goods_detail/au_img11.jpg">
-					</div>
-					<div class="img_box">
-						<img src="./img/goods_detail/au_img21.jpg">
-					</div>
-					<div class="img_box">
-						<img src="./img/goods_detail/au_img31.jpg">
-					</div>
-					<div class="img_box">
-						<img src="./img/goods_detail/au_img51.jpg">
-					</div>
-					<div class="img_box">
-						<img src="./img/goods_detail/au_img61.jpg">
-					</div>
-					<div class="img_box">
-						<img src="./img/goods_detail/au_img71.jpg">
-					</div>
-					<div class="img_box">
-						<img src="./img/goods_detail/au_img81.jpg">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-
-
-
-
-
 
 
 	<!-- 全局footer -->
@@ -3984,51 +2908,12 @@
 	</div>
 	<!-- 引入jQuery -->
 	<script src="./js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
-	<!-- 轮播图插件 -->
-	<script src="./lib/swiper-5.3.0/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
-	<!-- 全局header、footer----修改：nav不固定 -->
-	<script src="./js/goods_detail/header&footer_detail.js" type="text/javascript" charset="utf-8"></script>
+	<!-- 全局header、footer----勿删 -->
+	<script src="./js/header&footer.js" type="text/javascript" charset="utf-8"></script>
 	<!-- 右侧栏JS -->
 	<script src="./js/ScrollBar.js" type="text/javascript" charset="utf-8"></script>
-	<!-- 当前页面 -->
-	<script src="./js/goods_detail/goods_detail.js" type="text/javascript" charset="utf-8"></script>
-	<!-- 初始化Swiper -->
-	<script type="text/javascript">
-		var mySwiper = new Swiper('.swiper-container', {
-			direction: 'horizontal', // 垂直切换选项
-			loop: false, // 循环模式选项
-			allowTouchMove: false,//关闭触摸滑动
-
-			// 如果需要分页器
-			pagination: {
-				el: '.swiper-pagination',
-				type: 'fraction',
-			},
-
-			// 如果需要前进后退按钮
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			},
-		});
-		//箭头移入移出
-		$('.swiper-container').on('mouseenter', function () {
-			$('.swiper-button-next').stop(true).animate({
-				'right': '10px'
-			});
-			$('.swiper-button-prev').stop(true).animate({
-				'left': '10px'
-			});
-		});
-		$('.swiper-container').on('mouseleave', function () {
-			$('.swiper-button-next').stop(true).animate({
-				'right': '-45px'
-			});
-			$('.swiper-button-prev').stop(true).animate({
-				'left': '-45px'
-			});
-		});
-	</script>
+	<!-- 当前页 index.js -->
+	<script src="./js/collection/collection.js" type="text/javascript" charset="utf-8"></script>
 </body>
 
 </html>

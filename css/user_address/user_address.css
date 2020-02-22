@@ -369,7 +369,7 @@
 
 /* -----------编辑收货地址-------------- */
 
-.input_box {
+.content .input_box {
   border-top: 1px solid #ef50a3;
   margin-top: 25px;
   background: #fff none repeat;
@@ -377,7 +377,7 @@
   font-size: 12px;
 }
 
-.input_box .title {
+.content .input_box .title {
   display: block;
   color: #333;
   font-size: 14px;
@@ -387,18 +387,18 @@
 
 /* ------编辑区域 ------*/
 
-.input_box .edit_box {
+.content .input_box .edit_box {
   padding: 20px 0 5px;
   border-top: 1px solid #dcdcdc;
   background: #fbfbfb;
 }
 
-.input_box .edit_box .item {
+.content .input_box .edit_box .item {
   display: block;
   margin-bottom: 15px;
 }
 
-.input_box .edit_box .item .tip {
+.content .input_box .edit_box .item .tip {
   font-size: 14px;
   height: 18px;
   line-height: 18px;
@@ -409,12 +409,12 @@
   padding: 7px 0 7px 0
 }
 
-.input_box .edit_box .item span:first-child {
+.content .input_box .edit_box .item span:first-child {
   color: #f10180;
   margin-right: 5px;
 }
 
-.input_box .edit_box .item span:nth-child(2) {
+.content .input_box .edit_box .item span:nth-child(2) {
   font-size: 14px;
   width: 126px;
   color: #333;
@@ -422,7 +422,7 @@
   text-align: right;
 }
 
-.input_box .edit_box .item input {
+.content .input_box .edit_box .item input {
   width: 220px;
   height: 18px;
   line-height: 18px;
@@ -437,7 +437,7 @@
 
 /* 收货时间 */
 
-.input_box .edit_box .time .time_sel {
+.content .input_box .edit_box .time .time_sel {
   padding: 4px;
   border: 1px solid #b3b3b3;
   border-radius: 3px;
@@ -454,7 +454,7 @@
 
 /* 收货地址 */
 
-.input_box .edit_box .city .city_sel {
+.content .input_box .edit_box .city .city_sel {
   color: #999;
   line-height: 30px;
   text-decoration: none;
@@ -467,7 +467,7 @@
   outline: 0;
 }
 
-.input_box .edit_box .city .city_sel select {
+.content .input_box .edit_box .city .city_sel select {
   width: 160px;
   height: 30px;
   border-radius: 3px;
@@ -477,27 +477,27 @@
 
 /* 收货地址类型 */
 
-.input_box .edit_box .type .check_box {
+.content .input_box .edit_box .type .check_box {
   padding-top: 8px;
 }
 
-.input_box .edit_box .type .check_box input {
+.content .input_box .edit_box .type .check_box input {
   width: 15px;
   margin-right: 5px;
 }
 
-.input_box .edit_box .type .check_box span {
+.content .input_box .edit_box .type .check_box span {
   margin-right: 15px;
 }
 
 /* 是否设为默认地址 */
 
-.input_box .edit_box .setDefault span {
+.content .input_box .edit_box .setDefault span {
   color: #333;
   font-size: 14px;
 }
 
-.input_box .edit_box .setDefault input {
+.content .input_box .edit_box .setDefault input {
   width: 16px;
   height: 16px;
   margin-right: 5px;
@@ -505,7 +505,7 @@
 
 /* 保存 取消 */
 
-.input_box .edit_box .btn #save {
+.content .input_box .edit_box .btn #save {
   margin-right: 20px;
   background-color: #f10180;
   border: 0;
@@ -522,7 +522,7 @@
   border: 1px solid #f10180;
 }
 
-.input_box .edit_box .btn #cancel {
+.content .input_box .edit_box .btn #cancel {
   margin-right: 20px;
   background-color: #fafafa;
   border: 0;
