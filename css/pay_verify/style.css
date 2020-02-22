@@ -140,6 +140,27 @@
 	padding: 7px 10px;
 	border-radius: 4px;
 }
+.pay-person .area select{
+	padding: 7px 0px;
+	width: 100px;
+	border-radius: 4px;
+}
+#save-btn{
+	border: 0;
+	background-color:#F10180;
+	padding: 10px 40px;
+	border-radius: 3px;
+	margin-right: 50px;
+	color: white;
+}
+#cancel-btn{
+	border: 1px solid #ddd;
+	background-color:#F3F3F3;
+	padding: 10px 40px;
+	border-radius: 3px;
+	margin-right: 50px;
+	color: #AAAAAA;
+}
 .cart-box .cart .cart-head .goods{
 	width: 1000px;
 	font-size: 15px;
