@@ -2,6 +2,7 @@
 $(window).ready(function () {
   //初始化
   $('#target').distpicker('reset', true);
+  var $distpicker = $('#target');
   //获取地址编辑区域的Top值
   var inputTop = $('.editTop').offset().top;
   //存储初始Li-->obj
@@ -104,7 +105,7 @@ $(window).ready(function () {
     //清空val
     $('.edit_box .name input').val('');
     $('.edit_box .tel input').val('');
-    $('.edit_box .time option:selected').val(null).trigger("change")
+    $('.edit_box .time .time_sel').val('allday').trigger("change")
     $('.edit_box .detail_address input').val('');
     $('.edit_box .type input').prop('checked', false);
     $('.edit_box .setDefault input').prop('checked', false);
@@ -156,6 +157,11 @@ $(window).ready(function () {
     var province = $('.edit_box #province').val().trim();
     var city = $('.edit_box #city').val().trim();
     var district = $('.edit_box #district').val().trim();
+    //地址代码
+    var provinceID = $('.edit_box #province').find('option:selected').attr('data-code');
+    var cityID = $('.edit_box #city').find('option:selected').attr('data-code');
+    var districtID = $('.edit_box #district').find('option:selected').attr('data-code');
+    console.log(provinceID, cityID, districtID);
     var detail_address = $('.edit_box .detail_address input').val().trim();
     var type = $('.edit_box .type input:checked').next().text().trim();
     var setDefault = $('.edit_box .setDefault input:checked');
@@ -169,7 +175,7 @@ $(window).ready(function () {
       //取消禁用
       $('#save').prop('disabled', false);
     }
-    var arr = [name, tel, time, province, city, district, detail_address, type, setDefault]
+    var arr = [name, tel, time, province, city, district, detail_address, type, setDefault, provinceID, cityID, districtID]
     console.log(arr);
     //判断是修改还是新增
     var isShow = $('#cancel').is(':visible');
@@ -199,6 +205,9 @@ $(window).ready(function () {
       detail_address: arr[6],
       time: arr[2],
       type: arr[7],
+      provinceID: arr[9],
+      cityID: arr[10],
+      districtID: arr[11],
     }
     $Li.data('msg', obj);
     //判断是否是默认地址
@@ -232,7 +241,7 @@ $(window).ready(function () {
     //清空val
     $('.edit_box .name input').val('');
     $('.edit_box .tel input').val('');
-    $('.edit_box .time option:selected').val(null).trigger("change")
+    $('.edit_box .time .time_sel').val('allday').trigger("change")
     $('.edit_box .detail_address input').val('');
     $('.edit_box .type input').prop('checked', false);
     $('.edit_box .setDefault input').prop('checked', false);
@@ -250,7 +259,7 @@ $(window).ready(function () {
     //清空val
     $('.edit_box .name input').val('');
     $('.edit_box .tel input').val('');
-    $('.edit_box .time option:selected').val(null).trigger("change")
+    $('.edit_box .time .time_sel').val('allday').trigger("change");
     $('.edit_box .detail_address input').val('');
     $('.edit_box .type input').prop('checked', false);
     $('.edit_box .setDefault input').prop('checked', false);
@@ -269,21 +278,23 @@ $(window).ready(function () {
     var obj = $(this).parents('li').data('msg');
     console.log(obj);
     //传参
-    /*   var $name = $('.edit_box .name input');
-  var $tel = $('.edit_box .tel input');
-  var $time = $('.edit_box .time option:selected');
-  var $province = $('.edit_box #province');
-  var $city = $('.edit_box #city');
-  var $district = $('.edit_box #district');
-  var $detail_address = $('.edit_box .detail_address input');
-  var $type = $('.edit_box .type input');
-  var $setDefault = $('.edit_box .setDefault input'); */
     $('.edit_box .name input').val(obj.name);
     $('.edit_box .tel input').val(obj.tel);
     $('.edit_box .time option:selected').text(obj.time);
-    $('.edit_box #province').val(obj.province);
-    $('.edit_box #city').val(obj.city);
-    $('.edit_box #district').val(obj.district);
+    $("#distpicker").distpicker('destroy');
+    $("#distpicker").distpicker({
+      autoSelect: false,
+      placeholder: true
+    });
+    var $province = $("#province");
+    $province.val(obj.province);
+    $province.trigger("change");
+    var $city = $("#city");
+    $city.val(obj.city);
+    $city.trigger("change");
+    var $district = $("#district");
+    $district.val(obj.district);
+    $district.trigger("change");
     $('.edit_box .detail_address input').val(obj.detail_address);
     //判断type
     if (obj.type == "家庭") {
@@ -307,6 +318,15 @@ $(window).ready(function () {
   })
   /* ----------------------返回按钮----------------------- */
   $('#cancel').on('click', function () {
-
+    $(this).css('display', 'none');
+    //清空val
+    $('.edit_box .name input').val('');
+    $('.edit_box .tel input').val('');
+    $('.edit_box .time .time_sel').val('allday').trigger("change");
+    $('.edit_box .detail_address input').val('');
+    $('.edit_box .type input').prop('checked', false);
+    $('.edit_box .setDefault input').prop('checked', false);
+    //重置城市选择
+    $('#target').distpicker('reset', true);
   })
 });
