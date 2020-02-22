@@ -7,6 +7,8 @@
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<!-- valid插件 -->
 		<link rel="stylesheet" type="text/css" href="lib/Validform_v5.3.2/css/style.css" />
+		<!-- 全局 header/footer -->
+		<link rel="stylesheet" type="text/css" href="css/goods_search/header&footer.css"/>
 		<!-- 购物车の样式 -->
 		<link rel="stylesheet" type="text/css" href="css/shopping_cart/style.css" />
 	</head>
@@ -91,7 +93,7 @@
 						<tr>
 							<td class="goods-td clearfix">
 								<div class="goods-img float-left">
-									<img src="img/shopping_cart/good1.jpg" width="60px">
+									<a href="goods_detail.html"><img src="img/shopping_cart/good1.jpg" width="60px"></a>
 								</div>
 								<div class="goods-font float-left clearfix">
 									<div class="font">
@@ -123,7 +125,7 @@
 						<tr>
 							<td class="goods-td clearfix">
 								<div class="goods-img float-left">
-									<img src="img/shopping_cart/good1.jpg" width="60px">
+									<a href="goods_detail.html"><img src="img/shopping_cart/good1.jpg" width="60px"></a>
 								</div>
 								<div class="goods-font float-left clearfix">
 									<div class="font">
@@ -155,7 +157,7 @@
 						<tr>
 							<td class="goods-td clearfix">
 								<div class="goods-img float-left">
-									<img src="img/shopping_cart/good1.jpg" width="60px">
+									<a href="goods_detail.html"><img src="img/shopping_cart/good1.jpg" width="60px"></a>
 								</div>
 								<div class="goods-font float-left clearfix">
 									<div class="font">
@@ -197,17 +199,60 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="pay-box clearfix">
-				<div class="coupon float-left"><span class="middle">使用优惠券</span> <img src="img/shopping_cart/pink-down.jpg" class="middle" ></div>
+				<div class="coupon float-left"><span class="middle">使用优惠券</span> <img src="img/shopping_cart/pink-down.jpg" class="middle"></div>
 				<div class="sum-box float-right">
 					共<span class="total">0</span>件商品 商品金额<span class="sum">0</span>元
 					<div class="no-freight">总金额（未含运费）<span class="sum">0</span>元</div>
 				</div>
 			</div>
 			<div class="calculation clearfix">
-				<div class="tips float-left"><span class="middle">请在倒计时结束前结算</span><img src="img/shopping_cart/tip.png" class="middle" ></div>
+				<div class="tips float-left"><span class="middle">请在倒计时结束前结算</span><img src="img/shopping_cart/tip.png" class="middle"></div>
 				<div class="calculation-btn float-right">立即结算<span class=""></span></div>
+			</div>
+			<div class="serve-box">
+				<img src="img/shopping_cart/serve-content.png" width="1000px">
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="container">
+				<div class="about">
+					<ul>
+						<li><a href="#">关于我们</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Investor Relations</a></li>
+						<li><a href="#">媒体报道</a></li>
+						<li><a href="#">品牌招商</a></li>
+						<li><a href="#">隐私条款</a></li>
+						<li><a href="#">唯品诚聘</a></li>
+						<li><a href="#">唯品卡</a></li>
+						<li><a href="#">联系我们</a></li>
+					</ul>
+				</div>
+				<div class="Copyright">Copyright © 2008-2020 vip.com，All Rights Reserved 使用本网站即表示接受 <a href="#">唯品会用户协议</a>。版权所有
+					<a href="#">广州唯品会电子商务有限公司</a> </div>
+				<div class="put_on_records">
+					<span><a href="#" class="vertical-mid"><img src="./img/index/police_icon.png" class="vertical-mid">粤公网安备
+							44010302111111号</a> <a href="#">粤ICP备08114786号</a> <a href="#">增值业务经营许可证：粤B2-20170777</a> <a href="#">网络文化经营许可证：粤网文〔2018〕5030-1743号</a>
+					</span>
+					<span><a href="#">自营主体经营证照</a> <a href="#">风险监测信息</a> <a href="#">互联网药品信息服务资格证书：（粤）-经营性-2018-0271</a> <a href="#">网络食品交易第三方平台备案凭证：粤B2-20170777</a>
+						<a href="#">医疗器械网络交易服务第三方平台</a></span>
+					<span><a href="#">备案凭证：（粤）网械平台备字[2019]第00001号</a></span>
+				</div>
+				<div class="identification">
+					<a href="#"><i class="icon_identification icon_identification_Unionpay"></i></a>
+					<!-- <a href="#"><i class="icon_identification icon_identification_Alipay"></i></a>
+			<a href="#"><i class="icon_identification icon_identification_CreditEnterprise"></i></a> -->
+					<a href="#"><i class="icon_identification icon_identification_LegalRights"></i></a>
+					<a href="#"><i class="icon_identification icon_identification_RedLink"></i></a>
+					<a href="#"><i class="icon_identification icon_identification_callPolice"></i></a>
+					<a href="#"><i class="icon_identification icon_identification_netPolice"></i></a>
+					<!-- <a href="#"><i class="icon_identification icon_identification_ccredit"></i></a> -->
+					<a href="#"><i class="icon_identification icon_identification_integrityWeb"></i></a>
+					<a href="#"><i class="icon_identification icon_identification_credibleWeb"></i></a>
+				</div>
 			</div>
 		</div>
 		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
@@ -222,21 +267,21 @@
 					var minute = parseInt(time / 60);
 					var second = parseInt(time % 60);
 					oResult.innerHTML = '特卖商品 ' + minute + ' : ' + second;
-                    oCalculation.innerHTML = '立即结算 ' + minute + ' : ' + second;
+					oCalculation.innerHTML = '立即结算 ' + minute + ' : ' + second;
 				}, 1000);
 			}
-            
+
 			$('.tips .tip img').hover(function() {
 				$('.order-tip').css('opacity', '1');
 				$('.order-tip').css('transition', 'all 0.5s');
 			}, function() {
 				$('.order-tip').css('opacity', '0');
 			})
-			
-			$('.add').click(function () {
+
+			$('.add').click(function() {
 				//数量显示
 				var $num = $(this).siblings('.num');
-				var num =parseFloat($num.text());
+				var num = parseFloat($num.text());
 				num++;
 				$num.text(num);
 				//小计显示
@@ -248,10 +293,10 @@
 				console.log(price)
 				console.log(num)
 			});
-			$('.minus').click(function () {
+			$('.minus').click(function() {
 				//数量显示
 				var $num = $(this).siblings('.num');
-				var num =parseFloat($num.text());
+				var num = parseFloat($num.text());
 				num--;
 				$num.text(num);
 				//小计显示
@@ -261,7 +306,7 @@
 				calNum();
 				calSum();
 			});
-			$('.goods-del').click(function () {
+			$('.goods-del').click(function() {
 				//数量显示
 				$(this).parent('td').siblings('.adjust-td').find('.num').text('0');
 				//小计显示
@@ -273,16 +318,16 @@
 			//计算总数量
 			function calNum() {
 				var total = 0;
-				$('.num').each(function (index) {
-					var n = parseFloat($(this).text());//每一个元素里的数字   this指每一个元素
+				$('.num').each(function(index) {
+					var n = parseFloat($(this).text()); //每一个元素里的数字   this指每一个元素
 					total += n;
 				});
 				$('.total').text(total);
 			};
 			//计算总价格
-			function calSum(){
+			function calSum() {
 				var sum = 0;
-				$('.goods-sum .sum-num').each(function (index) {
+				$('.goods-sum .sum-num').each(function(index) {
 					var n = parseFloat($(this).text());
 					sum += n;
 				});
