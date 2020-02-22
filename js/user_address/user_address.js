@@ -1,9 +1,7 @@
 /* --------------------------加载DOM---------------------------- */
 $(window).ready(function () {
   //初始化
-  $(function () {
-    $('#target').distpicker();
-  })
+  $('#target').distpicker('reset', true);
   //获取地址编辑区域的Top值
   var inputTop = $('.editTop').offset().top;
   //存储初始Li-->obj
