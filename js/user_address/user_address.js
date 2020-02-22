@@ -150,8 +150,8 @@ $(window).ready(function () {
     var city = $('.edit_box #city').val().trim();
     var district = $('.edit_box #district').val().trim();
     var detail_address = $('.edit_box .detail_address input').val().trim();
-    var type = $('.edit_box .type input').prop('checked').next().text().trim();
-    var setDefault = $('.edit_box .setDefault input').prop('checked');
+    var type = $('.edit_box .type input:checked').next().text().trim();
+    var setDefault = $('.edit_box .setDefault input:checked');
     //判断是否完善
     var not = $('error-tip').is(':visible');
     if (not || !name || !tel || !district || !detail_address) {
@@ -230,7 +230,7 @@ $(window).ready(function () {
     $('.edit_box .type input:checked').removeAttr('checked');
     $('.edit_box .setDefault input').removeAttr('checked');
     //重置城市选择
-    $().distpicker('reset', true);
+    $('#target').distpicker('reset', true);
     //判断已保存的数量
     var Box_num = $('.address_box li').length;
     //赋值显示
