@@ -47,6 +47,18 @@
 	background-color: white;
 	outline: 0;
 }
+.okey{
+	margin: 16px 15px 16px 0 ;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+	padding: 3px 5px;
+	background-color: white;
+	outline: 0;
+	display: none;
+}
+.match-chose{
+	display: none;
+}
 .brand-box{
 	border-bottom: 1px solid #DDD;
 }
