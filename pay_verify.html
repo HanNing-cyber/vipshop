@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<title>订单验证</title>
 		<!-- 重置样式表 -->
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<!-- valid插件 -->
@@ -19,28 +19,28 @@
 					<tr>
 						<td rowspan="2">
 							<div class="logo">
-								<img src="img/pay_verify/logo.png" width="220px">
+								<a href="index.html"><img src="img/pay_verify/logo.png" width="220px"></a>
 							</div>
 						</td>
 						<td class="clearfix head">
-							<div class="number float-right">
+							<a href=""><div class="number float-right">
 								<img src="img/pay_verify/number.png" class="middle">
 								<span class="middle">会员服务</span>
-							</div>
-							<div class="customer float-right">
+							</div></a>
+							<a href=""><div class="customer float-right">
 								<img src="img/pay_verify/customer.png" class="middle">
 								<span class="middle">在线客服</span>
-							</div>
-							<div class="tel float-right">
+							</div></a>
+							<a href=""><div class="tel float-right">
 								<img src="img/pay_verify/tel.png" class="middle">
 								<span class="middle">400-6789-888</span>
-							</div>
+							</div></a>
 							<div class="order-ctrl float-right">
-								<span class="middle ">订单管理</span>
+								<a href="user_order.html"><span class="middle ">订单管理</span></a>
 							</div>
 							<div class="user float-right">
-								<span class="middle">您好，********！</span>
-								<img src="img/pay_verify/user.png" class="middle">
+								<a href="user.html"><span class="middle">您好，********！</span>
+								<img src="img/shopping_cart/user.png" class="middle"></a>
 								<span>[退出]</span>
 							</div>
 						</td>
@@ -86,136 +86,130 @@
 							<td class="goods">收货信息</td>
 						</tr>
 					</thead>
-					<tbody class="cart-body form">
-						<table class="pay-person">
-						<tr class="person">
-							<td>
-								<span class="must-write">*</span><span>收货人</span>
-							</td>
-							<td>
-								<input type="text" name="" id="" placeholder="收货人姓名" />
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<span class="must-write">*</span><span>手机号</span>
-							</td>
-							<td>
-								<input type="text" name="" id="" placeholder="" />
-								<span class="must-write">*</span><span>备用号码</span>
-								<input type="text" name="" id="" placeholder="收货人姓名" />
-							</td>
-						</tr>
-						<tr class="time">
-							<td>
-								<span class="must-write">*</span><span>收货时间</span>
-							</td>
-							<td class="time-select">
-								<select>
-									<option value="" selected="selected">周一至周日均可收货</option>
-									<option value="">周六日、节假日收货</option>
-									<option value="">周一至周五收货</option>
-								</select>
-							</td>
-						</tr>
-						<tr class="area">
-							<td>
-								<span class="must-write">*</span><span>所在地区</span>
-							</td>
-							<td>
-								<select>
-									<option value="" selected="selected">省/直辖市</option>
-									<option value="">山东省</option>
-									<option value="">北京</option>
-									<option value="">上海</option>
-									<option value="">天津</option>
-									<option value="">深圳</option>
-								</select>
-								<select>
-									<option value="" selected="selected">城市</option>
-									<option value="">济南</option>
-									<option value="">青岛</option>
-									<option value="">烟台</option>
-									<option value="">潍坊</option>
-									<option value="">德州</option>
-									<option value="">济宁</option>
-									<option value="">威海</option>
-									<option value="">莱芜</option>
-									<option value="">枣庄</option>
-									<option value="">聊城</option>
-									<option value="">日照</option>
-									<option value="">蓬莱</option>
-									<option value="">淄博</option>
-									<option value="">曲阜</option>
-								</select>
-								<select>
-									<option value="" selected="selected">区/县</option>
-									<option value="">山东省</option>
-									<option value="">北京</option>
-								</select>
-								<select>
-									<option value="" selected="selected">乡镇/街道</option>
-									<option value="">山东省/option>
-									<option value="">北京</option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<span class="must-write">*</span><span>详细地址</span>
-							</td>
-							<td>
-								<input type="text" name="" id="" placeholder="收货人姓名" />
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<span class="must-write">*</span><span class="address-type">地址类型</span>
-							</td>
-							<td class="type-btn">
-								<input type="radio" name="address" id="" value="" />家庭
-								<input type="radio" name="address" id="" value="" />公司
-								<input type="radio" name="address" id="" value="" />其他
-							</td>
-						</tr>
-						<tr class="default-address">
-							<td></td>
-							<td><input type="checkbox" name="" id="" value="" />设为默认地址</td>
-						</tr>
-						<tr>
-							<td></td>
-							<td><button type="button" id="save-btn">保存</button>
-							<button type="button" id="cancel-btn">取消</button></td>
-						</tr>
-						</table>
-					</tbody>
 				</table>
-				<div class="cart-foot">
-					<div class="clearfix">
-						<div class="freight float-left">运费</div>
-						<div class="freight-tip float-left float-left">唯品自营: 唯品自营商品已满足新会员专享首单满38元免邮（限唯品自营商品，部分商品不可用）</div>
+				<div class="cart-body form">
+					<div class="address-item float-left">
+						<div class="item-head clearfix">
+							<span class="name float-left">张三</span>
+							<span class="default-address float-right">默认地址</span>
+							<span class="change float-right">修改</span>
+						</div>
+						<div class="item-body clearfix">
+							<span class="item-tel">12345678910</span>
+							<span class="item-time">周一至周日均可收货</span>
+							<div class="item-address">
+								<img src="img/pay_verify/address-logo.png" class="middle">
+								<span class="address-city">山东省青岛市</span>
+								<span class="address-detail">崂山区银川东路33号</span>
+							</div>
+						</div>
 					</div>
-					<div class="clearfix">
-						<div class="limit float-left">限制</div>
-						<div class="limit-tip float-left float-left">唯品快抢商品仅支持叠加参与买赠、返券、免邮活动，不支持使用优惠券及满减、折扣、任选活动</div>
+				
+					<div class="add-address relative float-left">
+						<div class="add-content">
+							<div class="plus">+</div>
+							<div class="add-font">添加地址</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				
+				<div class="detailed-list">
+					<span class="detailed-list-head">商品清单</span>
+					<span class="go-back float-right"><a href="shopping_cart.html">返回购物袋修改商品</a></span>
+				</div>
+				<div class="detailed-list-body">
+					<table>
+						<thead>
+							<tr class="body-title">
+								<td class="title-logo">唯品会 发货订单</span>
+				                <td class="title-size">尺码</td>
+								<td class="title-price">单价</td>
+								<td class="title-num">数量</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="arrive-time">
+									<img src="img/pay_verify/clock.png" class="middle" >
+									<span class="middle">预计 <b>02月27号（周四）</b> 送达</span>
+								</td>
+							</tr>
+							<tr class="body-content">
+								<td class="body-logo">
+									<a href="goods_detail.html"><img src="img/pay_verify/good1.jpg" width="60px"></a>
+									<span class="top">【1盒6色】粉悦木马轻雾感口红小样套盒 哑光雾面唇膏非</span>
+							    </td>
+								<td class="body-size">
+									<span>3g</span>
+								</td>
+								<td class="body-price">
+									<span>￥<span class="body-price-num">155</span></span>
+								</td>
+								<td class="body-num">
+									<span>1</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+			    </div>
+				
+				<div class="detailed-list">
+					<span class="detailed-list-head">支付清单</span>
+				</div>
+				<div class="my-money">
+					<div class="money-title">我的资产</div>
+					<div class="vipcard">
+						<input type="checkbox" name="" id="" value="" />
+						<span>唯品卡支付</span>
+						<span>余额999999999元</span>
+						<img src="img/pay_verify/gray-tip.png" class="middle" >
+						<a href="#">激活唯品卡</a>
+					</div>
+					<div class="balance">
+						<input type="checkbox" name="" id="" value="" />
+						<span>零钱支付</span>
+						<span>余额999999999元</span>
+					</div>
+					<div class="pay-mode">支付方式</div>
+					<div class="mode-box clearfix">
+						<input type="radio" name="" id="" value="" class="float-left" />
+						<span class="mode-title float-left">在线支付</span>
+						<div class="mode float-left">
+							<div class="mode-up"><a href="#">支持绝大多数银行卡、微信支付等，可在提交订单后选择。</a></div>
+							<div class="mode-down"><a href="#">如唯品金融、中国建设银行、中国工商银行、中国农业银行、中国银行、微信支付等</a></div>
+						</div>
+					</div>
+					<div class="invoice-title">发票信息</div>
+					<div class="invoice-box">
+						<input type="checkbox" name="" id="" value="" />
+						<span>开具发票</span>
+						<img src="img/pay_verify/gray-tip.png" class="middle" >
 					</div>
 				</div>
 			</div>
+               
 
-			<div class="pay-box clearfix">
-				<div class="coupon float-left"><span class="middle">使用优惠券</span> <img src="img/shopping_cart/pink-down.jpg" class="middle"></div>
-				<div class="sum-box float-right">
-					共<span class="total">0</span>件商品 商品金额<span class="sum">0</span>元
-					<div class="no-freight">总金额（未含运费）<span class="sum">0</span>元</div>
-				</div>
+			<!-- <div class="cart-foot">
+                
+			</div> -->
+
+		<div class="pay-box clearfix">
+			<div class="sum-box float-right">
+				<div class="calculation-price">商品金额：<span class="sum">0</span>元</div>
+				<div class="no-freight">运费：<span class="fre-num">0</span>元</div>
+				<div class="wait-pay">待支付：<span class="sum">0</span>元</div>
+				<div class="arrive-address">送货至： 崂山区 银川东路33号金岭新村，张三，123****8910</div>
 			</div>
-			<div class="calculation clearfix">
-				<div class="tips float-left"><span class="middle">请在倒计时结束前结算</span><img src="img/shopping_cart/tip.png" class="middle"></div>
-				<div class="calculation-btn float-right">立即结算<span class=""></span></div>
-			</div>
-			<div class="serve-box">
-				<img src="img/shopping_cart/serve-content.png" width="1000px">
-			</div>
+		</div>
+		<div class="calculation clearfix">
+			<div class="tips float-left"><span class="middle">请在倒计时结束前结算</span><img src="img/shopping_cart/tip.png" class="middle"></div>
+			<a href="pay_success.html"><div class="calculation-btn float-right">立即结算<span class=""></span></div></a>
+		</div>
+		<div class="serve-box">
+			<img src="img/shopping_cart/serve-content.png" width="1000px">
+		</div>
 		</div>
 
 		<div class="footer">
@@ -278,58 +272,10 @@
 				$('.order-tip').css('transition', 'all 0.5s');
 			}, function() {
 				$('.order-tip').css('opacity', '0');
-			})
-
-			$('.add').click(function() {
-				//数量显示
-				var $num = $(this).siblings('.num');
-				var num = parseFloat($num.text());
-				num++;
-				$num.text(num);
-				//小计显示
-				var price = $(this).parents('.adjust-td').siblings('.now-price').find('.price-num').text();
-				$(this).parents('.adjust-td').siblings('.goods-sum').find('.sum-num').text(num * price);
-				//调用计算总数量函数
-				calNum();
-				calSum();
-				console.log(price)
-				console.log(num)
 			});
-			$('.minus').click(function() {
-				//数量显示
-				var $num = $(this).siblings('.num');
-				var num = parseFloat($num.text());
-				num--;
-				$num.text(num);
-				//小计显示
-				var price = $(this).parents('.adjust-td').siblings('.now-price').find('.price-num').text();
-				$(this).parents('.adjust-td').siblings('.goods-sum').find('.sum-num').text(num * price);
-				//调用计算总数量函数
-				calNum();
-				calSum();
-			});
-			$('.goods-del').click(function() {
-				//数量显示
-				$(this).parent('td').siblings('.adjust-td').find('.num').text('0');
-				//小计显示
-				$(this).parent('td').siblings().find('.sum-num').text('0');
-				//调用计算总数量函数
-				calNum();
-				calSum();
-			});
-			//计算总数量
-			function calNum() {
-				var total = 0;
-				$('.num').each(function(index) {
-					var n = parseFloat($(this).text()); //每一个元素里的数字   this指每一个元素
-					total += n;
-				});
-				$('.total').text(total);
-			};
-			//计算总价格
-			function calSum() {
+			window.onload = function calSum() {
 				var sum = 0;
-				$('.goods-sum .sum-num').each(function(index) {
+				$('.body-content .body-price-num').each(function(index) {
 					var n = parseFloat($(this).text());
 					sum += n;
 				});
