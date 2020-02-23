@@ -169,11 +169,29 @@
 	border-left: 3px solid #F10180;
 	text-align: left;
 }
-.cart-box .cart .cart-body .goods-td{
-	padding: 20px;
-	width: 300px;
+.detailed-list{
+	background-color: #f5f5f5;
+	color: #000000;
+	border: 1px solid #ddd;
+	border-left: 3px solid #F10180;
+	padding:10px 15px;
+	margin-top: 50px;
+}
+.detailed-list-head{
+	width: 1000px;
+	font-size: 15px;
+	color: #F10180;
 	text-align: left;
 }
+.detailed-list-body{
+	width: 1000px;
+	border-bottom: 1px solid #ddd;
+}
+.detailed-list-body thead{
+	border-bottom: 1px solid #ddd;
+	width: 1000px;
+}
+
 .self-support{
 	height: 10px;
 }
@@ -246,7 +264,7 @@
 	padding: 20px;
 	margin-top: 50px;
 	border: 1px solid #ddd;
-	height: 60px;
+	height: 110px;
 }
 .pay-box .coupon{
 	padding: 5px 10px;
@@ -264,17 +282,34 @@
 	color: #F10180;
 	margin: 0 10px;
 }
-.pay-box .sum-box .sum{
-	margin-left: 50px;
+.pay-box .sum-box .calculation-price .sum{
+	margin-left: 70px;
 }
 .sum-box .no-freight{
 	margin-top: 10px;
 	text-align: right;
 }
-.pay-box .sum-box .no-freight .sum{
-	margin-left: 40px;
+.pay-box .sum-box .no-freight .fre-num{
+	margin-left: 70px;
 	font-size: 15px;
 	color: #F10180;
+}
+.pay-box .sum-box .calculation-price{
+	text-align: right;
+}
+.pay-box .sum-box .wait-pay{
+	margin-top: 10px;
+	text-align: right;
+	font-size: 20px;
+}
+.pay-box .sum-box .wait-pay .sum{
+	margin-left: 50px;
+	color: #f10180;
+}
+.pay-box .sum-box .arrive-address{
+	border: none;
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 .calculation{
 	width: 100%;
@@ -302,3 +337,150 @@
 	margin-top: 60px;
 }
 
+
+
+/* 新增 */
+.cart-body{
+	padding-top: 30px;
+}
+.address-item{
+	background: url(../../img/user_address/address_bg.png) no-repeat;
+	width: 252px;
+	height: 151px;
+}
+.item-head{
+	padding: 15px 0;
+	margin:  0 auto;
+	width: 85%;
+	border-bottom: 1px solid #ddd;
+	
+}
+.item-head .name{
+	font-size: 15px;
+}
+.item-body{
+	margin:  0 auto;
+	width: 85%;
+	margin-top: 20px;
+}
+.item-body .item-address{
+	margin-top: 15px;
+}
+.add-address{
+	width: 252px;
+	height: 151px;
+	border: 1px solid #ddd;
+	background-color: #F9F9F9;
+	margin-left: 30px;
+	color: #ddd;
+}
+.add-content{
+	width: 100px;
+	height: 90px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	text-align: center;
+}
+.add-content .plus{
+	font-size: 50px;
+}
+.body-title{
+	width: 1000px;
+}
+.title-logo{
+	width: 40%;
+	padding: 20px 50px 10px 10px;
+	font-size: 15px;
+	color: #000000;
+	font-weight: bold;
+}
+.title-size{
+	width: 16%;
+	padding: 20px 70px 10px 70px;
+}
+.title-price{
+	width: 16%;
+	padding: 20px 70px 10px 70px;
+}
+.title-num{
+	width: 17%;
+	padding: 20px 70px 10px 70px;
+}
+.body-logo{
+	width: 40%;
+	padding: 0px 50px 10px 10px;
+	color: #000000;
+}
+.body-size{
+	width: 16%;
+	padding: 0px 70px 10px 70px;
+}
+.body-price{
+	width: 16%;
+	padding: 0px 70px 10px 70px;
+}
+.body-num{
+	width: 17%;
+	padding: 0px 70px 10px 70px;
+}
+.arrive-time{
+	padding: 5px;
+}
+.my-money{
+	padding: 15px;
+}
+.money-title{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 15px;
+	color: #000000;
+	font-weight: bold;
+}
+.vipcard{
+	font-size: 15px;
+	margin-bottom: 15px;
+}
+a{
+	color: #6394D3;
+}
+.balance{
+	font-size: 15px;
+	padding-bottom: 20px;
+	border-bottom: 1px dotted #ddd;
+}
+.pay-mode{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 15px;
+	color: #000000;
+	font-weight: bold;
+}
+.mode-box{
+    border: 1px solid #7CBF13;
+    background-color: #FCFEF9;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.mode-box .mode-title{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.pay-mode .mode{
+	margin-left: 20px;
+}
+.invoice-title{
+	margin-top: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 15px;
+	color: #000000;
+	font-weight: bold;
+	border-top: 1px dotted #ddd;
+}
+.invoice-box{
+	font-size: 15px;
+}
