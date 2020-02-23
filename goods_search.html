@@ -2428,9 +2428,10 @@
 		<div class="head-box relative">
 			<div class="serve-box clearfix">
 				<div class="serve float-left">唯品服务</div>
-				<div class="reduction float-left">超值优惠</div>
-				<div class="counter float-left">专柜同步</div>
+				<div class="reduction float-left"><input type="checkbox" class="match-chose" />超值优惠</div>
+				<div class="counter float-left"><input type="checkbox" class="match-chose" />专柜同步</div>
 				<div class="float-right"><button type="button" class="check">+ 多选</button></div>
+				<div class="float-right"><button type="button" class="okey">确认</button></div>
 			</div>
 			<!-- 商标盒子 -->
 			<div class="brand-box clearfix">
@@ -2476,42 +2477,44 @@
 			<!-- 妆色盒子 -->
 			<div class="color-box clearfix">
 				<div class="color-font float-left">色系</div>
-				<div class="color1 float-left">粉色系</div>
-				<div class="color2 float-left">蓝色系</div>
-				<div class="color3 float-left">绿色系</div>
-				<div class="color4 float-left">黄色系</div>
-				<div class="color5 float-left">黑白系</div>
-				<div class="color6 float-left">多彩色系</div>
-				<div class="color7 float-left">红色系</div>
+				<div class="color1 float-left"><input type="checkbox" class="match-chose" />粉色系</div>
+				<div class="color2 float-left"><input type="checkbox" class="match-chose" />蓝色系</div>
+				<div class="color3 float-left"><input type="checkbox" class="match-chose" />绿色系</div>
+				<div class="color4 float-left"><input type="checkbox" class="match-chose" />黄色系</div>
+				<div class="color5 float-left"><input type="checkbox" class="match-chose" />黑白系</div>
+				<div class="color6 float-left"><input type="checkbox" class="match-chose" />多彩色系</div>
+				<div class="color7 float-left"><input type="checkbox" class="match-chose" />红色系</div>
 				<div class="float-right"><button type="button" class="check">+ 多选</button></div>
+				<div class="float-right"><button type="button" class="okey">确认</button></div>
 				<div class="more float-right">更多<img src="img/goods_search/images/down.jpg"></div>
 			</div>
 			<div class="effect-box clearfix">
 				<div class="effect-font float-left">彩妆功效</div>
-				<div class="effect1 float-left">遮瑕</div>
-				<div class="effect2 float-left">防晒</div>
-				<div class="effect3 float-left">隔离</div>
-				<div class="effect4 float-left">防水</div>
-				<div class="effect5 float-left">美白</div>
-				<div class="effect6 float-left">滋润</div>
-				<div class="effect7 float-left">补水</div>
+				<div class="effect1 float-left"><input type="checkbox" class="match-chose" />遮瑕</div>
+				<div class="effect2 float-left"><input type="checkbox" class="match-chose" />防晒</div>
+				<div class="effect3 float-left"><input type="checkbox" class="match-chose" />隔离</div>
+				<div class="effect4 float-left"><input type="checkbox" class="match-chose" />防水</div>
+				<div class="effect5 float-left"><input type="checkbox" class="match-chose" />美白</div>
+				<div class="effect6 float-left"><input type="checkbox" class="match-chose" />滋润</div>
+				<div class="effect7 float-left"><input type="checkbox" class="match-chose" />补水</div>
 				<div class="float-right"><button type="button" class="check">+ 多选</button></div>
+				<div class="float-right"><button type="button" class="okey">确认</button></div>
 				<div class="more float-right">更多<img src="img/goods_search/images/down.jpg"></div>
 			</div>
 			<div class="suit-box clearfix">
 				<div class="suit-font float-left">是否套装</div>
 				<div class="suit1 float-left">是</div>
 				<div class="suit2 float-left">否</div>
-				<div class="float-right"><button type="button" class="check">+ 多选</button></div>
 			</div>
 			<div class="sense-box clearfix">
 				<div class="sense-font float-left">妆感</div>
-				<div class="sense1 float-left">自然</div>
-				<div class="sense2 float-left">哑光</div>
-				<div class="sense3 float-left">闪光/珠光</div>
-				<div class="sense4 float-left">雾面</div>
-				<div class="sense5 float-left">素颜</div>
+				<div class="sense1 float-left"><input type="checkbox" class="match-chose" />自然</div>
+				<div class="sense2 float-left"><input type="checkbox" class="match-chose" />哑光</div>
+				<div class="sense3 float-left"><input type="checkbox" class="match-chose" />闪光/珠光</div>
+				<div class="sense4 float-left"><input type="checkbox" class="match-chose" />雾面</div>
+				<div class="sense5 float-left"><input type="checkbox" class="match-chose" />素颜</div>
 				<div class="float-right"><button type="button" class="check">+ 多选</button></div>
+				<div class="float-right"><button type="button" class="okey">确认</button></div>
 			</div>
 			<div class="more-chose relative">更多选项<img src="img/goods_search/images/down.jpg" class="down">
 				<img src="img/goods_search/images/up.jpg" class="up"></div>
@@ -2935,6 +2938,19 @@
 	<!-- 全局header、footer----勿删 -->
 	<script src="./js/goods_search/header&footer.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
+		// 点击多选出现多选框
+		$('.check').click(function () {
+			$(this).parent().siblings().find('.match-chose').css('display','inline-block')
+			$(this).css('display','none')
+			$(this).parent().siblings().find('.okey').css('display','block')
+		})
+		// 点击确认，隐藏多选框
+		$('.okey').click(function () {
+			$(this).parent().siblings().find('.match-chose').css('display','none')
+			$(this).css('display','none')
+			$(this).parent().siblings().find('.check').css('display','block')
+		})
+		
 		$('.more-chose').click(function () {
 			var isShow = $('.effect-box').is(':visible');
 			if (isShow) {
