@@ -223,7 +223,7 @@ $(window).ready(function () {
     } else {
       //当前非默认
       $Li.removeClass('isDefault');
-      //隐藏默认地址的删除按钮
+      //默认地址的删除按钮
       $Li.find('.btn').children('#del').css('display', 'inline-block')
       //默认的改成无法点击
       $Li.find('.default').removeClass('cannot');
