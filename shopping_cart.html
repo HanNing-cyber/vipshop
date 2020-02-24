@@ -8,7 +8,7 @@
 		<!-- valid插件 -->
 		<link rel="stylesheet" type="text/css" href="lib/Validform_v5.3.2/css/style.css" />
 		<!-- 全局 header/footer -->
-		<link rel="stylesheet" type="text/css" href="css/goods_search/header&footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/goods_search/header&footer.css" />
 		<!-- 购物车の样式 -->
 		<link rel="stylesheet" type="text/css" href="css/shopping_cart/style.css" />
 	</head>
@@ -23,24 +23,30 @@
 							</div>
 						</td>
 						<td class="clearfix head">
-							<a href=""><div class="number float-right">
-								<img src="img/pay_verify/number.png" class="middle">
-								<span class="middle">会员服务</span>
-							</div></a>
-							<a href=""><div class="customer float-right">
-								<img src="img/pay_verify/customer.png" class="middle">
-								<span class="middle">在线客服</span>
-							</div></a>
-							<a href=""><div class="tel float-right">
-								<img src="img/pay_verify/tel.png" class="middle">
-								<span class="middle">400-6789-888</span>
-							</div></a>
+							<a href="">
+								<div class="number float-right">
+									<img src="img/pay_verify/number.png" class="middle">
+									<span class="middle">会员服务</span>
+								</div>
+							</a>
+							<a href="">
+								<div class="customer float-right">
+									<img src="img/pay_verify/customer.png" class="middle">
+									<span class="middle">在线客服</span>
+								</div>
+							</a>
+							<a href="">
+								<div class="tel float-right">
+									<img src="img/pay_verify/tel.png" class="middle">
+									<span class="middle">400-6789-888</span>
+								</div>
+							</a>
 							<div class="order-ctrl float-right">
 								<a href="user_order.html"><span class="middle ">订单管理</span></a>
 							</div>
 							<div class="user float-right">
 								<a href="user.html"><span class="middle">您好，********！</span>
-								<img src="img/shopping_cart/user.png" class="middle"></a>
+									<img src="img/shopping_cart/user.png" class="middle"></a>
 								<span>[退出]</span>
 							</div>
 						</td>
@@ -209,7 +215,9 @@
 			</div>
 			<div class="calculation clearfix">
 				<div class="tips float-left"><span class="middle">请在倒计时结束前结算</span><img src="img/shopping_cart/tip.png" class="middle"></div>
-				<a href="pay_verify.html"><div class="calculation-btn float-right">立即结算<span class=""></span></div></a>
+				<a href="pay_verify.html">
+					<div class="calculation-btn float-right">立即结算<span class=""></span></div>
+				</a>
 			</div>
 			<div class="serve-box">
 				<img src="img/shopping_cart/serve-content.png" width="1000px">
@@ -269,8 +277,8 @@
 					oResult.innerHTML = '特卖商品 ' + minute + ' : ' + second;
 					oCalculation.innerHTML = '立即结算 ' + minute + ' : ' + second;
 				}, 1000);
-			}
 
+			}
 			$('.tips .tip img').hover(function() {
 				$('.order-tip').css('opacity', '1');
 				$('.order-tip').css('transition', 'all 0.5s');
