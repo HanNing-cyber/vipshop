@@ -47,12 +47,12 @@
 	margin-top: 5px;
 	border-right: 1px solid #aaa;
 }
-.tel,
+.tel-tel,
 .number {
 	padding: 0 10px;
 	margin-top: 6px;
 }
-.tel{
+.tel-tel{
 	border-right: 1px solid #aaa;
 }
 .serve-img{
@@ -368,10 +368,11 @@
 }
 .add-address{
 	width: 252px;
-	height: 151px;
+	height: 149px;
+	margin-top: 10px;
 	border: 1px solid #ddd;
 	background-color: #F9F9F9;
-	margin-left: 30px;
+	margin-left: 15px;
 	color: #ddd;
 }
 .add-content{
@@ -483,4 +484,10 @@ a{
 }
 .invoice-box{
 	font-size: 15px;
+}
+.input_box{
+	display: none;
+}
+#cancel{
+	display: none;
 }
