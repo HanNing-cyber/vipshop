@@ -5,6 +5,8 @@ $(window).ready(function () {
   var $distpicker = $('#target');
   //获取地址编辑区域的Top值
   var inputTop = $('.editTop').offset().top;
+  //获取已保存的Top值
+  var saveTop = $('.save_box').offset().top;
   //存储初始Li-->obj
   var obj_01 = {
     name: '李华',
@@ -117,7 +119,7 @@ $(window).ready(function () {
   });
   /*  ---------------------收货信息验证------------------  */
   var arr = [];
-  $('.form').Validform({
+  $('#form').Validform({
     tiptype: function (msg, o, cssctl) {
       //o.obj 正在验证的元素-->用户名input  -->提示框
       var $tip = o.obj.siblings('.error-tip');
@@ -131,11 +133,13 @@ $(window).ready(function () {
         //没有验证通过
         $tip.fadeIn();
         $input.addClass('illegal');
+        $('#save').prop('disabled', false);
       }
       if (o.type == 2) {
         //通过验证
         $tip.fadeOut();
         $input.removeClass('illegal');
+        $('#save').prop('disabled', false);
       }
     },
   });
@@ -202,8 +206,11 @@ $(window).ready(function () {
       type: arr[7],
     }
     $Li.data('msg', obj);
+    //判断已保存的数量
+    var saveBoxNum = $('.save_box li').length;
+    console.log(saveBoxNum);
     //判断是否是默认地址
-    if (arr[8]) {
+    if (arr[8] && saveBoxNum <= 10) {
       //原来的默认地址取消
       $('.address_box li').removeClass('isDefault');
       //删除按钮出现
@@ -214,13 +221,15 @@ $(window).ready(function () {
       $('.address_box li.isDefault .default').stop(true).animate({ 'top': '-20px' });
       //当前设为默认
       $Li.addClass('isDefault');
+      $Li.find('.default').stop(true).animate({ 'top': '0' });
       //隐藏默认地址的删除按钮
       $Li.find('.btn').children('#del').css('display', 'none')
       //默认的改成无法点击
       $Li.find('.default').addClass('cannot');
       //插入
       $('.address_box').append($Li);
-    } else {
+    }
+    if (!arr[8] && saveBoxNum <= 10) {
       //当前非默认
       $Li.removeClass('isDefault');
       //默认地址的删除按钮
@@ -229,6 +238,10 @@ $(window).ready(function () {
       $Li.find('.default').removeClass('cannot');
       //插入
       $('.address_box').append($Li);
+    }
+    if(saveBoxNum > 10){
+      layer.alert('收货地址数量已经超出最大值');
+      return;
     }
     //清空val
     $('.edit_box .name input').val('');
@@ -245,6 +258,11 @@ $(window).ready(function () {
     $('.save_box .now_num').text(Box_num);
     //返回按钮消失
     $('#cancel').css('display', 'none')
+    //返回已经保存的区域
+    $('html, body').stop(true).animate({
+      scrollTop: saveTop
+    });
+
   })
   /* ----------------------修改信息----------------------- */
   $('.address_box li #edit').on('click', function () {
@@ -320,5 +338,9 @@ $(window).ready(function () {
     $('.edit_box .setDefault input').prop('checked', false);
     //重置城市选择
     $('#target').distpicker('reset', true);
+    //返回已经保存的区域
+    $('html, body').stop(true).animate({
+      scrollTop: saveTop
+    });
   })
 });
