@@ -9,8 +9,11 @@
 		<link rel="stylesheet" type="text/css" href="lib/Validform_v5.3.2/css/style.css" />
 		<!-- 全局 header/footer -->
 		<link rel="stylesheet" type="text/css" href="css/goods_search/header&footer.css" />
+		
 		<!-- 订单验证の样式 -->
 		<link rel="stylesheet" type="text/css" href="css/pay_verify/style.css" />
+		<!-- 主要内容 -->
+		<link rel="stylesheet" type="text/css" href="css/pay_verify/second-style.css" />
 	</head>
 	<body>
 		<div class="head-border">
@@ -23,24 +26,30 @@
 							</div>
 						</td>
 						<td class="clearfix head">
-							<a href=""><div class="number float-right">
-								<img src="img/pay_verify/number.png" class="middle">
-								<span class="middle">会员服务</span>
-							</div></a>
-							<a href=""><div class="customer float-right">
-								<img src="img/pay_verify/customer.png" class="middle">
-								<span class="middle">在线客服</span>
-							</div></a>
-							<a href=""><div class="tel float-right">
-								<img src="img/pay_verify/tel.png" class="middle">
-								<span class="middle">400-6789-888</span>
-							</div></a>
+							<a href="">
+								<div class="number float-right">
+									<img src="img/pay_verify/number.png" class="middle">
+									<span class="middle">会员服务</span>
+								</div>
+							</a>
+							<a href="">
+								<div class="customer float-right">
+									<img src="img/pay_verify/customer.png" class="middle">
+									<span class="middle">在线客服</span>
+								</div>
+							</a>
+							<a href="">
+								<div class="tel-tel float-right">
+									<img src="img/pay_verify/tel.png" class="middle">
+									<span class="middle">400-6789-888</span>
+								</div>
+							</a>
 							<div class="order-ctrl float-right">
 								<a href="user_order.html"><span class="middle ">订单管理</span></a>
 							</div>
 							<div class="user float-right">
 								<a href="user.html"><span class="middle">您好，********！</span>
-								<img src="img/shopping_cart/user.png" class="middle"></a>
+									<img src="img/shopping_cart/user.png" class="middle"></a>
 								<span>[退出]</span>
 							</div>
 						</td>
@@ -88,33 +97,162 @@
 					</thead>
 				</table>
 				<div class="cart-body form">
-					<div class="address-item float-left">
-						<div class="item-head clearfix">
-							<span class="name float-left">张三</span>
-							<span class="default-address float-right">默认地址</span>
-							<span class="change float-right">修改</span>
-						</div>
-						<div class="item-body clearfix">
-							<span class="item-tel">12345678910</span>
-							<span class="item-time">周一至周日均可收货</span>
-							<div class="item-address">
-								<img src="img/pay_verify/address-logo.png" class="middle">
-								<span class="address-city">山东省青岛市</span>
-								<span class="address-detail">崂山区银川东路33号</span>
+					<div class="save_box">
+					<ul class="address_box ">
+					    <li class="relative isDefault" data-msg="">
+					      <div class="item">
+					        <div class="default">默认地址</div>
+					        <div class="name">
+					          <img class="vertical-mid" src="./img/user_address/name_address.png" alt="">
+					          <span class="vertical-mid">李华</span>
+					        </div>
+					        <div class="location">
+					          <img class="vertical-mid" src="./img/user_address/location_address.png" alt="">
+					          <span class="vertical-mid">
+					            <span class="province">山东省</span>
+					            <span class="city">青岛市</span>
+					            <span class="district">市南区</span>
+					            <span class="detail_address">香港中路</span>
+					          </span>
+					        </div>
+					        <div class="tel">
+					          <img class="vertical-mid" src="./img/user_address/tel_address.png" alt="">
+					          <span class="vertical-mid">18888888888</span>
+					        </div>
+					        <div class="btn">
+					          <button type="button" id="edit">修改</button>
+					          <button type="button" id="del">删除</button>
+					        </div>
+					      </div>
+					    </li>
+					    <li class="relative"
+					      data-msg="">
+					      <div class="item">
+					        <div class="default">默认地址</div>
+					        <div class="name">
+					          <img class="vertical-mid" src="./img/user_address/name_address.png" alt="">
+					          <span class="vertical-mid">张麻子</span>
+					        </div>
+					        <div class="location">
+					          <img class="vertical-mid" src="./img/user_address/location_address.png" alt="">
+					          <span class="vertical-mid">
+					            <span class="province">山东省</span>
+					            <span class="city">烟台市</span>
+					            <span class="district">芝罘区</span>
+					            <span class="detail_address">南大街</span>
+					          </span>
+					        </div>
+					        <div class="tel">
+					          <img class="vertical-mid" src="./img/user_address/tel_address.png" alt="">
+					          <span class="vertical-mid">16666666666</span>
+					        </div>
+					        <div class="btn">
+					          <button type="button" id="edit">修改</button>
+					          <button type="button" id="del">删除</button>
+					        </div>
+					      </div>
+					    </li>
+						<li class="add-address relative">
+							<div class="add-content">
+								<div class="plus">+</div>
+								<div class="add-font">添加地址</div>
 							</div>
-						</div>
+						</li>
+					  </ul>
 					</div>
-				
-					<div class="add-address relative float-left">
-						<div class="add-content">
-							<div class="plus">+</div>
-							<div class="add-font">添加地址</div>
-						</div>
 					</div>
+
+					
 					<div class="clear"></div>
+					
+					<!-- 编辑地址/新增地址 -->
+					<div class="input_box editTop">
+					  <div class="title">新增收货地址</div>
+					  <form class="edit_box form">
+					    <!-- 收货人 -->
+					    <div class="name item clearfix relative">
+					      <div class="tip fl vertical-mid">
+					        <span>*</span>
+					        <span>收货人：</span>
+					      </div>
+					      <input class="fl vertical-mid" type="text" id="name" datatype="s" nullmsg="请输入收货人姓名"
+					        errormsg="收货人姓名只支持中文" placeholder="收货人姓名">
+					      <div class="error-tip"><img src="./img/user_address/tips_error.png" alt=""></div>
+					    </div>
+					    <!-- 手机号 -->
+					    <div class="tel item clearfix relative">
+					      <div class="tip fl vertical-mid">
+					        <span>*</span>
+					        <span>手机号：</span>
+					      </div>
+					      <input class="fl vertical-mid" type="text" id="name" datatype="m" nullmsg=" 请输入收货人手机号"
+					        errormsg="手机格式不正确" placeholder="手机号">
+					      <div class="error-tip"></div>
+					    </div>
+					    <!-- 收货时间 -->
+					    <div class="time item clearfix relative">
+					      <div class="tip fl vertical-mid">
+					        <span>*</span>
+					        <span>收货时间：</span>
+					      </div>
+					      <select class="time_sel vertical-mid">
+					        <option  value="allday">周一至周日均可收货</option>
+					        <option value="holiday">周六日、节假日收货</option>
+					        <option value="weekday">周一至周五收货</option>
+					      </select>
+					    </div>
+					    <!-- 所在地区 -->
+					    <div class="city item clearfix relative">
+					      <div class="tip fl vertical-mid">
+					        <span>*</span>
+					        <span>所在地区：</span>
+					      </div>
+					      <div id="target" class="city_sel" data-toggle="distpicker">
+					        <select id="province"></select>
+					        <select id="city"></select>
+					        <select id="district"></select>
+					      </div>
+					    </div>
+					    <!-- 详细地址 -->
+					    <div class="detail_address item clearfix relative">
+					      <div class="tip fl vertical-mid">
+					        <span>*</span>
+					        <span>详细地址：</span>
+					      </div>
+					      <input class="fl vertical-mid" type="text" id="name" datatype="s" nullmsg="请填写完整的地址信息"
+					        placeholder="详细地址">
+					      <div class="error-tip"></div>
+					    </div>
+					    <!-- 地址类型 -->
+					    <div class="type item clearfix relative">
+					      <div class="tip fl vertical-mid">
+					        <span>*</span>
+					        <span>地址类型：</span>
+					      </div>
+					      <div class="check_box vertical-mid">
+					        <input class="vertical-mid" type="radio" class="address_type" name="type" value="1" />
+					        <span class="vertical-mid home">家庭</span>
+					        <input class="vertical-mid" type="radio" class="address_type" name="type" value="2" />
+					        <span class="vertical-mid company">公司</span>
+					        <input class="vertical-mid" type="radio" class="address_type" name="type" value="3" />
+					        <span class="vertical-mid rests">其他</span>
+					      </div>
+					    </div>
+					    <!-- 设为默认地址 -->
+					    <div class="setDefault item clearfix relative">
+					      <div class="tip fl vertical-mid"></div>
+					      <input class="vertical-mid" type="checkbox" /><span class="vertical-mid">设为默认地址</span>
+					    </div>
+					    <!-- 保存 取消 -->
+					    <div class="btn item clearfix">
+					      <div class="tip fl vertical-mid"></div>
+					      <button type="button" id="save">保存</button>
+					      <button type="button" id="cancel">取消</button>
+					  </form>
+					</div>
 				</div>
-				
-				
+                
+
 				<div class="detailed-list">
 					<span class="detailed-list-head">商品清单</span>
 					<span class="go-back float-right"><a href="shopping_cart.html">返回购物袋修改商品</a></span>
@@ -124,7 +262,7 @@
 						<thead>
 							<tr class="body-title">
 								<td class="title-logo">唯品会 发货订单</span>
-				                <td class="title-size">尺码</td>
+								<td class="title-size">尺码</td>
 								<td class="title-price">单价</td>
 								<td class="title-num">数量</td>
 							</tr>
@@ -132,7 +270,7 @@
 						<tbody>
 							<tr>
 								<td class="arrive-time">
-									<img src="img/pay_verify/clock.png" class="middle" >
+									<img src="img/pay_verify/clock.png" class="middle">
 									<span class="middle">预计 <b>02月27号（周四）</b> 送达</span>
 								</td>
 							</tr>
@@ -140,7 +278,7 @@
 								<td class="body-logo">
 									<a href="goods_detail.html"><img src="img/pay_verify/good1.jpg" width="60px"></a>
 									<span class="top">【1盒6色】粉悦木马轻雾感口红小样套盒 哑光雾面唇膏非</span>
-							    </td>
+								</td>
 								<td class="body-size">
 									<span>3g</span>
 								</td>
@@ -153,8 +291,8 @@
 							</tr>
 						</tbody>
 					</table>
-			    </div>
-				
+				</div>
+
 				<div class="detailed-list">
 					<span class="detailed-list-head">支付清单</span>
 				</div>
@@ -164,7 +302,7 @@
 						<input type="checkbox" name="" id="" value="" />
 						<span>唯品卡支付</span>
 						<span>余额999999999元</span>
-						<img src="img/pay_verify/gray-tip.png" class="middle" >
+						<img src="img/pay_verify/gray-tip.png" class="middle">
 						<a href="#">激活唯品卡</a>
 					</div>
 					<div class="balance">
@@ -185,31 +323,31 @@
 					<div class="invoice-box">
 						<input type="checkbox" name="" id="" value="" />
 						<span>开具发票</span>
-						<img src="img/pay_verify/gray-tip.png" class="middle" >
+						<img src="img/pay_verify/gray-tip.png" class="middle">
 					</div>
 				</div>
 			</div>
-               
 
-			<!-- <div class="cart-foot">
-                
-			</div> -->
 
-		<div class="pay-box clearfix">
-			<div class="sum-box float-right">
-				<div class="calculation-price">商品金额：<span class="sum">0</span>元</div>
-				<div class="no-freight">运费：<span class="fre-num">0</span>元</div>
-				<div class="wait-pay">待支付：<span class="sum">0</span>元</div>
-				<div class="arrive-address">送货至： 崂山区 银川东路33号金岭新村，张三，123****8910</div>
+
+
+			<div class="pay-box clearfix">
+				<div class="sum-box float-right">
+					<div class="calculation-price">商品金额：<span class="sum">0</span>元</div>
+					<div class="no-freight">运费：<span class="fre-num">0</span>元</div>
+					<div class="wait-pay">待支付：<span class="sum">0</span>元</div>
+					<div class="arrive-address">送货至： 崂山区 银川东路33号金岭新村，张三，123****8910</div>
+				</div>
 			</div>
-		</div>
-		<div class="calculation clearfix">
-			<div class="tips float-left"><span class="middle">请在倒计时结束前结算</span><img src="img/shopping_cart/tip.png" class="middle"></div>
-			<a href="pay_success.html"><div class="calculation-btn float-right">立即结算<span class=""></span></div></a>
-		</div>
-		<div class="serve-box">
-			<img src="img/shopping_cart/serve-content.png" width="1000px">
-		</div>
+			<div class="calculation clearfix">
+				<div class="tips float-left"><span class="middle">请在倒计时结束前结算</span><img src="img/shopping_cart/tip.png" class="middle"></div>
+				<a href="pay_success.html">
+					<div class="calculation-btn float-right">立即结算</div>
+				</a>
+			</div>
+			<div class="serve-box">
+				<img src="img/shopping_cart/serve-content.png" width="1000px">
+			</div>
 		</div>
 
 		<div class="footer">
@@ -252,9 +390,17 @@
 			</div>
 		</div>
 		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- 收货地址 -->
+		<script src="./lib/jQueryAddress-3thLinkage/js/distpicker.data.js"></script>
+		<script src="./lib/jQueryAddress-3thLinkage/dist/distpicker.min.js"></script>
+		<script src="./lib/jQueryAddress-3thLinkage/js/main.js"></script>
+		<!-- 当前页面 -->
+		<script src="./js/pay_verify/pay_verify.js" type="text/javascript" charset="utf-8"></script>
+		<!-- Validform插件js -->
+		<script src="./lib/Validform_v5.3.2/js/Validform_v5.3.2_min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			// 特价售卖倒计时
-			window.onload = function() {
+			function date() {
 				var oResult = document.querySelector(".result");
 				var oCalculation = document.querySelector(".calculation-btn");
 				var time = 1200;
@@ -265,15 +411,14 @@
 					oResult.innerHTML = '特卖商品 ' + minute + ' : ' + second;
 					oCalculation.innerHTML = '立即结算 ' + minute + ' : ' + second;
 				}, 1000);
-			}
-
+            }
 			$('.tips .tip img').hover(function() {
 				$('.order-tip').css('opacity', '1');
 				$('.order-tip').css('transition', 'all 0.5s');
 			}, function() {
 				$('.order-tip').css('opacity', '0');
 			});
-			window.onload = function calSum() {
+	         function calSum() {
 				var sum = 0;
 				$('.body-content .body-price-num').each(function(index) {
 					var n = parseFloat($(this).text());
@@ -281,6 +426,10 @@
 				});
 				$('.sum-box .sum').text(sum);
 			};
+			
+			$('.add-address').click(function () {
+				$('.input_box').css('display','block')
+			})
 		</script>
 	</body>
 </html>
