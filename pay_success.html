@@ -23,24 +23,30 @@
 							</div>
 						</td>
 						<td class="clearfix head">
-							<a href=""><div class="number float-right">
-								<img src="img/pay_verify/number.png" class="middle">
-								<span class="middle">会员服务</span>
-							</div></a>
-							<a href=""><div class="customer float-right">
-								<img src="img/pay_verify/customer.png" class="middle">
-								<span class="middle">在线客服</span>
-							</div></a>
-							<a href=""><div class="tel float-right">
-								<img src="img/pay_verify/tel.png" class="middle">
-								<span class="middle">400-6789-888</span>
-							</div></a>
+							<a href="">
+								<div class="number float-right">
+									<img src="img/pay_verify/number.png" class="middle">
+									<span class="middle">会员服务</span>
+								</div>
+							</a>
+							<a href="">
+								<div class="customer float-right">
+									<img src="img/pay_verify/customer.png" class="middle">
+									<span class="middle">在线客服</span>
+								</div>
+							</a>
+							<a href="">
+								<div class="tel float-right">
+									<img src="img/pay_verify/tel.png" class="middle">
+									<span class="middle">400-6789-888</span>
+								</div>
+							</a>
 							<div class="order-ctrl float-right">
 								<a href="user_order.html"><span class="middle ">订单管理</span></a>
 							</div>
 							<div class="user float-right">
 								<a href="user.html"><span class="middle">您好，********！</span>
-								<img src="img/shopping_cart/user.png" class="middle"></a>
+									<img src="img/shopping_cart/user.png" class="middle"></a>
 								<span>[退出]</span>
 							</div>
 						</td>
@@ -119,10 +125,10 @@
 		<div class="code-pay-box">
 			<div class="container">
 				<div class="pay-img">
-					<img src="img/pay_success/vchat-pay.png" >
+					<img src="img/pay_success/vchat-pay.png">
 				</div>
 				<div class="code-img">
-					<img src="img/pay_success/code.png" width="250px" >
+					<img src="img/pay_success/code.png" width="250px">
 				</div>
 				<div class="push-box">
 					<div class="push">
@@ -141,7 +147,7 @@
 					<div class="go-back">改选其他支付方式</div>
 					<div class="price-font">￥155.00</div>
 				</div>
-			    <div class="tip-box">
+				<div class="tip-box">
 					<span>完成支付没有提示？</span>
 				</div>
 			</div>
@@ -264,8 +270,8 @@
 					var second = parseInt(time % 60);
 					oTimeResult.innerHTML = minute + '分' + second + '秒';
 				}, 1000);
-			}
 
+			}
 			window.onload = function calSum() {
 				var sum = 0;
 				$('.body-content .body-price-num').each(function(index) {
@@ -308,7 +314,7 @@
 				$('.ready').click(function() {
 					$('.mode-box').css('display', 'none')
 					$('.code-pay-box').css('display', 'block')
-					$('.strip').css('display','none')
+					$('.strip').css('display', 'none')
 				})
 			})
 			$('.next .back').click(function() {
@@ -326,7 +332,7 @@
 			$('.code-pay-box .go-back').click(function() {
 				$('.code-pay-box').css('display', 'none')
 				$('.mode-box').css('display', 'block')
-				$('.strip').css('display','block')
+				$('.strip').css('display', 'block')
 			})
 		</script>
 	</body>
