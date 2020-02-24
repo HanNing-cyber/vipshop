@@ -1,5 +1,5 @@
 ﻿王启帆：
-	唯品会主页	index.html
+	唯品会主页		index.html
 	商品详情		goods_detail.html
 	用户中心主页	user.html
 	订单管理		user_order.html
@@ -11,8 +11,8 @@
 	登录页面		login.html
 	注册页面		register.html
 	商品搜索列表	goods_search.html
-	购物车		shopping_cart.html
-                订单验证                   pay-verify.html
-                订单支付                   pay-success.html
+	购物车			shopping_cart.html
+    订单验证        pay-verify.html
+    订单支付        pay-success.html
 	
 
